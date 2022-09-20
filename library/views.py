@@ -1,0 +1,75 @@
+from datetime import datetime
+from django.shortcuts import render
+from django.views.generic.base import View
+from accounts.models import User
+from django.views.generic import ListView
+from library.models import Books, Signouts
+from library.utils import sign_back_all_borrows
+
+class SignoutView(View):
+    def get(self, request, *args, **kwargs):
+        context = {"error": False}
+        return render(request, "signout.html", context)
+
+    def post(self, request, *args, **kwargs):
+        error = False
+        book_number = request.POST.get('book_number')
+
+        try:
+            book = Books.objects.get(unique_number=book_number)
+            print(book.title)
+        except Books.DoesNotExist:
+            error = True
+            
+        if error:
+            context = {"error": True}
+            return render(request, "signout.html", context)
+        # if already unavailable, assuming the person returned and didn't sign it in
+        if not book.available:
+            sign_back_all_borrows(book)
+
+        user = User.objects.get(id=request.user.id)
+        signout_time = datetime.now()
+        signout = Signouts(book=book, user=user, signout_date=signout_time, signin_date=None)
+        signout.save()
+        book.available = False
+        book.save()
+        context = {"book_number": book_number, "book": book}
+        return render(request, "signout_success.html", context)
+    
+class SigninView(View):
+    def get(self, request, *args, **kwargs):
+        context = {"error": False}
+        return render(request, "signin.html", context)
+
+    def post(self, request, *args, **kwargs):
+        error = False
+        book_number = request.POST.get('book_number')
+        
+        try:
+            book = Books.objects.get(unique_number=book_number)
+            print(book.title)
+        except Books.DoesNotExist:
+            error = True
+            
+        if error:
+            context = {"error": True}
+            return render(request, "signin.html", context)
+
+        sign_back_all_borrows(book)
+
+        book.available = True
+        book.save()
+        
+        context = {"book_number": book_number, "book": book}
+        return render(request, "return_success.html", context)
+
+class BooksView(ListView):
+    model = Books
+
+    def get_queryset(self, *args, **kwargs):
+        qs = super(BooksView, self).get_queryset(*args, **kwargs)
+        qs = qs.order_by("unique_number")
+        return qs
+    
+

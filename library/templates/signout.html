@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Signout{% endblock %}
+
+{% block content %}
+<h1>Sign out a book</h1>
+<form method="post">
+  {%csrf_token%}
+  {% if error %}
+  <p>Please input a valid book number. It can be found on the inside of the cover.</p>
+  {%endif%}
+  <label for="book_number">Book Number: </label>
+  <input id="book_number" type="number" name="book_number" value="0">
+  <input type="submit" value="SUBMIT">
+</form>
+{% endblock %}
