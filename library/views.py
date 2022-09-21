@@ -1,4 +1,5 @@
 from datetime import datetime
+from distutils import errors
 from django.shortcuts import render
 from django.views.generic.base import View
 from accounts.models import User
@@ -72,4 +73,32 @@ class BooksView(ListView):
         qs = qs.order_by("unique_number")
         return qs
     
+
+class AddBookView(View):    
+    def get(self, request, *args, **kwargs):
+        context = {"error": False}
+        return render(request, "add_book.html", context)
+
+    def post(self, request, *args, **kwargs):
+        errors = []
+        print(request.POST)
+
+        book_number = request.POST.get('book_number')
+        title = request.POST.get('title')
+        author = request.POST.get('author')
+        description = request.POST.get('description')
+        available = True if request.POST.get('available') == 'on' else False
+
+        if title == '':
+            errors.append("Title is Empty!")
+            title = None
+
+        try:
+            book = Books(title=title, author=author, description=description, available=available, unique_number=book_number)
+            book.save()
+        except:
+            errors.append("Book number is not unique!")
+            
+        context = {"error": (len(errors) > 0), "errors": errors, "book": book}
+        return render(request, "add_book.html", context)
 

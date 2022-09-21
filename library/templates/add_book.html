@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Add a Book{% endblock %}
+
+{% block content %}
+<h1>Add a book</h1>
+<form method="post">
+  {%csrf_token%}
+  {% if error %}
+    <p>Cannot save the book. Please correct the following: </p>
+    <ul>
+    {% for bad in errors %}
+        <li>{{ bad }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if book %}
+    <h4>Successfully added {{book.title}} to the library!</h4>
+  {% endif %}
+  
+  <label for="book_number">Book Unique Number: </label>
+  <input id="book_number" type="number" name="book_number">
+  
+  <label for="title">Book Title: </label>
+  <input id="title" type="text" name="title">
+
+  <label for="author">Book Author: </label>
+  <input id="author" type="text" name="author">
+  
+  <label for="description">Book Description: </label>
+  <input id="description" type="text" name="description">
+
+  <label for="available">Available: </label>
+  <input id="available" type="checkbox" name="available" checked="true">
+
+  <input type="submit" value="SUBMIT">
+</form>
+{% endblock %}
