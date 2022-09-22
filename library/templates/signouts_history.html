@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}History{% endblock %}
+
+{% block content %}
+<h1>History</h1>
+<ul>
+	<!-- Iterate over object_list -->
+	{% for object in object_list %}
+	<!-- Display Objects -->
+	<li>Book: {{ object.book.title }} by {{ object.book.author }} -- {{object.book.unique_number}}</li>
+	<li>Borrower: 
+		<ul>
+			<li>Name: {{ object.user.get_full_name }}</li>
+			<li>Email: {{ object.user.email }}</li>
+			<li>Phone Number: {{ object.user.phone_number }}</li>
+		</ul> 
+	</li>
+	<li>Signout Date: {{ object.signout_date }}</li>
+	<li>Has it been signed back in: {{ object.signed_back_in }}</li>
+	<li>Signin Date: {{ object.signin_date }}</li>
+	<hr/>
+	<!-- If object_list is empty -->
+	{% empty %}
+	<li>No objects yet.</li>
+	{% endfor %}
+</ul>
+{% endblock %}

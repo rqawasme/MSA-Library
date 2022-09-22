@@ -102,3 +102,14 @@ class AddBookView(View):
         context = {"error": (len(errors) > 0), "errors": errors, "book": book}
         return render(request, "add_book.html", context)
 
+
+class SignoutsHistoryView(ListView):    
+    model = Signouts
+    template_name: str = "signouts_history.html"
+    def get_queryset(self, *args, **kwargs):
+        return super(SignoutsHistoryView, self).get_queryset(*args, **kwargs)
+
+    # def get(self, request, *args, **kwargs):
+    #     signouts = 
+    #     context = {"error": False}
+    #     return render(request, "signouts_history.html", context)
