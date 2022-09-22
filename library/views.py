@@ -6,8 +6,10 @@ from accounts.models import User
 from django.views.generic import ListView
 from library.models import Books, Signouts
 from library.utils import sign_back_all_borrows
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import UserPassesTestMixin
 
-class SignoutView(View):
+class SignoutView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         context = {"error": False}
         return render(request, "signout.html", context)
@@ -74,7 +76,10 @@ class BooksView(ListView):
         return qs
     
 
-class AddBookView(View):    
+class AddBookView(UserPassesTestMixin, View):    
+    def test_func(self):
+        return self.request.user.is_superuser
+
     def get(self, request, *args, **kwargs):
         context = {"error": False}
         return render(request, "add_book.html", context)
@@ -103,13 +108,11 @@ class AddBookView(View):
         return render(request, "add_book.html", context)
 
 
-class SignoutsHistoryView(ListView):    
+class SignoutsHistoryView(UserPassesTestMixin, ListView):    
     model = Signouts
     template_name: str = "signouts_history.html"
     def get_queryset(self, *args, **kwargs):
         return super(SignoutsHistoryView, self).get_queryset(*args, **kwargs)
 
-    # def get(self, request, *args, **kwargs):
-    #     signouts = 
-    #     context = {"error": False}
-    #     return render(request, "signouts_history.html", context)
+    def test_func(self):
+        return self.request.user.is_superuser
