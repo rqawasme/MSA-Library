@@ -1,0 +1,119 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif !important;
+    margin: 0;
+}
+
+header {
+    box-sizing: border-box;
+    display: block;
+}
+
+#nav {
+    background-color: transparent;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+
+    .pancake_sidebar {
+        border-right: 1px solid #ccc!important;
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed!important;
+        z-index: 10;
+        overflow: auto;
+    }
+
+    .top_nav {
+        color: white;
+        @media screen and (max-width: 420px) {
+            display: none;
+        }
+    }   
+
+    .pancake_button {
+        color: #fff!important;
+        font-size: 24px!important;
+        user-select: none;
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+}
+
+#main {
+    min-height: 87vh;
+}
+
+#main_title {
+    background-image: url("/static/images/library_dark.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        padding-bottom: 18px;
+        color: #ffffff;
+        font-family: 'Lora', 'Arial' !important;    
+        font-size: 45pt;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 1.26;
+        margin: 0; 
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            right: 0;
+            top: 0;
+            width: 100px;
+            border-bottom-style: solid;
+            border-bottom-width: 8px;
+            border-color: rgba(193,48,13,1);
+            margin: 0 auto;
+        }
+    }
+}
+
+#footer {    
+//    position: fixed;
+//    bottom: 0;
+   width: 100%;
+   min-height: 60px;   /* Height of the footer */
+   background: grey;
+   display: flex;
+   color: white;
+   flex-direction: row;
+   font-size: 12px;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-around;
+   padding: 25px 10px;
+
+   @media only screen and (max-width: 600px){
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 200px;
+   }
+}

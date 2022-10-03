@@ -1,28 +1,89 @@
-<!-- templates/base.html -->
+{% load sass_tags %}
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+  <title>{% block title %}MSA Library{% endblock %}</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{% static 'compiled/images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% sass_src 'pages/css/styles.scss' %}">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-  <main>
+  <div id="nav">
+    {% comment %} the side bar {% endcomment %}    
+    <div id="pancake" class="pancake_sidebar w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+      <button onclick="pancake_close()" class="w3-bar-item w3-large">Close &times;</button>
+      <a href="/" class="w3-bar-item w3-button">Borrow a Book</a>
+      <a href="/signin/" class="bar-item w3-button">Return a Book</a>
+      <a href="/addbook/" class="w3-bar-item w3-button">Add a Book</a>
+      <a href="/books/" class="w3-bar-item w3-button">Books List</a>
+      <a href="/history/" class="w3-bar-item w3-button">Borrow History</a>
+    </div>
+
+    {% comment %} nav button {% endcomment %}
+    <div style="display: flex; align-items: center; justify-content: space-between; background: rgb(0,0,0,0.2);">
+      <button  class="pancake_button" role="button" title="Show sidebar" onclick="pancake_open()">☰</button>
+      <div class="top_nav">
+        <a href="/" class="w3-bar-item w3-button">Borrow a Book</a>
+        <a href="/signin/" class="bar-item w3-button">Return a Book</a>
+        <a href="/books/" class="w3-bar-item w3-button">Books List</a>
+      </div>
+    </div>
+  </div>
+  {% comment %} main content {% endcomment %}
+  <div id="main">
+
+    <div id="main_title">
+      <h1>
+          <strong>{% block main_title %}MSA Library{% endblock %}</strong>
+      </h1>
+    </div>
+
+
+
+
     {% if user.is_authenticated %}
       Hi {{ user.get_full_name }}!
     {% else %}
       <p>You are not logged in</p>
       <a href="{% url 'login' %}">Log In</a>
     {% endif %}
+
     {% block content %}
     {% endblock %}
-  </main>
+    
+    {% if user.is_authenticated %}
+      <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+      <a href="{% url 'signup' %}">Sign Up</a>
+      <a href="{% url 'password_reset' %}">Reset Password</a>
+    {% endif %} 
+  </div>
+  <div id="footer">
+    <div>
+      Contact Us
+      <br/>
+      Email: sfu-msa@hotmail.com
+    </div>
+    <div style="max-width: 325px;">
+      <i>We would like to acknowledge that at Simon Fraser University we live and work on the unceded traditional territories of the Coast Salish peoples of the Musqueam, Squamish, and Tsleil-Waututh Nations.</i>
+    </div>
+  </footer>
 </body>
-</footer>
-{% if user.is_authenticated %}
-  <a href="{% url 'logout' %}">Logout</a>
-{% else %}
-  <a href="{% url 'signup' %}">Sign Up</a>
-  <a href="{% url 'password_reset' %}">Reset Password</a>
-{% endif %}
-</footer>
 </html>
+
+{% block js %}
+{% endblock %}
+<script>
+  function pancake_open() {
+    document.getElementById("pancake").style.display = "block";
+    {% comment %} document.getElementById("pancake").style.width = "100%"; {% endcomment %}
+  }
+  
+  function pancake_close() {
+    document.getElementById("pancake").style.display = "none";
+  }
+</script>
