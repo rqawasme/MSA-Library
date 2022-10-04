@@ -17,10 +17,19 @@
     <div id="pancake" class="pancake_sidebar w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
       <button onclick="pancake_close()" class="w3-bar-item w3-large">Close &times;</button>
       <a href="/" class="w3-bar-item w3-button">Borrow a Book</a>
-      <a href="/signin/" class="bar-item w3-button">Return a Book</a>
-      <a href="/addbook/" class="w3-bar-item w3-button">Add a Book</a>
+      <a href="/signin/" class="w3-bar-item w3-button">Return a Book</a>
       <a href="/books/" class="w3-bar-item w3-button">Books List</a>
+      {% if user.is_superuser %}
+      <a href="/addbook/" class="w3-bar-item w3-button">Add a Book</a>
       <a href="/history/" class="w3-bar-item w3-button">Borrow History</a>
+      {% endif %}
+      {% if user.is_authenticated %}
+      <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
+      {% else %}
+      <a href="{% url 'login' %}" class="w3-bar-item w3-button">Login</a>
+      <a href="{% url 'signup' %}" class="w3-bar-item w3-button">Sign Up</a>
+      <a href="{% url 'password_reset' %}" class="w3-bar-item w3-button">Reset Password</a>
+      {% endif %} 
     </div>
 
     {% comment %} nav button {% endcomment %}
@@ -28,8 +37,14 @@
       <button  class="pancake_button" role="button" title="Show sidebar" onclick="pancake_open()">☰</button>
       <div class="top_nav">
         <a href="/" class="w3-bar-item w3-button">Borrow a Book</a>
-        <a href="/signin/" class="bar-item w3-button">Return a Book</a>
+        <a href="/signin/" class="w3-bar-item w3-button">Return a Book</a>
         <a href="/books/" class="w3-bar-item w3-button">Books List</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="w3-bar-item w3-button">Login</a>
+        <a href="{% url 'signup' %}" class="w3-bar-item w3-button">Sign Up</a>
+        {% endif %} 
       </div>
     </div>
   </div>
@@ -42,25 +57,8 @@
       </h1>
     </div>
 
-
-
-
-    {% if user.is_authenticated %}
-      Hi {{ user.get_full_name }}!
-    {% else %}
-      <p>You are not logged in</p>
-      <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-
     {% block content %}
     {% endblock %}
-    
-    {% if user.is_authenticated %}
-      <a href="{% url 'logout' %}">Logout</a>
-    {% else %}
-      <a href="{% url 'signup' %}">Sign Up</a>
-      <a href="{% url 'password_reset' %}">Reset Password</a>
-    {% endif %} 
   </div>
   <div id="footer">
     <div>
@@ -80,7 +78,7 @@
 <script>
   function pancake_open() {
     document.getElementById("pancake").style.display = "block";
-    {% comment %} document.getElementById("pancake").style.width = "100%"; {% endcomment %}
+    document.getElementById("pancake").style.width = "100%";
   }
   
   function pancake_close() {

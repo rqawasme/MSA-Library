@@ -1,27 +1,24 @@
 {% extends 'base.html' %}
 
-{% block title %}Books listing{% endblock %}
+{% block title %}Books list{% endblock %}
 
 {% block main_title %}Books List{% endblock %}
 
 {% block content %}
-<h1>All the Book in the library</h1>
-<ul>
-	<!-- Iterate over object_list -->
-	{% for object in object_list %}
-	<!-- Display Objects -->
-	<li>{{ object.title }}</li>
-	<li>Author: {{ object.author }}</li>
-	<li>Description: {{ object.description }}</li>
-	<li>Available: {{ object.available }}</li>
-	<li>Book Number: {{ object.unique_number }}</li>
+<div class="red_header">
+  <h2>Books in Our Library</h2>
+</div>
 
-	<hr/>
-	<!-- If object_list is empty -->
-	{% empty %}
-	<li>No objects yet.</li>
-	{% endfor %}
-</ul>
+{% for object in object_list %}
+<div class="lightred_header">
+	<h4>{{ object.title }} by {{ object.author }} ({{object.unique_number}})</h4>
+</div>
+<div style="padding-left: 20px;">
+	<p>Description: {{ object.description }}</p>
+</div>
+{% empty %}
+<h1>No objects yet.</h1>
+{% endfor %}
 
 {% endblock %}
 

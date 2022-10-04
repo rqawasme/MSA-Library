@@ -37,8 +37,8 @@ class SignoutView(LoginRequiredMixin, View):
         signout.save()
         book.available = False
         book.save()
-        context = {"book_number": book_number, "book": book}
-        return render(request, "signout_success.html", context)
+        context = {"book_number": book_number, "book": book, "success": True}
+        return render(request, "signout.html", context)
     
 class SigninView(View):
     def get(self, request, *args, **kwargs):
@@ -64,8 +64,8 @@ class SigninView(View):
         book.available = True
         book.save()
         
-        context = {"book_number": book_number, "book": book}
-        return render(request, "return_success.html", context)
+        context = {"book_number": book_number, "book": book, "success": True}
+        return render(request, "signin.html", context)
 
 class BooksView(ListView):
     model = Books

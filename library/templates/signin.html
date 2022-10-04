@@ -5,14 +5,21 @@
 {% block main_title %}Return a Book{% endblock %}
 
 {% block content %}
-<h1>Return a book</h1>
-<form method="post">
-  {%csrf_token%}
-  {% if error %}
-  <p>Please input a valid book number. It can be found on the inside of the cover.</p>
-  {%endif%}
-  <label for="book_number">Book Number: </label>
-  <input id="book_number" type="number" name="book_number" value="0">
-  <input type="submit" value="SUBMIT">
-</form>
+<div class="red_header">
+  <h2>Return a book</h2>
+</div>
+<div class="form">
+  <form method="post">
+    {%csrf_token%}
+    {% if error %}
+    <p class="error">Please input a valid book number. It can be found on the inside of the cover.</p>
+    {%endif%}
+    {% if success %}
+      <h4>Returned {{book.title}} Successfully! Jazakallah Khair!</h4>
+    {% endif %}
+    <label for="book_number">Book Number: </label><br/>
+    <input id="book_number" type="number" name="book_number" value="0" class="input_field">
+    <input type="submit" value="Submit" class="input_button">
+  </form>
+</div>
 {% endblock %}

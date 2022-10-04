@@ -16,6 +16,7 @@ header {
     top: 0;
     width: 100%;
     height: 50px;
+    z-index: 9;
 
     .pancake_sidebar {
         border-right: 1px solid #ccc!important;
@@ -23,13 +24,12 @@ header {
         width: 200px;
         background-color: #fff;
         position: fixed!important;
-        z-index: 10;
         overflow: auto;
     }
 
     .top_nav {
         color: white;
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 614px) {
             display: none;
         }
     }   
@@ -79,6 +79,10 @@ header {
         margin: 0; 
         position: relative;
 
+        @media screen and (max-width: 500px) {
+            font-size: 35px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -97,8 +101,6 @@ header {
 }
 
 #footer {    
-//    position: fixed;
-//    bottom: 0;
    width: 100%;
    min-height: 60px;   /* Height of the footer */
    background: grey;
@@ -116,4 +118,109 @@ header {
     align-items: flex-start;
     min-height: 200px;
    }
+}
+
+.red_header {
+    width: 100%;
+    background-color: rgba(193,48,13,1);
+    padding-left: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        color: white;
+        margin: 0;
+        padding: 0;
+        // font-family: 'Lora', 'Arial';
+        vertical-align: baseline;
+        font-weight: 600;
+        line-height: 1.56;
+    }
+}
+
+.form {
+    padding: 1.5rem 20px;
+    margin-right: 10px;
+
+    label {
+        color: rgb(33,33,33);
+        font-size: 16px;
+        padding: 24px 20px;
+        width: 100%;
+        line-height: 1.56;
+        font-weight: 400;
+    }
+
+    .input_field {
+        margin: 24px 18px;
+        border-color: rgba(193,48,13,1);
+        color: rgba(193,48,13,1);
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .input_button {
+        background-color: rgba(193,48,13,1);
+        color: white;
+        margin: 24px 18px;
+        border: none;
+        border-color: rgba(193,48,13,1);
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 4px;
+        width: 125px;
+    }
+
+    .error {
+        color: red;
+    }
+
+    h4 {
+        color: green;
+    }
+}
+
+.login_form {
+    margin: 1.5rem;
+
+    input {        
+        margin: 8px 0px;
+        border-color: rgba(193,48,13,1);
+        color: rgba(193,48,13,1);
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .input_button {
+        background-color: rgba(193,48,13,1);
+        color: white;
+        margin: 8px 0 ;
+        border: none;
+        border-color: rgba(193,48,13,1);
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 4px;
+        width: 125px;
+    }
+
+    span {
+        color: rgba(193,48,13,0.7);
+        font-style: italic;
+    }
+}
+
+.lightred_header {
+    width: 100%;
+    background-color: rgba(193,48,13,0.2);
+    padding-left: 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
 }
