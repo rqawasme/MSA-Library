@@ -7,8 +7,6 @@ django-environ==0.9.0
 django-libsass==0.9
 django-phonenumber-field==7.0.0
 django-sass-processor==1.2.1
-django_compressor==2.2
-django-libsass==0.7
 libsass==0.21.0
 rcssmin==1.1.0
 rjsmin==1.2.0
