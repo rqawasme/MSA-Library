@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 1234
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 1234
+# SECRET_KEY = os.environ['SECRET_KEY']
 # must paste in the secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -152,3 +152,7 @@ STATICFILES_FINDERS = [
 STATIC_ROOT = BASE_DIR / 'static'
 
 SASS_PROCESSOR_ROOT = STATIC_ROOT
+
+COMPRESS_OFFLINE = True
+LIBSASS_OUTPUT_STYLE = 'compressed'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
