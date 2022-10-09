@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'library',
     'accounts',
     'sass_processor',
+    'compressor',
 ]
 
 MIDDLEWARE = [
@@ -147,11 +148,16 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'sass_processor.finders.CssFinder',
+    'compressor.finders.CompressorFinder',
 ]
 
 STATIC_ROOT = BASE_DIR / 'static'
 
 SASS_PROCESSOR_ROOT = STATIC_ROOT
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
 
 COMPRESS_OFFLINE = True
 LIBSASS_OUTPUT_STYLE = 'compressed'

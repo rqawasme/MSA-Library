@@ -1,5 +1,6 @@
 {% load sass_tags %}
 {% load static %}
+{% load compress %}
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +9,11 @@
   <title>{% block title %}MSA Library{% endblock %}</title>
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{% static 'compiled/images/favicon.ico' %}">
-  <link rel="stylesheet" href="{% sass_src 'pages/css/styles.scss' %}">
+  {% comment %} <link rel="stylesheet" href="{% sass_src 'pages/css/styles.scss' %}"> {% endcomment %}
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  {% compress css %}
+  <link type="text/x-scss" href="{% static 'pages/css/styles.scss' %}" rel="stylesheet" media="screen">
+  {% endcompress %}
 </head>
 <body>
   <div id="nav">
