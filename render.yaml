@@ -1,0 +1,13 @@
+services: 
+- type: web
+  name: msalibrary
+  env: python
+  buildCommand: "./build.sh"        # ensure it's a string
+  startCommand: gunicorn msalibrary.wsgi:application
+  repo: https://github.com/rqawasme/MSA-Library.git # optional
+  # plan: standard # optional
+  healthCheckPath: /
+  # autoDeploy: false             # optional
+  envVars:
+  - key: DJANGO_SECRET_KEY
+    generateValue: true       # will generate a base64-encoded 256-bit secret
