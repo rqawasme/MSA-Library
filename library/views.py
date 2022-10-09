@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views.generic.base import View
 from accounts.models import User
 from django.views.generic import ListView
-from library.models import Books, Signouts
+from library.models import Book, Signout
 from library.utils import sign_back_all_borrows
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin
@@ -19,9 +19,9 @@ class SignoutView(LoginRequiredMixin, View):
         book_number = request.POST.get('book_number')
 
         try:
-            book = Books.objects.get(unique_number=book_number)
+            book = Book.objects.get(unique_number=book_number)
             print(book.title)
-        except Books.DoesNotExist:
+        except Book.DoesNotExist:
             error = True
             
         if error:
@@ -33,7 +33,7 @@ class SignoutView(LoginRequiredMixin, View):
 
         user = User.objects.get(id=request.user.id)
         signout_time = datetime.now()
-        signout = Signouts(book=book, user=user, signout_date=signout_time, signin_date=None)
+        signout = Signout(book=book, user=user, signout_date=signout_time, signin_date=None)
         signout.save()
         book.available = False
         book.save()
@@ -50,9 +50,9 @@ class SigninView(View):
         book_number = request.POST.get('book_number')
         
         try:
-            book = Books.objects.get(unique_number=book_number)
+            book = Book.objects.get(unique_number=book_number)
             print(book.title)
-        except Books.DoesNotExist:
+        except Book.DoesNotExist:
             error = True
             
         if error:
@@ -68,7 +68,7 @@ class SigninView(View):
         return render(request, "signin.html", context)
 
 class BooksView(ListView):
-    model = Books
+    model = Book
 
     def get_queryset(self, *args, **kwargs):
         qs = super(BooksView, self).get_queryset(*args, **kwargs)
@@ -99,7 +99,7 @@ class AddBookView(UserPassesTestMixin, View):
             title = None
 
         try:
-            book = Books(title=title, author=author, description=description, available=available, unique_number=book_number)
+            book = Book(title=title, author=author, description=description, available=available, unique_number=book_number)
             book.save()
         except:
             errors.append("Book number is not unique!")
@@ -109,7 +109,7 @@ class AddBookView(UserPassesTestMixin, View):
 
 
 class SignoutsHistoryView(UserPassesTestMixin, ListView):    
-    model = Signouts
+    model = Signout
     template_name: str = "signouts_history.html"
     def get_queryset(self, *args, **kwargs):
         return super(SignoutsHistoryView, self).get_queryset(*args, **kwargs)

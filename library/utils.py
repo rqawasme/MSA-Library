@@ -1,8 +1,8 @@
 from datetime import datetime
-from library.models import Books, Signouts
+from library.models import Book, Signout
 
-def sign_back_all_borrows(book: Books):
-    signouts = Signouts.objects.filter(book=book, signed_back_in=False)
+def sign_back_all_borrows(book: Book):
+    signouts = Signout.objects.filter(book=book, signed_back_in=False)
     for signout in signouts:
         signout.signed_back_in = True
         signout.signin_date = datetime.now()
