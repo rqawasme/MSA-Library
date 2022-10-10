@@ -128,7 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -151,7 +151,14 @@ STATICFILES_FINDERS = [
     'compressor.finders.CompressorFinder',
 ]
 
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'library/static'),
+    os.path.join(PROJECT_ROOT, 'static'),
+]
 
 SASS_PROCESSOR_ROOT = STATIC_ROOT
 
