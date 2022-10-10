@@ -28,7 +28,7 @@ SECRET_KEY = 1234
 # must paste in the secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
