@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # PATH = os.path.join(os.path.dirname(__file__), "../../")
 
@@ -23,8 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 1234
-# SECRET_KEY = os.environ['SECRET_KEY']
+# SECRET_KEY = 1234
+SECRET_KEY = os.getenv("SECRET_KEY")
 # must paste in the secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -87,10 +90,14 @@ WSGI_APPLICATION = 'msalibrary.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': os.getenv("DATABASE_NAME"),
+       'USER': os.getenv("DATABASE_USER"),
+       'PASSWORD': os.getenv("DATABASE_PASSWORD"),
+       'HOST': os.getenv("DATABASE_HOST"),
+       'PORT': os.getenv("DATABASE_PORT"),
+   }
 }
 
 

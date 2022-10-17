@@ -24,3 +24,5 @@ pipreqs==0.4.11
 requests==2.28.1
 urllib3==1.26.12
 yarg==0.1.9
+psycopg2==2.9.4
+python-dotenv==0.21.0
