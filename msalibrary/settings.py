@@ -164,7 +164,7 @@ STATIC_ROOT = "/opt/render/project/src/static/"# os.path.join(BASE_DIR, 'static'
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'library/static'),
-    os.path.join(PROJECT_ROOT, 'static'),
+    # os.path.join(PROJECT_ROOT, 'static'),
 ]
 
 SASS_PROCESSOR_ROOT = STATIC_ROOT
