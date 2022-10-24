@@ -108,7 +108,8 @@ class SignoutsHistoryView(UserPassesTestMixin, ListView):
     model = Signout
     template_name: str = "signouts_history.html"
     def get_queryset(self, *args, **kwargs):
-        return super(SignoutsHistoryView, self).get_queryset(*args, **kwargs)
+        qs = super(SignoutsHistoryView, self).get_queryset(*args, **kwargs)
+        return qs.filter(signed_back_in=False)
 
     def test_func(self):
         return self.request.user.is_superuser
