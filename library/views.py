@@ -20,7 +20,6 @@ class SignoutView(LoginRequiredMixin, View):
 
         try:
             book = Book.objects.get(unique_number=book_number)
-            print(book.title)
         except Book.DoesNotExist:
             error = True
             
@@ -51,7 +50,6 @@ class SigninView(View):
         
         try:
             book = Book.objects.get(unique_number=book_number)
-            print(book.title)
         except Book.DoesNotExist:
             error = True
             
@@ -86,8 +84,6 @@ class AddBookView(UserPassesTestMixin, View):
 
     def post(self, request, *args, **kwargs):
         errors = []
-        print(request.POST)
-
         book_number = request.POST.get('book_number')
         title = request.POST.get('title')
         author = request.POST.get('author')

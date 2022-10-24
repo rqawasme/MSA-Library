@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'accounts',
     'sass_processor',
     'compressor',
+    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -176,3 +177,13 @@ SASS_PROCESSOR_ROOT = STATIC_ROOT
 # COMPRESS_OFFLINE = True
 # LIBSASS_OUTPUT_STYLE = 'compressed'
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 30 # One month
+
+CRONJOBS = [
+    # ('0 0 * * 1', 'library.tasks.send_email_reminders'),
+    ('* * * * *', 'library.tasks.send_email_reminders', '>> '+os.path.join(BASE_DIR, 'library/debug.log'+' 2>&1 ')),
+]
+
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
