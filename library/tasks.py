@@ -51,5 +51,3 @@ def send_email_reminders():
             with smtplib.SMTP_SSL("sfumsa.ca", port, context=context) as server:
                 server.login(email_from, password)
                 server.sendmail(email_from, recipient, message.as_string())
-
-    

@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'accounts',
     'sass_processor',
     'compressor',
-    'django_crontab',
+    # 'django_crontab',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -180,10 +181,10 @@ SASS_PROCESSOR_ROOT = STATIC_ROOT
 
 SESSION_COOKIE_AGE = 60 * 60 * 24 * 30 # One month
 
-CRONJOBS = [
-    ('0 0 * * 1', 'library.tasks.send_email_reminders'),
-    # ('* * * * *', 'library.tasks.send_email_reminders'),
-]
+# CRONJOBS = [
+#     ('0 0 * * 1', 'library.tasks.send_email_reminders'),
+#     # ('* * * * *', 'library.tasks.send_email_reminders'),
+# ]
 
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")

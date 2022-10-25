@@ -1,13 +1,14 @@
 from datetime import datetime
-from distutils import errors
 from django.shortcuts import render
 from django.views.generic.base import View
 from accounts.models import User
 from django.views.generic import ListView
 from library.models import Book, Signout
+from library.tasks import send_email_reminders
 from library.utils import sign_back_all_borrows
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin
+from django.http import HttpResponse
 
 class SignoutView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
@@ -113,3 +114,17 @@ class SignoutsHistoryView(UserPassesTestMixin, ListView):
 
     def test_func(self):
         return self.request.user.is_superuser
+
+class SendEmailsView(UserPassesTestMixin, View):
+    def test_func(self):
+        return self.request.user.is_superuser
+
+    def get(self, request, *args, **kwargs):
+        try:
+            send_email_reminders()
+        except:
+            res =  HttpResponse("Something went wrong.")
+            res.status_code = 500
+            return res
+
+        return HttpResponse("Success.")
