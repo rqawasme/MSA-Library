@@ -115,11 +115,16 @@ class SignoutsHistoryView(UserPassesTestMixin, ListView):
     def test_func(self):
         return self.request.user.is_superuser
 
-class SendEmailsView(UserPassesTestMixin, View):
-    def test_func(self):
-        return self.request.user.is_superuser
+class SendEmailsView(View):
 
     def get(self, request, *args, **kwargs):
+        keyword = request.GET.get("keyword")
+
+        if keyword != "alwayshalalmemes":
+            res =  HttpResponse("Something went wrong.")
+            res.status_code = 500
+            return res
+
         try:
             send_email_reminders()
         except:
