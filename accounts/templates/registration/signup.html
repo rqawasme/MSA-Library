@@ -10,6 +10,7 @@
   <h2>Sign Up</h2>
 </div>
 <div class="login_form">
+  <p><strong>*Password is optional and can be left blank</strong></p>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

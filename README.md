@@ -1,8 +1,6 @@
 # MSA-Library
+Hosted on Render.com, visit: https://sfumsa-library.onrender.com
 
-Hosted on Render.com
-visit at: https://msalibrary.onrender.com
-Login using msasfu.events@gmail.com
-
-Using Elephant DB:
-Login using msasfu.events@gmail.com
+## To Run
+- run the build.sh file `./build.sh`
+- then run `python3 manage.py runserver` 
