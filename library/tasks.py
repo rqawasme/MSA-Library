@@ -20,8 +20,12 @@ def send_email_reminders():
     context = ssl.create_default_context()
 
     for signout in all_signouts:
+        # check if has expected return date
+        expected_return = signout.signout_date + datetime.timedelta(days=21)
+        if signout.expected_return_date is not None:
+            expected_return = signout.expected_return_date
         # if outstanding books, send emails
-        if (signout.signout_date + datetime.timedelta(days=21)).timestamp() <= today.timestamp():
+        if (expected_return).timestamp() <= today.timestamp():
             # has book for more than 3 weeks
             print("Sending Email")
             recipient = signout.user.email

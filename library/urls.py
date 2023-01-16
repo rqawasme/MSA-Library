@@ -18,6 +18,7 @@ urlpatterns = [
     path('books/', views.BooksView.as_view(), name='books'),
     path('addbook/', views.AddBookView.as_view(), name='addbook'),
     path('history/', views.SignoutsHistoryView.as_view(), name='history'),
+    path('overdue/', views.OverdueView.as_view(), name='overdue'),
     path('sendreminders/', views.SendEmailsView.as_view()),
     # REST API
     path('', include(router.urls)),

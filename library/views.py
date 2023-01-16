@@ -116,6 +116,17 @@ class SignoutsHistoryView(UserPassesTestMixin, ListView):
     def test_func(self):
         return self.request.user.is_superuser
 
+class OverdueView(UserPassesTestMixin, ListView):    
+    model = Signout
+    template_name: str = "signouts_history.html"
+    def get_queryset(self, *args, **kwargs):
+        qs = super(OverdueView, self).get_queryset(*args, **kwargs)
+        qs = qs.filter(signed_back_in=False)
+        return qs.filter(expected_return_date__lt=datetime.now())
+
+    def test_func(self):
+        return self.request.user.is_superuser
+
 class SendEmailsView(View):
 
     def get(self, request, *args, **kwargs):
