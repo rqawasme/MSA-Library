@@ -16,3 +16,4 @@ class Signout(models.Model):
     signout_date = models.DateTimeField(blank=False)
     signin_date = models.DateTimeField(default=None, null=True, blank=True)
     signed_back_in = models.BooleanField(default=False)
+    expected_return_date = models.DateTimeField(default=None, null=True, blank=True)

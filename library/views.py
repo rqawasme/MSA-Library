@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from django.shortcuts import render
 from django.views.generic.base import View
 from accounts.models import User
@@ -33,7 +33,8 @@ class SignoutView(LoginRequiredMixin, View):
 
         user = User.objects.get(id=request.user.id)
         signout_time = datetime.now()
-        signout = Signout(book=book, user=user, signout_date=signout_time, signin_date=None)
+        expected_return_date = signout_time + timedelta(days=21)
+        signout = Signout(book=book, user=user, signout_date=signout_time, signin_date=None, expected_return_date=expected_return_date)
         signout.save()
         book.available = False
         book.save()

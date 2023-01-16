@@ -8,7 +8,7 @@ import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-subject = 'SFU MSA Library - Outstanding Book [DO NOT REPlY]'
+subject = 'SFU MSA Library - Outstanding Book [DO NOT REPLY]'
 email_from = settings.EMAIL_HOST_USER
 port = 465
 password = settings.EMAIL_HOST_PASSWORD
