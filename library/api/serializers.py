@@ -4,7 +4,7 @@ from ..models import Book, Signout
 class BookSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Book
-        fields = ('title', 'description', 'creators', 'publisher', 'publish_date', 'total_copies', 'available_copies', 'unique_number')
+        fields = ('title', 'description', 'creators', 'publisher', 'publish_date', 'total_copies', 'available_copies', 'unique_number', 'isbn', 'image_url')
 
 class SignoutSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

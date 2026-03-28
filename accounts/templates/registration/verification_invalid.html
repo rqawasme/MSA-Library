@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Invalid Link — MSA Library{% endblock %}
+{% block main_title %}Verification Failed{% endblock %}
+
+{% block content %}
+<div class="form-card" style="max-width:480px;text-align:center;">
+  <div style="font-size:48px;margin-bottom:16px;">&#10007;</div>
+  <div class="form-card-title">This link is invalid or has expired</div>
+  <p style="color:var(--text-2);margin:12px 0 20px;line-height:1.6;">
+    The verification link may have expired or already been used. Please try signing up again.
+  </p>
+  <a href="{% url 'signup' %}" class="btn-primary" style="display:inline-block;padding:10px 28px;">Sign Up Again</a>
+</div>
+{% endblock %}
