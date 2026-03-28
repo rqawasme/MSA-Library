@@ -23,9 +23,8 @@
     </a>
 
     <div class="nav-links">
-      <a href="/">Borrow</a>
-      <a href="/signin/">Return</a>
-      <a href="/books/">Browse</a>
+      <a href="/books/">Browse Books</a>
+      <a href="/signin/">My Books</a>
       {% if user.is_superuser %}
       <a href="/addbook/">Add Book</a>
       <a href="/history/">History</a>
@@ -54,9 +53,8 @@
       <button class="drawer-close" onclick="drawerClose()">&#x2715;</button>
     </div>
     <div class="drawer-links">
-      <a href="/" onclick="drawerClose()">Borrow a Book</a>
-      <a href="/signin/" onclick="drawerClose()">Return a Book</a>
       <a href="/books/" onclick="drawerClose()">Browse Books</a>
+      <a href="/signin/" onclick="drawerClose()">My Books</a>
       {% if user.is_superuser %}
       <div class="drawer-divider"></div>
       <a href="/addbook/" onclick="drawerClose()">Add a Book</a>

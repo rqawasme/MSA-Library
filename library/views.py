@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.base import View
 from accounts.models import User
 from django.views.generic import ListView
@@ -8,73 +8,76 @@ from library.tasks import send_email_reminders
 from library.utils import sign_back_all_borrows
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseForbidden
 
-class SignoutView(LoginRequiredMixin, View):
-    def get(self, request, *args, **kwargs):
-        context = {"error": False}
-        return render(request, "signout.html", context)
-
-    def post(self, request, *args, **kwargs):
-        error = False
-        book_number = request.POST.get('book_number')
-
-        try:
-            book = Book.objects.get(unique_number=book_number)
-        except Book.DoesNotExist:
-            error = True
-            
-        if error:
-            context = {"error": True}
-            return render(request, "signout.html", context)
-        # if already unavailable, assuming the person returned and didn't sign it in
-        if book.available_copies <= 0:
-            sign_back_all_borrows(book)
-            book.available_copies = book.total_copies
-
-        user = User.objects.get(id=request.user.id)
-        signout_time = datetime.now()
-        expected_return_date = signout_time + timedelta(days=21)
-        signout = Signout(book=book, user=user, signout_date=signout_time, signin_date=None, expected_return_date=expected_return_date)
-        signout.save()
-        book.available_copies -= 1
-        book.save()
-        context = {"book_number": book_number, "book": book, "success": True}
-        return render(request, "signout.html", context)
-    
-class SigninView(View):
-    def get(self, request, *args, **kwargs):
-        context = {"error": False}
-        return render(request, "signin.html", context)
-
-    def post(self, request, *args, **kwargs):
-        error = False
-        book_number = request.POST.get('book_number')
-        
-        try:
-            book = Book.objects.get(unique_number=book_number)
-        except Book.DoesNotExist:
-            error = True
-            
-        if error:
-            context = {"error": True}
-            return render(request, "signin.html", context)
-
-        sign_back_all_borrows(book)
-
-        book.available_copies = book.total_copies
-        book.save()
-        
-        context = {"book_number": book_number, "book": book, "success": True}
-        return render(request, "signin.html", context)
-
-class BooksView(ListView):
+class BooksView(LoginRequiredMixin, ListView):
     model = Book
 
     def get_queryset(self, *args, **kwargs):
         qs = super(BooksView, self).get_queryset(*args, **kwargs)
         qs = qs.order_by("unique_number")
         return qs
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        if self.request.user.is_authenticated:
+            active = Signout.objects.filter(user=self.request.user, signed_back_in=False).select_related('book')
+            context['user_active_ids'] = set(s.book_id for s in active)
+            context['user_borrow_count'] = len(context['user_active_ids'])
+        else:
+            context['user_active_ids'] = set()
+            context['user_borrow_count'] = 0
+        return context
+
+
+class CheckoutView(LoginRequiredMixin, View):
+    def post(self, request, book_id, *args, **kwargs):
+        book = get_object_or_404(Book, id=book_id)
+        active = Signout.objects.filter(user=request.user, signed_back_in=False)
+        active_ids = set(s.book_id for s in active)
+
+        if book.available_copies <= 0 or book.id in active_ids or len(active_ids) >= 3:
+            return redirect('books')
+
+        signout_time = datetime.now()
+        expected_return_date = signout_time + timedelta(days=21)
+        Signout.objects.create(
+            book=book,
+            user=request.user,
+            signout_date=signout_time,
+            signin_date=None,
+            expected_return_date=expected_return_date,
+        )
+        book.available_copies -= 1
+        book.save()
+        return redirect(f"{'/'}?msg=checked_out")
+
+
+class MyBorrowsView(LoginRequiredMixin, View):
+    def get(self, request, *args, **kwargs):
+        now = datetime.now()
+        signouts = (
+            Signout.objects.filter(user=request.user, signed_back_in=False)
+            .select_related('book')
+            .order_by('expected_return_date')
+        )
+        for s in signouts:
+            s.is_overdue = s.expected_return_date < now
+        context = {'signouts': signouts}
+        return render(request, "signin.html", context)
+
+
+class ReturnView(LoginRequiredMixin, View):
+    def post(self, request, signout_id, *args, **kwargs):
+        signout = get_object_or_404(Signout, id=signout_id)
+        if signout.user != request.user:
+            return HttpResponseForbidden()
+        signout.signed_back_in = True
+        signout.signin_date = datetime.now()
+        signout.save()
+        signout.book.available_copies += 1
+        signout.book.save()
+        return redirect('signin')
     
 
 class AddBookView(UserPassesTestMixin, View):    
