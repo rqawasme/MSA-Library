@@ -28,15 +28,16 @@ class SignoutView(LoginRequiredMixin, View):
             context = {"error": True}
             return render(request, "signout.html", context)
         # if already unavailable, assuming the person returned and didn't sign it in
-        if not book.available:
+        if book.available_copies <= 0:
             sign_back_all_borrows(book)
+            book.available_copies = book.total_copies
 
         user = User.objects.get(id=request.user.id)
         signout_time = datetime.now()
         expected_return_date = signout_time + timedelta(days=21)
         signout = Signout(book=book, user=user, signout_date=signout_time, signin_date=None, expected_return_date=expected_return_date)
         signout.save()
-        book.available = False
+        book.available_copies -= 1
         book.save()
         context = {"book_number": book_number, "book": book, "success": True}
         return render(request, "signout.html", context)
@@ -61,7 +62,7 @@ class SigninView(View):
 
         sign_back_all_borrows(book)
 
-        book.available = True
+        book.available_copies = book.total_copies
         book.save()
         
         context = {"book_number": book_number, "book": book, "success": True}
@@ -88,16 +89,20 @@ class AddBookView(UserPassesTestMixin, View):
         errors = []
         book_number = request.POST.get('book_number')
         title = request.POST.get('title')
-        author = request.POST.get('author')
+        creators = request.POST.get('creators')
         description = request.POST.get('description')
-        available = True if request.POST.get('available') == 'on' else False
+        publisher = request.POST.get('publisher')
+        publish_date = request.POST.get('publish_date')
+        total_copies = int(request.POST.get('total_copies') or 1)
 
         if title == '':
             errors.append("Title is Empty!")
             title = None
 
         try:
-            book = Book(title=title, author=author, description=description, available=available, unique_number=book_number)
+            book = Book(title=title, creators=creators, description=description, publisher=publisher,
+                        publish_date=publish_date, total_copies=total_copies, available_copies=total_copies,
+                        unique_number=book_number)
             book.save()
         except:
             errors.append("Book number is not unique!")
