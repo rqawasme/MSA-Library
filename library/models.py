@@ -9,7 +9,7 @@ class Book(models.Model):
     publish_date = models.CharField(max_length=100, blank=True)
     total_copies = models.IntegerField(default=1)
     available_copies = models.IntegerField(default=1)
-    # image = models.ImageField()
+    isbn = models.CharField(max_length=20, blank=True)
     unique_number = models.IntegerField(unique=True, blank=False)
 
 

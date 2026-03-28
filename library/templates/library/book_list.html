@@ -18,38 +18,17 @@
   {% if object_list %}
   <div class="book-grid">
     {% for book in object_list %}
-    <div class="book-card">
-      <div class="book-accent"></div>
+    <a href="{% url 'book_detail' book.id %}" class="book-card book-card-link">
+      {% if book.isbn %}
+      <img src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg" alt="{{ book.title }}" class="book-cover">
+      {% endif %}
       <div class="book-body">
         <div class="book-title">{{ book.title }}</div>
         {% if book.creators %}
         <div class="book-creators">{{ book.creators }}</div>
         {% endif %}
-        {% if book.publisher %}
-        <div class="book-publisher">
-          {{ book.publisher }}{% if book.publish_date %}, {{ book.publish_date|slice:":4" }}{% endif %}
-        </div>
-        {% endif %}
-        {% if book.description %}
-        <div class="book-description">{{ book.description }}</div>
-        {% endif %}
       </div>
-      <div class="book-footer">
-        <span class="book-number"># {{ book.unique_number }}</span>
-        {% if book.available_copies == 0 %}
-          <button class="btn-checkout" disabled>Unavailable</button>
-        {% elif book.id in user_active_ids %}
-          <button class="btn-checkout" disabled>Already Borrowed</button>
-        {% elif user_borrow_count >= 3 %}
-          <button class="btn-checkout" disabled>Limit Reached</button>
-        {% else %}
-          <form method="post" action="{% url 'checkout' book.id %}">
-            {% csrf_token %}
-            <button type="submit" class="btn-checkout">Borrow</button>
-          </form>
-        {% endif %}
-      </div>
-    </div>
+    </a>
     {% endfor %}
   </div>
   {% else %}
