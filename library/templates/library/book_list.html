@@ -11,10 +11,12 @@
 
 {% for object in object_list %}
 <div class="lightred_header">
-	<h4>{{ object.title }} by {{ object.author }} ({{object.unique_number}})</h4>
+	<h4>{{ object.title }}{% if object.creators %} by {{ object.creators }}{% endif %} ({{object.unique_number}})</h4>
 </div>
 <div style="padding-left: 20px;">
-	<p>Description: {{ object.description }}</p>
+	{% if object.publisher %}<p>Publisher: {{ object.publisher }}{% if object.publish_date %}, {{ object.publish_date }}{% endif %}</p>{% endif %}
+	{% if object.description %}<p>Description: {{ object.description }}</p>{% endif %}
+	<p>Available: {{ object.available_copies }} / {{ object.total_copies }} copies</p>
 </div>
 {% empty %}
 <h1>No objects yet.</h1>

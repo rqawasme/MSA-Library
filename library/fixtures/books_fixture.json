@@ -1,0 +1,1794 @@
+[
+    {
+        "model": "library.book",
+        "pk": 1,
+        "fields": {
+            "title": "Al-Shama'il Al-Muhammadiyya",
+            "creators": "Abu Isa Muhammad b. Isa b. Sawra al-Tirmidhi, Abdul Aziz Suraqah (Translated with commentary by), Mohammed Aslam (Translated with commentary by)",
+            "description": "",
+            "publisher": "Revival Press",
+            "publish_date": "2019-12-20",
+            "total_copies": 6,
+            "available_copies": 6,
+            "unique_number": 1
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 2,
+        "fields": {
+            "title": "How to Give Good Advice: The Difference Between Counsel & Shaming",
+            "creators": "Imam ‘Abd al-Rahman ibn Ahmad ibn Rajab al-Hanbali, Imam 'Abd al-Wahhab al-Sha‘rani, Talut Dawood",
+            "description": "This text is a compendium of two treatises on the subject of giving advice: Imam Ibn Rajab al-Hanbali's Al-Farq bayna al-Nasihah wa al-Ta'yir, and selected excerpts from Imam al-Sha‘rani's Al-Bahr al-Mawrud fi al-Mawathiq wa al-‘Uhud.Ibn Rajab's text, whose title has been translated as The Difference Between Counsel and Shaming, is a short treatise meant to help the reader distinguish between advice that is permissible and potentially beneficial, as opposed to that which is disliked or impermissible and potentially harmful. It includes chapters on the process for advising scholars, the difference between advising someone to leave sin as opposed to rebuking someone for sin, the characteristics of hypocritical advice and its effects, and more. Ibn Rajab's work is replete with relevant verses from the Qur'an, hadith narrations, as well as statements and stories from the Salaf and the righteous scholars. These verses and narrations serve as evidence for his arguments, as well as illustrations of the principles in action.Imam al-Sha‘rani's text, which consists of selected excerpts from a longer work, begins with a discussion of sincerity towards every Muslim, with a focus on the famous hadith in which the Prophet ﷺ stated \"Religion is sincere counsel.\" It proceeds with a long discussion of the parameters for commanding good and forbidding evil, the process for conducting an argument, the central importance of good character, and the proper balance between not demeaning other Muslims and covering their faults, while still giving advice and preventing sin when appropriate. Similar to Ibn Rajab's text, Imam al-Sha‘rani utilizes numerous verses of the Qur'an, hadith narrations, and statements and stories from the righteous to support his work.Taken together, these two texts provide a concise yet comprehensive discussion of how and when to offer advice, practices and etiquettes to help make the action of giving advice praiseworthy and the advice itself more likely to be effective, and potential missteps and pitfalls to avoid in order to not incur blame or cause additional harm.ABOUT THE AUTHORSImam ‘Abd al-Rahman ibn Ahmad ibn Rajab al-Hanbali (1335-1393) was born in Iraq to a scholarly family. During his youth, his family spent time living in a number of the major centers of knowledge in the Muslim world, including Baghdad, Damascus, Jerusalem, Egypt, and Makkah. He studied under many of the greatest scholars of his era, including al-Subki, Hafiz al-‘Iraqi, Ibn Qayyim, and many others. Among his best-known works are Jami‘ al-‘Ulum wa al-Hikam, one of the most important commentaries on the Arba‘in of Imam al-Nawawi, and Fath al-Bari, an unfinished commentary on Sahih al-Bukhari that lent its name to Ibn Hajar's complete commentary some decades later.Imam 'Abd al-Wahhab al-Sha‘rani (1492/3-1565) was a distinguished Ottoman-Egyptian scholar of the 16th century. Born near Cairo, he mastered Islamic jurisprudence, theology, and tasawwuf from a young age. Studying at al-Azhar, he became proficient in all four Sunni legal schools of thought. He is recognized as a leading figure and reviver (mujaddid) of Islam in the 16th century.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2025-01-31",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 2
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 3,
+        "fields": {
+            "title": "All the Sultan's Men",
+            "creators": "Jalal al-Din al-Suyuti, Talut Dawood",
+            "description": "check out here https://support.libib.com/getting-started/get-libib-pro.html\n\n\"All the Sultan's Men\" is a translation of Imam al-Suyuti's text “Ma Rawahu al-Asatin fi 'Adami al-Maji'i ila al-Salatin”. As indicated by the title, it argues and establishes the blameworthy nature of scholars associating with rulers. Since the age of early Muslims when the Prophetic Khilafah ended and the era of Muslim kings and empires began, scholars have wrestled with the nature of the relationship between the ulema-class and rulers. Some of our most illustrious Imams, such as Imam Abu Hanifah & Imam Malik, refused official appointments from rulers. Moreover, they refused to visit them in their courts. Others such as Qadi Abu Yusuf - the student of Imam Abu Hanifah - accepted official appointments. Such disparity in the way of dealing with the rulers was echoed throughout the time of the Tabi'in. Some scholars accepted appointments, while others criticized them and refused such an association.Nonetheless, both scholar and layman require guidance on the correct measures to take in times of confusion. One may wonder, \"When is it acceptable for a scholar to accept an appointment?\" Or \"When is it appropriate for a scholar to avoid politics altogether?\" Others may ask, \"Is there a middle ground between the two opinions?\" Such questions require in-depth answers. Although this text is only an introduction to the subject, it provides clear guidance on what kinds of interactions with the rulers are blameworthy for scholars, and why.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2021-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 3
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 4,
+        "fields": {
+            "title": "Faris and the Curious Case of the Missing Eid Presents [Paperback] Muhammad Sattaur and Husna Sattaur [Paperback] Muhammad Sattaur and Husna Sattaur",
+            "creators": "Muhammad Sattaur and Husna Sattaur",
+            "description": "It’s a beautiful early morning on the first day of Eid, and little Faris couldn’t be more excited. He wakes up before fajr, much earlier than usual. He gets out of bed and runs downstairs with a big smile on his face. But when he gets there, the little boy can’t believe his eyes. His Eid presents are nowhere to be found! Quickly, Faris’s mind starts to wander off and he thinks of a million ways in which his presents might have vanished. It’s the most important mystery of his life; luckily, he’s up to the task!",
+            "publisher": "Editions Jeunesse Sans Frontiere",
+            "publish_date": "2021-07-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 4
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 5,
+        "fields": {
+            "title": "Who Is the Prophet Muhammad?",
+            "creators": "Habib Umar bin Hafiz",
+            "description": "The uniqueness of the life of the Prophet Muhammad ¿ compared to that of other personalities and world figures present and past, is such that his ¿ legacy has not only remained, but is continually and endlessly on the rise. His ¿ praise continues to be spread far and wide by men and women whom Allah, exalted is He, has chosen in various times and places to carry the light of the Messenger ¿ and convey his life ¿ to the people. This Prophetic legacy is enduring, and will forever remain as long as the testament of faith is upon the lips and hearts of believers.Who is the Prophet Muhammad ¿? is primarily a didactic text in question & answer format. The book consists of 6 groups of questions & answers, progressing from relatively simple questions and short answers in the first group, to more complex issues with longer, more detailed explanations by the end. Each question & answer pair is given first in Arabic, as formulated by Habib 'Umar, or by his students under his supervision. Then, the translation of each Q & A is given. While perhaps not common in adult literature, the Q&A format is a time-honored teaching technique, and readers of all ages and levels will find surprising benefits in this unique text. The entire book has been beautifully arranged and presented by IGI's world-class design team, to make reading an enjoyable and visually appealing reading experience for the whole family.The author, Habib Umar bin Hafiz, is a descendant of the Prophet Muhammad ¿, and is one of the great luminaries of our time. This book has been made available to English speakers for whom we ask Allah to make it a means to attain proximity, in this life and the Hereafter, to Him and the Prophet Muhammad ¿. Authored by Habib Umar bin HafizTranslated by Abdullah SalihLanguage : EnglishPaperback edition: 112 pages, full color, glossy pagesISBN: 9781952306099Publisher: Imam Ghazali Institute",
+            "publisher": "Sattaur Publishing",
+            "publish_date": "2021-10-01",
+            "total_copies": 3,
+            "available_copies": 3,
+            "unique_number": 5
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 6,
+        "fields": {
+            "title": "O Son!",
+            "creators": "Imam Abu Hamid Al-Ghazali",
+            "description": "One of al-Ghazali's advanced students wrote to the Imam with a question: From all the fields of knowledge, what will benefit us most in the grave? The student clarified that, while he could certainly find the answer to his question within al-Ghazali's longer works, such as the Ihya 'Ulum al-Din, he wished for his teacher to give him a formal legal opinion, short enough that he could keep it with him at all times and refer to it constantly.Ayyuhal Walad is the great Imam's response: a personal note from al-Ghazali to his student, and by extension to anyone who desires to follow their way. Imam al-Ghazali elucidates the following for his student, and for the modern reader:The precise nature of the relationship between knowledge and action, and the role of each in one's striving for ParadiseThe significance of the night prayerSome advice from Luqman the Wise to his son, and its enduring meaning and importanceA concise definition of obedience and worship, which al-Ghazali states is the quintessence of knowledgeThe four matters that are required of a spiritual travelerA single hadith that contains the entirety of the knowledge of the ancients as well as the men of latter daysEight lessons that are sufficient for deliverance and salvationAyyuhal Walad is designed to be read and reread, and referred to frequently throughout one's life. The reader must take note that the original recipient of this letter was a top student of Imam al-Ghazali, and therefore a scholar of the highest caliber himself. This book is thus invaluable simply as a record of the interaction between one of the Ummah's greatest teachers and his esteemed disciple. However, al-Ghazali's prescriptions are conveyed with such clarity that any Muslim of high aspiration will benefit from this text.This edition includes Wordsmiths' meticulous English translation side-by-side with al-Ghazali's original Arabic epistle. This arrangement allows the English-speaking reader to get a taste of al-Ghazali's unique style, while students of Arabic may peruse the Imam's masterful Arabic prose alongside this elegant new English rendition.",
+            "publisher": "Sattaur Publishing",
+            "publish_date": "2020-07-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 6
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 7,
+        "fields": {
+            "title": "The Book of Intentions: Towards a Life of Purpose & Clarity",
+            "creators": "Habib Muhammad ibn Alawi al-Aydarus, Talut ibn Sulaiman Dawood",
+            "description": "\"I intend.\"With those two words, your entire approach and lens of perspective to everything you do can change. The Book of Intentions by Habib Muhammad ibn 'Alawi al-Aydarūs, better known as Habib Sa'd, explores the transformative power of intention (niyyah) in Islamic practice. Rooted in the profound and popular hadith that \"actions are by intentions,\" this book guides readers in aligning daily actions with purpose, so every deed becomes an act of worship. Habib Sa'd emphasizes that the heart's intentions are more significant than physical actions alone; even small acts, when performed with the right intention, yield immense spiritual rewards.The text is structured around various themes, such as visiting the mosque, gathering for prayer, and cultivating relationships with fellow believers. For each act, Habib Sa'd provides a list of recommended intentions, highlighting the unique rewards associated with them. He cites hadith and insights from the scholars and tradition to illustrate the deep-seated importance of intentions in the life of a Muslim, urging believers to make every permissible action purposeful, even routine tasks like eating or sleeping. Through these practical examples, Habib Sa'd illustrates how good intentions can sanctify daily life and create a continuous state of worship.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2024-11-13",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 7
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 8,
+        "fields": {
+            "title": "The Divine Reports: An English Translation of Mishkat al-Anwar",
+            "creators": "Ibn al-Arabi, Moustafa Elqabbany",
+            "description": "The Divine Reports is a translation Mishkāt al-Anwār. The work is a profound compilation of sacred hadiths (aḥādīth qudsiyya) gathered and transmitted by the celebrated Andalusian mystic and scholar, Ibn al-ʿArabī (1165–1240 CE), also known as The Greatest Master (al-Shaykh al-Akbar). It presents over one hundred sayings attributed directly to Allah, conveyed through the Prophet Muhammad ﷺ. These sayings are revered in the Islamic tradition for their spiritual depth, conveying divine speech that is distinct from the Qur'an yet illuminated by its authority.The book is divided into three main sections:Hadiths with full chains of transmission (isnād) ending directly with Allah.Hadiths without isnād but nonetheless traced back to divine address.Additional sacred sayings that focus on divine mercy, judgment, and spiritual insight.Themes throughout include Allah’s mercy, justice, provision, divine presence, and the intimate relationship between the Creator and His servants. Many hadiths emphasize the transformative power of remembrance (dhikr), love for others for the sake of Allah, sincerity, and contentment with divine decree.The compilation also explores eschatological realities, including paradise, divine judgment, and intercession. Ibn al-ʿArabī compiled these hadiths partly inspired by the Prophetic narration that promises divine favor to those who preserve and share forty hadiths for the benefit of the ummah.This English-Arabic edition, carefully translated and presented, makes accessible one of the most spiritually potent compilations in the Islamic tradition, reflecting the inner lights of divine address.AboutIbn al-ʿArabīIbn al-ʿArabi (1165–1240 CE) was a towering Andalusian scholar, philosopher, and poet known as The Greatest Master (al-Shaykh al-Akbar). Born in Murcia, Spain, he studied under leading scholars and spiritual masters across al-Andalus and North Africa. His travels took him to Makkah, Anatolia, and finally Damascus, where he taught and wrote extensively. Ibn al-ʿArabī authored over 300 works, including Fuṣūṣ al-Ḥikam and al-Futūḥāt al-Makkiyya, which explored metaphysics, divine love, and spiritual realities. He mentored Ṣadr al-Dīn al-Qūnawī and influenced generations of thinkers. His legacy continues to shape Islamic thought, spirituality, and philosophy to this day.Author: Ibn al-ʿArabiTranslator: WordsmithsBinding: PaperbackColor: Black & WhiteLength: 136 pagesCategory: Spirituality, Islam, HadithPublisher: Imam Ghazali Publishing",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2025-05-22",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 8
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 9,
+        "fields": {
+            "title": "Towards a True Spiritual Connection: Wisdom from the Teachings of Habib 'Umar bin Hafiz",
+            "creators": "Muhammad bin ‘Abdullah bin ‘Ali al-Aydarus, Abdullah Salih",
+            "description": "This text is a concise discussion of matters affecting the relationship between a student and a spiritual teacher. Adapted from the teachings of Habib 'Umar bin Hafiz, it covers both conceptual and practical knowledge necessary to benefit from such a relationship, with extended discussion of both outward and inward etiquettes of the student towards the teacher.The author writes in his introduction:\"I hope [this text] would enable us to recognise the right of being in the company of those whose condition inspires us and whose words guide us towards Allah ﷻ so that we too could hold on to divine attributes, be imbued with prophetic characteristics, and imbibe the qualities of the true servants.\"Excerpts from the Qur'an are interspersed throughout the text, with extended commentary on those verses most relevant to the relationship between teachers and students. The text also includes an overview of the history of spiritual teachers from the time of the Prophet ﷺ down to the present day, the role of such relationships in da'wah, the responsibilities and potential pitfalls of establishing such a connection, and other related issues.Author: Muhammad bin ‘Abdullah bin ‘Ali al-AydarusTranslator: Abdullah SalihBinding: PaperbackColour: Black & WhiteLength: 95 pagesCategory: Spirituality, IslamPublisher: Imam Ghazali Publishing",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2024-08-28",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 9
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 10,
+        "fields": {
+            "title": "Slavery and Islam",
+            "creators": "Jonathan A. C. Brown",
+            "description": "What happens when authorities you venerate condone something you know is wrong? Are you right or are they, and what does this mean about what you've been venerating? No issue brings this question into starker contrast than slavery. Every major religion and philosophy condoned or approved of it, but in modern times there is nothing seen as more evil. Americans confront this crisis of authority when they erect statues of Founding Fathers who slept with their slaves. And Muslims faced it when ISIS revived sex-slavery, justifying it with verses from the Quran and the practice of Muhammad. This book explores the moral and ultimately theological problem of slavery, tracing how the Christian, Jewish and Islamic traditions have tried to reconcile modern moral certainties with the infallibility of God's message, in particular on the issue of sex-slavery. It investigates the challenge of defining what slavery is in the first place, showing that this remains more than ever a highly politicized question. This book lays out how Islam viewed slavery in theory, and also how slavery was practiced across the reality of Islamic civilization. Finally, it explains how Muslims have argued for the abolition of slavery in Islam, asking whether their arguments are sincere and convincing.",
+            "publisher": "Oneworld Publications",
+            "publish_date": "2019-08-13",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 10
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 11,
+        "fields": {
+            "title": "The Politics of Vulnerability: How to Heal Muslim-Christian Relations in a Post-Christian America: Today's Threat to Religion and Religious Freedom",
+            "creators": "Asma T. Uddin",
+            "description": "A religious liberty lawyer and acclaimed author reveals the root of America's polarization inside the Muslim and evangelical Christian divide—and how it can be healed. Despite the dire consequences of America's cultural, political, and religious divisiveness, from increasing incivility to discrimination and outright violence, few have been able to get to the core cause of this conflict. Even fewer have offered measures for reconcilliation. Now, in The Politics of Vulnerability, Asma Uddin, American-Muslim public intellectual, religious-liberties attorney, and activist, provides a unique perspective on the complex political and social factors contributing to the Muslim-Christian divide. Unlike other analysts, Uddin asks what underlying drivers cause otherwise good people to do—or believe—bad things? Why do people who value faith support of measures that limit others, especially of Muslims’, religious freedom and other rights?’ Uddin humanizes a contentious relationship by fully embracing both sides as individuals driven by very human fears and anxieties. Many conservative Christians fear that the Left is dismantling traditional “Christian America” to replace it with an Islamized America, a conspiratorial theory that has given rise to an “evangelical persecution complex,” a politicized vulnerability. Uddin reveals that Islamophobia and other aspects of the conservative Christian movement are interconnected. Where does hate come from and how can it be conquered? Only by addressing the underlying factors of this politics of vulnerability can we begin to heal the divide.",
+            "publisher": "Pegasus Books",
+            "publish_date": "2021-03-23",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 11
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 12,
+        "fields": {
+            "title": "The Road to Mecca",
+            "creators": "Muhammad Asad",
+            "description": "In this extraordinary and beautifully-written autobiography, Asad tells of his initial rejection of all institutional religions, his entree into Taoism, his fascinating travels as a diplomat, and finally his embrace of Islam.",
+            "publisher": "",
+            "publish_date": "2000-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 12
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 13,
+        "fields": {
+            "title": "The Muqaddimah: An Introduction to History",
+            "creators": "Ibn Khaldûn",
+            "description": "",
+            "publisher": "Princeton University Press",
+            "publish_date": "2015-04-27",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 13
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 14,
+        "fields": {
+            "title": "The Tao of War",
+            "creators": "Mikhail Abdul-Latif",
+            "description": "The Tao of War is a training manual of Applied Philosophy, and a guide to those seeking to walk the path of the Warrior Poet. The Martial Arts are traditionally understood to be an outward practice related to “fighting”, which is the mastering of others, and an inward practice of “fighting”, which is the mastering of the self. The fighting without philosophy can become tyranny, while the philosophy never put into action is lame. It is the blending of application and philosophy which produces the Martial Arts, and from the Martial Arts emerges the human archetype of the Warrior Poet.The Tao of War is a map which draws upon the subtleties and secrets of the Martial Arts to assist seekers of truth in locating deeper visions of reality and selfhood. It explores both metaphysical and practical realities pertaining to the path of the Warrior Poet, and is an invaluable resource for student and teacher alike.About the AuthorMikhail Abdul-Latif is an author, poet, musician, and lifelong martial artist from Seattle, Washington. He holds national wrestling titles in both Canada and the United States, is a Black Belt in Jiu-Jitsu, and spent many years traveling the world as a professional athlete while studying under various masters of martial arts and spiritual traditions. As an instructor and educator, he strives to help his students integrate the philosophical, practical, artistic, and spiritual aspects of their pursuits.Praise for The Tao of WarMikhail Abdul-Latif has written a compelling manual to guide the poet or spiritual warrior. He does so through a thoughtful examination of the philosophy undergirding the martial arts, along with an examination of the utility of various martial arts themselves. He posits that just as the fight against the outer enemy cannot be divorced from the fight against the inner enemy, the true martial arts cannot be separated from fighting itself. When these separations occur they leave fraud in their wake. As Mikhail reminds us, war is real. Its true reality is not to be found in brutalizing the weak and downtrodden, violence for the sake of violence, base domination, or weapon sales. Rather, it is in the liberation and protection of the soul, internal processes that lay the path for the liberation and protection of others. The beauty of war is to be found in this meaning. Hence, the beauty of the martial arts. 'The Tao of War' is a penetrating examination of that beauty.— Imam Zaid Shakir",
+            "publisher": "Silk Road Press",
+            "publish_date": "2025-11-05",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 14
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 15,
+        "fields": {
+            "title": "Genghis Khan and the Making of the Modern World",
+            "creators": "Jack Weatherford",
+            "description": "A re-evaluation of Genghis Khan's rise to power examines the reforms the conqueror instituted throughout his empire and his uniting of East and West, which set the foundation for the nation-states and economic systems of the modern era.",
+            "publisher": "Broadway Books",
+            "publish_date": "2005-03-22",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 15
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 16,
+        "fields": {
+            "title": "Heart Therapy",
+            "creators": "Dr. Ali Albarghouthi",
+            "description": "",
+            "publisher": "Dakwah Corner Bookstore",
+            "publish_date": "2018-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 16
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 17,
+        "fields": {
+            "title": "The Art of Learning: Timeless Wisdom for the Seeker of Knowledge",
+            "creators": "Burhān al-Dīn al-Zarnújī, Shams Tameez",
+            "description": "The Art of Learningis a translation of Taʿlīm al-Mutaʿallim Ṭarīq al-Taʿallum by Imām Burhān al-Dīn al-Zarnūjī, translated by Shams Tameez. It is a timeless masterpiece on the pursuit of knowledge, self-discipline, and spiritual growth. Written in the 13th century, this profound work continues to offer invaluable guidance for students and educators alike, emphasizing the ethical and spiritual foundations necessary for true intellectual development.In this insightful treatise, al-Zarnūjī explores essential principles such as the importance of sincerity in seeking knowledge, the role of patience and perseverance, and the significance of choosing the right teacher and companions. Drawing from the Qur’an, Prophetic teachings, and Islamic tradition, he presents a holistic approach to education that nurtures both the intellect and the soul.The Art of Learning is more than a manual for ʿilmī success; it is a profound exploration of the ihsanic nature of the moral and spiritual responsibilities of seeking knowledge. Al-Zarnūjī reminds us that true learning goes beyond the accumulation of fact — it is a lifelong journey of character refinement, humility, and khidma to others.Though little is known about his life, al-Zarnūjī’s legacy rests primarily on his treatise Taʿlīm al-Mutaʿallim Ṭarīq al-Taʿallum. The work is divided into several chapters, covering key aspects of the educational process. These include the merits and purpose of knowledge, the importance of intention, selecting a teacher and companions, respect for knowledge, perseverance, and the spiritual dimensions of learning such as sincerity, humility, and trust in Allah (tawakkul). Al-Zarnūjī believed that true learning requires both intellectual effort and spiritual refinement, making his work foundational in Islamic pedagogy.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2025-01-08",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 17
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 18,
+        "fields": {
+            "title": "Toward Sacred Activism",
+            "creators": "Al Madina Institute (Created by)",
+            "description": "",
+            "publisher": "Al Madina Institute",
+            "publish_date": "2018-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 18
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 19,
+        "fields": {
+            "title": "Do not Be Envious (Golden Series Book-7)",
+            "creators": "",
+            "description": "Ever heard of the cause of the first disobedience in the heavens? ENVY! That was it! Ibless (Shaytaan) disobeyed Allah, his Lord, out of envy, arrogance and pride. (See Al-Araaf [7]: 12). Envy is also one of the commonest sins on earth! It is the deadly disease of the heart that destroys personal as well as communal relationships!\n\nENVY: its causes, its effects and how to deal with it, is the subject of this small but beneficial book. May the one Who is afflicted with this disease fine cure in the prescription contained in this book. (Ameen)\n\nBook #7 - ISBN: 9960-9967-0-7 / 9960996707 (Book 83) - Pages: 87",
+            "publisher": "Dar-us-Salam",
+            "publish_date": "2007-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 19
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 20,
+        "fields": {
+            "title": "Some Secrets of the Divine Approach",
+            "creators": "Imam Muhammad Said Ramadan al-Buti, Mahdi Lock",
+            "description": "In Islam, there are fundamental principles, each of which stands first on the pillar of belief and secondly on conduct. This book contains a brief explanation of all these fundamentals: it clarifies their basis first from the texts of the Quran and the authentic Sunnah and then, second, succinctly explains their content.Third, it then discusses their wisdom and benefit to society and the secret behind their legislation. Thus, it combines the knowledge of Islam as creed, thought, and conduct. Among these fundamentals are: faith in Allah and the secret behind its necessity, the way to unite the Muslims, the remembrance of Allah and its effect on man’s life, knowledge is the foundation of all conduct and creed, gentleness in following religious rulings, and separating from evil and its people.",
+            "publisher": "Nawa Books",
+            "publish_date": "2024-03-02",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 20
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 21,
+        "fields": {
+            "title": "Islam and the Problems of the Youth",
+            "creators": "Imam Muhammad Sa'id Ramadan al-Buti, Mahdi Lock",
+            "description": "The problems of the youth are not problems that are connected to them insomuch as they are problems of the community that they live in.Sticking them to the youth is to accuse the innocent and to exonerate the guilty. To charge them with the responsibility of rising above these problems while their communities remain as they are is a very strange kind of futile behaviour.How can that be, and what is the solution?The answer is found in the pages of this book.",
+            "publisher": "Nawa Books",
+            "publish_date": "2022-11-22",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 21
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 22,
+        "fields": {
+            "title": "To Every Young Woman Who Believes In Allah",
+            "creators": "Imam Muhammad Said Ramadan al-Buti, Mahdi Lock",
+            "description": "The fourth volume of Imam al-Buti's pinnacle papers.The woman’s covering…her freedom…her working…her rights: these are the last cards that the professional agents of the ideological attack have left to play with as they try to drive the Muslim woman away from her religion, and then transform her into an effective weapon against Muslim youth to prevent them from establishing an Islamic society.The book To Every Young Woman Who Believes in Allah was able to rip up these remaining cards and liberate the Muslim woman from the foolishness of frivolous people, the schemes of those who despise Islam, and the lies of those who slander it. Let everyone, near and far, be assured that the current Muslim drive towards the objective that Allah has commanded them to strive for will continue to move forward, rising above every base desire and being alert to every deceit.",
+            "publisher": "Nawa Books",
+            "publish_date": "2022-07-31",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 22
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 23,
+        "fields": {
+            "title": "A Unique Pedagogical Approach in the Quran",
+            "creators": "Imam MUHAMMAD SAID RAMADAN AL-BUTI, Mahdi Lock",
+            "description": "The third volume of Imam al-Buti's pinnacle papers.How does the Qurʾān appeal to man’s perfected rational and emotional constitution and draw him towards the realities that it speaks of, which include all of his intellectual and sentimental faculties, in equal proportion?How is its address formulated to suit all classes of people, of differing educations and ages, such that everyone understands the intended meaning to the extent that his education allows without any contradiction in these understandings?How does it proceed with its arbitrations of the intellect in such a way that the rules of logic are used but none of its terminology is relied on?In its dialogue, how does it satisfy both the imagination and the intellect without one of them prevailing over the other?It is in this book, which contains novel studies on the Qur'an, that you will find the answers to these questions and more, even if its title is familiar and well-known.",
+            "publisher": "Nawa Books",
+            "publish_date": "2022-02-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 23
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 24,
+        "fields": {
+            "title": "Inward Sin: The Greatest Danger in the Lives of Muslims",
+            "creators": "Imam Muhammad Said Ramadan al-Buti, Mahdi Lock",
+            "description": "The second volume of Imam al-Buti's pinnacle papers. Most Muslims today are turning their attention towards analyzing Islam and trying to present the true state of the Muslims, but they only look at outward actions and statements.These deeds and statements are nothing but the upper floors of Islam’s building; they cannot be strengthened nor consolidated unless they are relying on that humble, hidden part of the building known as the foundations. These foundations are established in the heart, so how can the foundations of Islam’s building be established therein? How can a connection be made between the foundations of this building and its upper floors, such that the Muslims can guarantee that it will not be blown away by the wind or rocked by a storm, and that it will not be inundated by the forces of tyranny and base desires? The mission of this book is to answer these questions and reveal the ways to make this connection between one’s Islamic life inside the heart and one’s Islamic life as manifested via one’s limbs and organs.",
+            "publisher": "Nawa Books",
+            "publish_date": "2021-12-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 24
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 25,
+        "fields": {
+            "title": "Man and Allah’s Justice on Earth",
+            "creators": "Imam Muhammad Said Ramadan al-Buti, Mahdi Lock",
+            "description": "This important book addresses one of the failed tactics of those who seek to sow doubt in order to push the upcoming generation away from Islam by saying,‘If Allah existed, justice would prevail throughout the world, because Allah is just. But where is this justice when we see innocent people suffering and criminals living in luxury?’This book contains a scientific answer to this question and shows the reader how this tactic always fails, as long as a person is adorned with objective thought and a free intellect.",
+            "publisher": "Nawa Books",
+            "publish_date": "2021-08-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 25
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 26,
+        "fields": {
+            "title": "The Content of Character",
+            "creators": "Ali Mazrui (Foreword by), Hamza Yusuf (Edited and Translated by)",
+            "description": "A collection of noble sayings of the Prophet Muhammad in Arabic and English.",
+            "publisher": "Sandala, Incorporated",
+            "publish_date": "2015-11-15",
+            "total_copies": 6,
+            "available_copies": 6,
+            "unique_number": 26
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 27,
+        "fields": {
+            "title": "Supplement for the Seeker of Certitude: Worship from Zad al-Mustaqni`",
+            "creators": "Musa al-Hajjawi, Musa Furber",
+            "description": "Supplement for the Seeker of Certitude presents the sections related to worship from Musa al-Hajjawi's Zad al-Mustaqni`, an abridgment of Ibn Qudamah’s Al-Muqni` that sticks to the school’s official position, removing extraneous issues, and adding a few necessary things. The book is extremely terse, yet it still manages to present the basics for the school along with issues rarely found in books twice its length. The book was accepted by scholars of the school to such an extent that some said that whoever has memorized it is fit to be a judge. The book continues to be considered essential reading for students of the school, making it a natural choice for presenting the school to English readers.The chapters covered in the text include purification, prayer, zakah, fasting, pilgrimage, and jihad. The text includes the Arabic original along with numerous notes from commentaries.",
+            "publisher": "Islamosaic",
+            "publish_date": "2016-11-11",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 27
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 28,
+        "fields": {
+            "title": "A Commentary upon the Creed of Imam al-Dardir",
+            "creators": "Siddiq Adam Mitha",
+            "description": "\"The science of theology isthe most virtuous of the sciencesIt is the primary obligation, and the foundation of all Islamic rulings\"The Creed of Imam al-Dardir, also known as the Tawhidiyya, was written with the purpose of reviving the core of the Islamic creed in the minds of common Muslims. Its succinct text, easily memorized, captures the essential points of creed that every Muslim is obligated to believe in.\"Our brother in faith, Dr. Siddiq Adam Mitha commendably set out in commentating upon this Creed in a simple and refined manner, a level appropriate for beginners in this field.\" -Shaykh ʿAbd al-Rahman al-ShaʿʿarIn his commentary, Ustadh Siddiq draws extensively on the texts of traditional scholars of the past and present. Most important from amongst them is Shaykh Mustafa al-ʿAqabawi's commentary upon the Tawhidyya and other treatises by Imam al-Dardir himself, such as his Kharida al-Bahiyya and his commentary on its text. Other classical works the author cites are from the pens of Imams al-Bayhaqi, al-Ghazali, al-Nasafi, al-Razi, al-Baydawi, al-Subki, al-Taftazani, al-Sanusi, Ibn Kamal Pasha, al-Qari, al-Bayadi, al-Laqqani, al-Zabidi, al-Sawi and al-Bajuri, as well as the modern scholarship of Shaykhs Zahid al-Kawthari, Muhammad al-Hashimi, Hasan Habannaka, Saʿid Ramadan al-Buti, Nur al-Din ʿItr, Nuh al-Qudat and Saʿid Foudah.\"In an age where self-defined readings of Islam have begun to emerge, and perhaps even dominate, this wonderful translation and commentary is a welcome addition to the English language library of works on Islam.\" -Shaykh Walead Mosaad",
+            "publisher": "Sunni Publications",
+            "publish_date": "2024-10-10",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 28
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 29,
+        "fields": {
+            "title": "The Alchemy of Happiness",
+            "creators": "Abu Hamid Al-Ghazzali, Claud Field",
+            "description": "2017 Reprint of 1910 Edition. Al-Ghazzali, or, Al-Ghazali, the author of The Alchemy of Happiness, was a Persian theologian, philosopher, and prolific Sunni Muslim author, and is regarded as one of the great thinkers of Islam. The work emphasized the importance of observing the ritual requirements of Islam, the actions that would lead to salvation, and avoidance of sin. The factor that set the Alchemy apart from other theological works at the time was its mystical emphasis on self-discipline and asceticism. Sa'āda (happiness) is a central concept in Islamic philosophy used to describe the highest aim of human striving. Sa'āda is equated with \"ultimate happiness\", namely that of the hereafter. It is achieved only after a human being has liberated his/her soul completely from its corporal existence, achieving \"active intellect\". The teachings were to help man to live a life in accordance with the sacred law, and by doing so gain a deeper understanding of its meaning on the day of Judgement.",
+            "publisher": "Martino Fine Books",
+            "publish_date": "2017-11-09",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 29
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 30,
+        "fields": {
+            "title": "Apostate",
+            "creators": "Joram Jaron Klaveren",
+            "description": "",
+            "publisher": "",
+            "publish_date": "2019-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 30
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 31,
+        "fields": {
+            "title": "Kalam Cosmological Arguments",
+            "creators": "Mr Mohammed Hijab",
+            "description": "",
+            "publisher": "Independently published",
+            "publish_date": "2019-05-13",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 31
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 32,
+        "fields": {
+            "title": "Imam Abu Hanifa's Al-Fiqh Al-Akbar Explained",
+            "creators": "Ahmad ibn Muhammad Maghnisawi, Abu Hanifah, Ali ibn Sultan Muhammad Qari al-Harawi, Abdur-Rahman Ibn Yusuf",
+            "description": "",
+            "publisher": "White Thread Press",
+            "publish_date": "2007-06-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 32
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 33,
+        "fields": {
+            "title": "Dedicating Rewards to the Deceased:: Reciting the Quran & Other Good Deeds",
+            "creators": "Sh Muhammad Fawaz an-Nimr, Ust Mahdi Lock",
+            "description": "If a person were to supplicate, recite the Noble Qurʾan, give to charity, or do any other act of worship and righteousness, and then dedicate the reward for that deed to someone deceased from this Ummah and ask Allah the Exalted to make it reach that deceased person, is such an action legitimate? And does the reward for that deed reach that deceased person?",
+            "publisher": "Nawa Books & The Foreword Publications",
+            "publish_date": "2023-05-05",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 33
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 34,
+        "fields": {
+            "title": "Fiqh of Social Media",
+            "creators": "Omar Usman",
+            "description": "Social media and digital technologies have changed our lives and there is no indication that things will slow down. As Muslims, we believe that Islam contains the most perfect guidance for all of mankind to follow. How do we implement that timeless advice in our unprecedented times? That is the focus of the Fiqh of Social Media. \"I am grateful and appreciative of my friend, Omar Usman, for exhausting available resources; Islamic, psychological, secular, and business, to develop the work you see before you. We have had long discussions pertaining to many of the topics covered in this book. I am confident that you will find this book to be beneficial, and I pray that it inspires more contributions on this topic.\" -Shaykh AbdulNasir Jangda, Qalam Institute \"With the time we spend on social media, being mindful of how we use it is crucial. This is a wonderful resource based in prophetic guidance on how to practically use social media in wise and beneficial ways.\" -Dr. Omar Suleiman, Yaqeen Institute \"Reading Fiqh of Social Media is like sitting with your best friend from Sunday school and having an intellectual & spiritual conversation about the impact of social media on your life. Omar distills years of research, experience, and thought leadership in an easily digestible book that you can enjoy with a good cup of coffee (and your phone off!)\" -Mohammed Faris, The Productive Muslim Company \"The Prophet (s) said, \"Whoever believes in Allah and the Last Day should say something good or keep silent.\" The ability to control our tongues, how we communicate with others, is an expression of our faith. Communication has evolved and changed so much that one of the primary ways many of us communicate with others is through social media; hashtags and 280 characters. This is a long-awaited work from my good friend and Hajj companion Omar Usman who has been writing, tweeting, speaking, and teaching about the Fiqh of Social Media for years. This is a valuable work providing guidance on how to use and benefit from social media in a way that conforms to our principles and values.\" -Shaykh Furhan Zubairi, Institute of Knowledge \"Ulama of the past have written on the adaab of speech and social interaction. Connecting those guidelines with the modern world of social media has been the need of our time. May Allah reward Omar for taking this task on!\" -Mufti Hussain Kamani, Qalam Institute \"This is a must-read for Muslims around the globe. I can't thank Omar enough for this work which forces Muslims to look in the mirror and answer tough questions about how social media has impacted our lives. It questions why we desire to share the most intimate aspects of our lives with strangers from around the world and provides action items to implement. These discussions need to be had within the Muslim community. We have to question how our quality of life has been impacted by the age of hyper-connectivity. Due to the fact that Social Media is the tool for creating social capital, we need to realize that speaking about the harms of constant connectivity takes a lot of courage. Thank you, Omar, for this work.\" -Shaykh Mikaeel Smith, Qalam Institute",
+            "publisher": "",
+            "publish_date": "2020-12-20",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 34
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 35,
+        "fields": {
+            "title": "The Rights of the Husband and Wife",
+            "creators": "Dr. Abdul Hadi al-Kharsah, Mahdi Lock",
+            "description": "It is from Allah’s wisdom, Glorified and Exalted is He, that, over time, the Muslims have spread to every corner of the earth. In recent decades, however, this spread has been attributed to several causes, and what has been noticed and is not hidden from anybody who is familiar with the state of Muslims in Western societies is their lacking many of the factors of a social and Islamic upbringing that are normal and customary in Islamic societies. These norms and customs, of course, come from the Revealed Law, whose source is the Book, the Sunnah, the consensus of the Ummah, and the preferred opinions of the imams and scholars. Thus, one of the most important reasons for the social stability that is found in Islamic societies is that life is based on solid foundations that come from the teachings of the Revealed Law.",
+            "publisher": "Nawa Books",
+            "publish_date": "2023-03-29",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 35
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 36,
+        "fields": {
+            "title": "Outlines of Islamic Jurisprudence",
+            "creators": "Imran Ahsan Khan Nyazee",
+            "description": "Outlines of Islamic jurisprudence covers a number of topics of usul al-fiqh, sometimes in abridged form, that have been covered in the title on the subject of Islamic Jurisprudence by the same author. The significance of this book can only be understood through a comparison with that book. Islamic jurisprudence focuses on the discipline of usul al-fiqh and deals with it in an exhaustive way. It, thus, covers the different aspects of interpretation and theories of Islamic law. The present book includes some of the topics covered in that book. The bulk of Outlines of Islamic Jurisprudence, however, summarizes the entire law of Islam presenting it in a concise yet effective way. Property, contracts, evidence, procedure, constitutional matters and issues of Muslim personal law (family law) are dealt with efficiently. The last part of the book also includes information on the schools of law and their history. Due to the treatment of the entire Islamic law in a comprehensive way, the book is like a short encyclopedia.The book was first published in 1998 and is now in its sixth edition. It is very popular among law students, lawyers and even the general readers. Minor improvements to the book have been made over the years and it is constantly updated. Parts of the book dealing with property and contracts are taught independently as a one semester course on contracts, in particular for Islamic banking. The section on the history of the schools serves as a brief introduction to the law of Islam.Supplementary learning material available for this book on our YouTube channel, \"Advanced Legal Studies Institute.\" The relevant course is called \"Islamic Jurisprudence.\"",
+            "publisher": "CreateSpace Independent Publishing Platform",
+            "publish_date": "2016-12-16",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 36
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 37,
+        "fields": {
+            "title": "Islamic Legal Maxims: Qawa`id Fiqhiyyah",
+            "creators": "Imran Ahsan Khan Nyazee",
+            "description": "This book is about qawa`id fiqhiyyah, which are sometimes referred to as legal maxims. In reality, the qawa`id play a much wider and more effective role as compared to legal maxims. Islamic law is all about principles and rules; it has been so from the day of its birth. The reason is that principles and rules were laid down by the Qur'an and the Sunnah. A legal system is created, and understood, through principles and rules, that is, the entire edifice of law revolves around principles and rules. Further, concepts, duties and rights emerge from rules and principles, thus, providing the basic elements of which law is made. The relationship between the disciplines of usul al-fiqh and qawa`id fiqhiyyah is like the relationship between the two arms of the human body; they cooperate with each other to yield the rules of fiqh. This vital relationship has been kept concealed by separating the two disciplines and by severing the bond between them. This book attempts to uncover this relationship, and to restore the bond. Understanding this relationship will enhance understanding of the discipline of usul al-fiqh as well.",
+            "publisher": "CreateSpace Independent Publishing Platform",
+            "publish_date": "2016-12-16",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 37
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 38,
+        "fields": {
+            "title": "Al-Fiqh Al-Manhaji, A Systematic Manual According to the Madhhab of Imam Ash-Shafi'i: Purification and Prayer",
+            "creators": "Dr Mustafa al-Khin, Dr Mustafa Dib Al-Bugha, Dr Ali al-Sharbaji, Ust Mahdi Lock",
+            "description": "The best that man preoccupies himself with is knowledge of the lawful and the unlawful regarding rulings, and knowing the valid from the invalid regarding actions; it is the science of fiqh that has taken it upon itself to elucidate that. Many of the early scholars wrote so many books in this field that it is almost impossible to count; including exhaustive works, abridged works, commentaries, and research papers focusing on main issues as well as branch issues. The Islamic library still needs to grow, which is this book’s point of departure; it covers the main fiqh issues along with their evidences from the Noble Book and the Purified Sunnah, and the authors have also added whatever wisdoms can be gleaned from each ruling. The wording is clear and concise and the numerous headings and subheadings make it very easy for the reader to navigate the various topics and issues.",
+            "publisher": "Nawa Books",
+            "publish_date": "2023-05-17",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 38
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 39,
+        "fields": {
+            "title": "The Creed Made Easy al-'Aqida al-Muyassira A bilingual introduction to Islamic theology Arabic - English",
+            "creators": "By Shaykh Mahmoud Abu l-Huda al-Husainy Translator: Ali Peter Keeler",
+            "description": "The Creed Made Easy is a concise and accessible bilingual treatise in Islamic theology, introducing the reader to all fundamental aspects of the Islamic creed that are necessary for a Muslim to know and believe. Set in Arabic and English side by side, it facilitates the path for the student to seek knowledge in Islam. Written in a clear and precise fashion without compromising on its pleasant style, the author takes the reader on an enlightening journey towards a rational and resolute affirmation of faith and the vanishing of doubts. **Contents** - *Individual and Communal Obligations* - *Legal Rulings* - *Rational Judgements* - *The Extrinsically Rationally Necessary and Impossible* - *Knowledge and Faith* - *The Accountable Person [mukallaf] and the ruling regarding the Blind Follower [muqallid]* - *Beliefs regarding the Divine* - *Existence* - *The Negating Attributes* - *Pre-eternality* - *Eternality* - *Dissimilarity from Contingent Things* - *Self-sufficiency* - *Oneness* - *Ascribing Partners to Allah [shirk] and Disbelief [kafir]* - *Customary Causes* - *The meaning of “There is no god but Allah.”*",
+            "publisher": "Sunni Publication & Warda Publikkationen",
+            "publish_date": "2020-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 39
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 40,
+        "fields": {
+            "title": "Notions That Must Be Corrected",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 40
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 41,
+        "fields": {
+            "title": "Agenda to Change Our Condition",
+            "creators": "Hamza Yusuf, Zaid Shakir",
+            "description": "This book is a concise treatise on the path to conscious awareness of our Lord. The Muslim tradition considers this the primary reason for our existence and the means by which we are ensured continued succor from our Creator. This classic volume elucidates a simple yet effective means to transform our inner world through spiritual struggle with our soul.",
+            "publisher": "Sandala, Incorporated",
+            "publish_date": "2013-08-29",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 41
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 42,
+        "fields": {
+            "title": "Purification of the Heart",
+            "creators": "Hamza Yusuf (Translator)",
+            "description": "This book offers an insightful introduction to one of the most ancient of religious concerns: spiritual purification of the heart. It takes the reader through a well-known text from the Muslim tradition, and gives important commentary that is relevant to our day and to people of a variety of religious experiences.",
+            "publisher": "Sandala, Incorporated",
+            "publish_date": "2012-05-15",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 42
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 43,
+        "fields": {
+            "title": "Being Muslim",
+            "creators": "Asad Tarsin, Hamza Yusuf (Foreword by)",
+            "description": "A brief manual designed to help Muslims learn how to live and practice their faith. Different from theoretical treatments of Islam, this book gives readers practical and useful knowledge that can help them understand what it means to be Muslim.",
+            "publisher": "Sandala, Incorporated",
+            "publish_date": "2015-07-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 43
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 44,
+        "fields": {
+            "title": "The Scholars of the Sufis: They are the Genuine Followers of the Salaf",
+            "creators": "Shaykh `Abd al-Hadi Kharsa",
+            "description": "The translation and publication of the present book, `Ulama al-Sufiyya Hum al-Salafiyya al-Haqiqiyyun is a welcome event for seekers of spiritual guidance and self-purification in our time. This praiseworthy effort offers to the English-speaking public a contemporary explanation of the immutable principles of Sufism, which are one and the same with the three principles of Religion: submission [islam], faith [iman], and excellence [ihsan]. The book contains Shaykh `Abd al-Hadi s carefully presented anthology of the wisdom of the Sufi masters of old and their summations of doctrine [`aqida] and of the various spiritual diseases and spiritual stations and states of the wayfarer. They were gleaned from the bio-sapiental classics of the genre such as Tabaqat al-Sufiyya, the Luma`, the Risala, the Ihya , and can be found in later works such as Tabaqat al-Awliya and al-Kawakib al-Durriyya fi Tarajim al-Sufiyya. The vehemence of the title shown in the emphatic-exclusive personal pronoun and translatable as The Scholars of the Sufis: [Only] They are the Genuine Followers of the Salaf! is a reminder of the tireless efforts of the last two hundred years of Ahl al-Sunna wal-Jama`a scholarship demonstrating the Islamic orthodoxy of tasawwuf and denouncing the heresy of Wahhabism and pseudo-Salafism. It is its unique gems that make `Ulama al-Sufiyya stand out such as, for example, the title s emphasis on knowledge: it is never about the Sufis at large but about their Gnostics; as for would-be-Sufi [mutasawwif] claimants who are nescient of the Shari`a or not even concerned by it: they are also heretics and completely undesirable no matter how big they grow their beard, turban, jubba, or voice! This is a theme stressed by many of our salaf al-salih [pious predecessors].",
+            "publisher": "Sunni Publications",
+            "publish_date": "2011-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 44
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 45,
+        "fields": {
+            "title": "A Critique of the Palmyran Creed: Deconstructing Ibn Taymiyya's Theology of Resemblance",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 45
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 46,
+        "fields": {
+            "title": "The Clear Quran",
+            "creators": "Mustafa Khattab",
+            "description": "To achieve accuracy, the translator has made use of the best works of old and modern tafsir (Quran commentaries), and shared the work with several Imams in North America for feedback and insight. For clarity, every effort has been made to select easy to understand words and phrases that reflect the original text. Along with informative footnotes and Sura (chapter) introductions, verses have been grouped and titled based on their themes for a better understanding of the chapters, their main concepts, and internal coherence.--Publisher's website.",
+            "publisher": "Book of Signs Foundation",
+            "publish_date": "2016-01-01",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 46
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 47,
+        "fields": {
+            "title": "Brand Islam",
+            "creators": "Faegheh Shirazi",
+            "description": "From food products to fashions and cosmetics to children’s toys, a wide range of commodities today are being marketed as “halal” (permitted, lawful) or “Islamic” to Muslim consumers both in the West and in Muslim-majority nations. However, many of these products are not authentically Islamic or halal, and their producers have not necessarily created them to honor religious practice or sentiment. Instead, most “halal” commodities are profit-driven, and they exploit the rise of a new Islamic economic paradigm, “Brand Islam,” as a clever marketing tool. Brand Islam investigates the rise of this highly lucrative marketing strategy and the resulting growth in consumer loyalty to goods and services identified as Islamic. Faegheh Shirazi explores the reasons why consumers buy Islam-branded products, including conspicuous piety or a longing to identify with a larger Muslim community, especially for those Muslims who live in Western countries, and how this phenomenon is affecting the religious, cultural, and economic lives of Muslim consumers. She demonstrates that Brand Islam has actually enabled a new type of global networking, joining product and service sectors together in a huge conglomerate that some are referring to as the Interland. A timely and original contribution to Muslim cultural studies, Brand Islam reveals how and why the growth of consumerism, global communications, and the Westernization of many Islamic countries are all driving the commercialization of Islam.",
+            "publisher": "University of Texas Press",
+            "publish_date": "2016-08-02",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 47
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 48,
+        "fields": {
+            "title": "Reconstruction of Religious Thought in Islam",
+            "creators": "Allama Muhammad Iqbal",
+            "description": "",
+            "publisher": "CreateSpace Independent Publishing Platform",
+            "publish_date": "2016-12-21",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 48
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 49,
+        "fields": {
+            "title": "THE MONEY HANDBOOK: WEALTH AND FINANCIAL DEALINGS IN ISLAM",
+            "creators": "Mufti Aasim Rashid",
+            "description": "This is a brief work outlining some key aspects of earning and spending in Islam.The information has been referenced with Qurʾānic verses and hadiths (verses are highlighted in green, hadiths in blue), and care has been taken to simplify the concepts in today’s English while providing examples (in grey) for each concept.The Arabic fiqh terminology of buyūʿ has been deliberately left out from this edition (except in very places), so the reader can focus on the concepts instead of the technical terms.Details of juridical differences have been omitted, as this is a primer and the objective is to explain matters of general agreement in mainstream fiqh.How to Use this Book:This work is primarily a course textbook to study with someone well-versed in this aspect of dīn. The text has been kept simple and brief so the student may grasp the concepts without having to read extensively. The instructor should enrich each lesson by:Conveying the relevance of the concepts to the lives of the studentsContextualizing each concept with examples, anecdotes and scenarios that the students would be familiar with.Encouraging students to create scenarios from the concepts. They can share their scenarios:orally,through writings, charts/diagrams,acting them out with others.Giving research activities to further their understanding. The research can be about:Modern applications of a concept,Effect that neglects of certain Islamic ethics has on modern society,History or background of a conceptExplaining the practical implementation and application of each conceptHelping students understand each concept before moving to the next one. This will involve answering their questions and possibly referring to lengthier works on this subject.The goal should be to develop a functional understanding of the teachings and their applications in daily life.I pray that Allah Almighty makes this short work beneficial for all who read, study and teach from.",
+            "publisher": "Independently published",
+            "publish_date": "2022-06-27",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 49
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 50,
+        "fields": {
+            "title": "The Etiquette of Dialogue in Allah’s Book: with a treatise on Preserving the Arabic Language & Its Literature",
+            "creators": "Imam Muhammad Said Ramadan al-Buti, Mahdi Lock",
+            "description": "Two Timely Essays by Imam al-Būṭī on Language, Dialogue, and the QurʾānIn this powerful and timely volume, Imam Muhammad Said Ramadan al-Buti, one of the foremost scholars of our time, presents two profound essays on the Qurʾān’s guidance concerning speech, dialogue, and the preservation of language.The first essay, The Etiquette of Dialogue in Allah’s Book, explores how the Quran instructs believers to engage in respectful, wise, and principled dialogue. Drawing directly from Quran verses, Imam al-Buti demonstrates that the believer’s approach to discussion — whether with fellow Muslims or with those who reject faith — must be rooted in clarity, logic, compassion, and ethical integrity. Far from encouraging polemics or verbal conquest, the Quran lays out a framework for inviting others to the truth with sincerity and dignity.The second essay, Preserving the Arabic Language and Its Literature, is a stirring defence of the Arabic language and its central role in the life of the Muslim ummah. Imam al-Buti exposes the ideological agendas — both historical and modern, colonial and internal — that have sought to weaken or displace Arabic, arguing that such efforts threaten the Ummah’s direct connection to the Quran and thus, by extension, their relationship with Allah Himself.Both essays are presented with fully vocalised Arabic text alongside precise English translations, offering timeless guidance for seekers of knowledge, Arabic students, educators, those engaged in daʿwah, and all who are committed to preserving the integrity of Islam.Deeply rooted in love for Allah, His Book, and the language in which it was revealed, this volume is a call to reflection, revival, and action.",
+            "publisher": "Independently published",
+            "publish_date": "2025-08-28",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 50
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 51,
+        "fields": {
+            "title": "The Eternal Challenge",
+            "creators": "Abu Zakariya",
+            "description": "",
+            "publisher": "One Reason Publications",
+            "publish_date": "2015-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 51
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 52,
+        "fields": {
+            "title": "El Corán - Esclarecedor | Paperback Paperback – January 1, 2020",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 52
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 53,
+        "fields": {
+            "title": "Al-'Arabiyya: Journal of the American Association of Teachers of Arabic, Volume 50",
+            "creators": "Amel Khalfaoui, Hezi Brosh, Jamal Mohamed Giaber, Mohammed Al-Hilal, Ahmed Al-Rawi, Yahya Kharrat, Keith Walters, Carmen Cross, Brahim Oulbeid, Katrien Vanpee, Mohammad T. Alhawary",
+            "description": "Al-'Arabiyya is the annual journal of the American Association of Teachers of Arabic and serves scholars in the United States and abroad. Al-'Arabiyya includes scholarly articles and reviews that advance the study, research, and teaching of Arabic language, linguistics, literature, and pedagogy.",
+            "publisher": "Georgetown University Press",
+            "publish_date": "2017-11-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 53
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 54,
+        "fields": {
+            "title": "Arabic Through the Qur'an",
+            "creators": "Alan Jones",
+            "description": "Whether used as a means of self-instruction or as part of higher learning coursework, this language primer is ideally suited for those wishing to learn classical Arabic and for Muslims who wish to learn Arabic exclusively for use in their religious and spiritual practice. Designed to enhance the understanding of the Qur'an and its vocabulary that has infiltrated the whole of Arabic and Islamic literature, this workbook provides 40 easy-to-follow lessons for learning Qur'anic rather than modern Arabic. Beginning with a section on the Arabic alphabet, the text moves on to individual lessons that address one or more grammatical topics, ranging from the basics of nouns, adjectives, and prepositions to the more complex concepts of the imperative, the passive, and conditional sentence, introducing new vocabulary in the process. Accompanying translation exercises, a glossary of technical terms, and an index supplement the main text.",
+            "publisher": "Islamic Texts Society",
+            "publish_date": "2005-10-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 54
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 55,
+        "fields": {
+            "title": "Tafsir al-Qurtubi - Introduction: The General Judgments of the Qur'an and Clarification of what it contains of the Sunnah and Āyahs of Discrimination",
+            "creators": "Abu 'abdullah Muhammad Al-Qurtubi, Abdalhaqq Bewley, Aisha Abdurrahman Bewley",
+            "description": "The tafsīr of al-Qurṭubī is perhaps one of the most compendious of them all and is certainly among the most famous. As its title, al-Jāmi' li Aḥkām al-Qur'ān - The General Judgments of the Qur'an, suggests, its main focus is on the rulings and judgments to be found in the Qur'ān. However, in the course of doing that, al-Qurṭubī examines all the relevant sciences necessary, such as the ḥadīth pertaining to the āyahs, events in the sīrah, what the Companions, their Followers and other noted people of knowledge said about the āyahs, essential aspects of Arabic etymology, syntax and usage, copiously illustrated by examples, and much more. In this introduction, the author lays out some of the key themes of the Qur'an: Its virtues and the reciter's; how to recite it; cautioning against showing off; what the one who knows the Qur'an must do and not neglect to do; learning its syntax; the excellence of tafsīr; the excellence of the bearer of the Qur'an; the respect and esteem mandatory for the Qur'an; threats against engaging in tafsīr by means of opinion (ra'y); the Book being explained by the Sunnah; how to learn and understand the Book of Allah and the Sunnah of His Prophet s; that it used to be easier to act by it than to memorise it; the words of the Prophet s; \"The Qur'an was revealed in seven aḥruf (dialects/modes)\"; the seven readings; the collection of the Qur'an; the memorisation of the Qur'an by the Companions at the time of the Prophet s; the order of the sūrahs and āyahs of the Qur'an; the meaning of the words sūrah, āyah, kalimah (word) and ḥarf (letter); non-Arabic words in the Qur'an; the inimitability of the Qur'an; hadiths forged about the excellence of the sūrahs of the Qur'an; refutation of those who attack the Qur'an; the Seeking Refuge with Allah from Shayṭān and the Basmalah. Diwan Press will be publishing the entire tafsīr in 30 volumes along with the Introduction. Abū Muḥammad ibn Aḥmad ibn Abī Bakr ibn Farḥ al-Anṣārī al-Khazrajī al-Andalusī al-Qurṭubī (610-11 AH/1214 CE - 671 AH/1273 CE) was born in Cordoba in Spain, but moved in 1236 to Cairo in Egypt, where he lived until his death. He was Mālikī in fiqh, and although he composed other works, he is most famous for this tafsīr. Aisha Bewley is the translator of a large number of classical works of Islam and Sufism, often in collaboration with Abdalhaqq Bewley, notably The Noble Qur'an - a New Rendering of Its Meanings in English; Muhammad, Messenger of Allah - the translation of Qāḍī 'Iyāḍ's ash-Shifā'; the Muwaṭṭa' of Imam Mālik ibn Anas; and Imam an-Nawawī's Riyāḍ aṣ-Ṣāliḥīn.",
+            "publisher": "Diwan Press",
+            "publish_date": "2018-12-03",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 55
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 56,
+        "fields": {
+            "title": "Tafsir al-Qurtubi Vol. 2: Juz' 2: Sūrat al-Baqarah 142 - 253",
+            "creators": "Abu 'abdullah Muhammad Al-Qurtubi, Abdalhaqq Bewley, Aisha Abdurrahman Bewley",
+            "description": "The tafsīr of al-Qurṭubī is perhaps one of the most compendious of them all and is certainly among the most famous. As its title, al-Jāmi' li Aḥkām al-Qur'ān - The General Judgments of the Qur'an, suggests, its main focus is on the rulings and judgments to be found in the Qur'ān. However, in the course of doing that, al-Qurṭubī examines all the relevant sciences necessary, such as the ḥadīth pertaining to the āyahs, events in the sīrah, what the Companions, their Followers and other noted people of knowledge said about the āyahs, essential aspects of Arabic etymology, syntax and usage, copiously illustrated by examples, and much more.In this volume, the author continues through the second juz'(two ḥizbs) of Sūrat al-Baqarah, stopping to examine aḥkām/judgments in greater detail including the changing of the qiblah, ḥajj, retaliation, fasting, wills and bequests, menstruation, marriage and divorce, fighting in the Way of Allah, Ṭālūt and Jālūt, and lending Allah a generous loan, a list, however, which hardly does justice to the range of subject matter and depth of treatment of this extraordinary work.",
+            "publisher": "Diwan Press",
+            "publish_date": "2019-07-12",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 56
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 57,
+        "fields": {
+            "title": "Tafsir al-Qurtubi Vol. 3: Juz' 3: Sūrat al-Baqarah 254 - 286 & Sūrah Āli 'Imrān 1 - 95",
+            "creators": "Abu 'abdullah Muhammad Al-Qurtubi, Abdalhaqq Bewley, Aisha Abdurrahman Bewley",
+            "description": "The tafsīr of al-Qurṭubī is perhaps one of the most compendious of them all and is certainly among the most famous. As its title, al-Jāmi' li Aḥkām al-Qur'ān - The General Judgments of the Qur'an, suggests, its main focus is on the rulings and judgments to be found in the Qur'ān. However, in the course of doing that, al-Qurṭubī examines all the relevant sciences necessary, such as the ḥadīth pertaining to the āyahs, events in the sīrah, what the Companions, their Followers and other noted people of knowledge said about the āyahs, essential aspects of Arabic etymology, syntax and usage, copiously illustrated by examples, and much more.Among the important matters covered in this volume are extensive commentary on the Āyat al-Kursī the greatest āyat in the Qur'an, the āyats on usury and the longest āyat in the Qur'an which regulates credit and debt, among the very last revealed to the Messenger of Allah, may Allah bless him and grant him peace, the unparalleled āyats that conclude Sūrat al-Baqarah, and the passage from Sūrah Āl 'Imrān that explicates the difference between āyats containing clear judgements and others that are open to interpretation. There is of course, the eponymous theme of the sūrah, the family of 'Imrān: Maryam, her son 'Īsā, Zakariyyā' and his son Yaḥyā, peace be upon them all.",
+            "publisher": "Diwan Press",
+            "publish_date": "2019-11-12",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 57
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 58,
+        "fields": {
+            "title": "Muhammad: A Very Short Introduction",
+            "creators": "Jonathan A. C. Brown",
+            "description": "Drawing on traditional Muslim sources, Michael Cook describes Muhammad's life and teaching. He also attempts to stand back from this traditional picture to show how far it is historically justified.",
+            "publisher": "Oxford University Press",
+            "publish_date": "2011-04-24",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 58
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 59,
+        "fields": {
+            "title": "Misquoting Muhammad: The Challenge and Choices of Interpreting the Prophet's Legacy",
+            "creators": "Jonathan A.C. Brown",
+            "description": "Few things provoke controversy in the modern world like the religion brought by Prophet Muhammad. Modern media are replete with alarm over jihad, underage marriage and the threat of amputation or stoning under Shariah law. Sometimes rumor, sometimes based on fact and often misunderstood, the tenets of Islamic law and dogma were not set in the religion’s founding moments. They were developed, like in other world religions, over centuries by the clerical class of Muslim scholars. Misquoting Muhammad takes the reader back in time through Islamic civilization and traces how and why such controversies developed, offering an inside view into how key and controversial aspects of Islam took shape. From the protests of the Arab Spring to Istanbul at the fall of the Ottoman Empire, and from the ochre red walls of Delhi’s great mosques to the trade routes of the Indian Ocean world,Misquoting Muhammad lays out how Muslim intellectuals have sought to balance reason and revelation, weigh science and religion, and negotiate the eternal truths of scripture amid shifting values.",
+            "publisher": "Oneworld Publications",
+            "publish_date": "2015-09-08",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 59
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 60,
+        "fields": {
+            "title": "The Eternal Message of Muhammad",
+            "creators": "Abd Al-Rahman Azzam, Caesar E. Farah (Translator), Vincent Sheean (Other Primary Creator)",
+            "description": "This translation into English of a great Islamic classic offers the western world a simple yet profound interpretation of Islam. Drawing upon years of unparalleled experience in diplomacy and government, Azzam examines the social and economic ramifications of the Muslim state, one based on humane ideals of law and justice expressed in the Qur'an, and one which can provide the foundation for a just society. Abd al-Rahman Azzam (1893-1976) is generally considered as the father of the Arab League. He served as the League's first Secretary-General between 1945-52 as well as distinguishing himself in a long career as an ambassador and parliamentarian. As Vincent Sheean points out in his introduction, 'In Damascus as well as in Djakarta, Istanbul and Baghdad, this man is known for valour of spirit and elevation of mind...He combines in the best Islamic mode, the aspects of thought and action, like the Muslim warriors of another time who are typified for us Westerners by the figure of Saladin.' Malcolm X's reading of The Eternal Message of Muhammad and his meeting with Azzam Pasha are vividly recounted in his Autobiography. It is clear that these events marked the point in his life at which Malcolm X turned towards orthodox traditional Islam.",
+            "publisher": "Islamic Texts Society",
+            "publish_date": "1993-12-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 60
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 61,
+        "fields": {
+            "title": "When The Moon Split",
+            "creators": "",
+            "description": "",
+            "publisher": "Darussalam",
+            "publish_date": "2002-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 61
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 62,
+        "fields": {
+            "title": "Muhammad Pb",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 62
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 63,
+        "fields": {
+            "title": "The Leadership of Muhammad",
+            "creators": "John. Adair",
+            "description": "The Leadership of Muhammad is a very personal study of the life-story and leadership skills of the Prophet. John Adair served with a Bedouin regiment in the Arab Legion and this story is full of fascinating detail of desert life and Bedouin beliefs. A business book that crosses boundaries it highlights the key leadership skills displayed by Muhammad and allows you to share in his wisdom. John Adair weaves the story of Muhammad's life together with aspects of Bedouin culture and ancient proverbs to provide key points for leaders and aspiring leaders. He discusses tribal leadership and essential attributes such as integrity, moral authority and humility.Learning and leadership go hand in hand. You are not born a leader, but you can become one and it is never too late to learn. John Adair's study or Muhammad and the tribal tradition of leadership is an essential addtion to the leadership debate.",
+            "publisher": "Kogan Page, Limited",
+            "publish_date": "2010-08-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 63
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 64,
+        "fields": {
+            "title": "The 40 Hadith of Imam al-Nawawi",
+            "creators": "Imam Al-Nawawi",
+            "description": "Known in Arabic simply as the Arba'in, \"The Forty,\" this is without question the most widely-known and widely-read small compilation of Prophetic hadith. Across the world, from the east to the west, Imam al-Nawawi's collection is often the first, and sometimes the only Hadith text many Muslims study in their lives.Each hadith in this collection and serves as a foundational proof text in at least one area of the Islamic sciences. Being of such importance, these Hadith are also incredibly dense in meaning; one of Allah's gifts to His Prophet ﷺ was the ability to convey volumes in only a few words, and the Hadith of the Arba'in are among the best examples of this.IGI's edition of al-Nawawi's Arba'in includes: New translation of each HadithSuccinct gems to ponder the significance and major themes of each HadithShort biography of Imam al-NawawiThis is a beautiful edition that is easy and pleasurable to read, that you will return to again and again, and that we hope will live on your shelf for many years to come.Foreword by Shaykh Abdullah Anik MisraTranslator: Talut DawoodLanguage: English and ArabicPublisher: Imam Ghazali Publishing",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2025-04-29",
+            "total_copies": 3,
+            "available_copies": 3,
+            "unique_number": 64
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 65,
+        "fields": {
+            "title": "Hadith Nomenclature Primers",
+            "creators": "Ibn Hajar, Steven Furber",
+            "description": "This volume presents two primers on the discipline of ḥadīth nomenclature (muṣṭalaḥ al-ḥadīth) and the authentication of transmitted reports. They are Nukhbat al-fikar (\"Chosen Thoughts on the Nomenclature of Ḥadīth Experts\") by Ibn Ḥajar al-ʿAsqalānī (773-835AH); and Al-Tadhkirah (\"The Memorandum\") by ʿIbn al-Mulaqqin (723-804AH).These primers were written to facilitate speedy mastery of the discipline's core material. Although the primers focus on definitions, they also include methods for addressing problems specific to the topic. Students would often commit a primer to memory while studying it with a living master who would explain its content in detail and demonstrate its application. It is through this interaction between students and instructors that Islamic education transmits both knowledge and skills across generations. In translation, these primers are ideal for English-speaking instructors looking for a primary text covering the subject's core concepts. The translations will also benefit students looking to review their lessons or to prepare themselves for more advanced studies.",
+            "publisher": "Islamosaic",
+            "publish_date": "2015-05-18",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 65
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 66,
+        "fields": {
+            "title": "Hadith: Muhammad's Legacy in the Medieval and Modern World",
+            "creators": "Jonathan A. C. Brown",
+            "description": "",
+            "publisher": "Oneworld Publications",
+            "publish_date": "2018-01-12",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 66
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 67,
+        "fields": {
+            "title": "Riyad as-Salihin: The Meadows of The Righteous - Abridged And Annotated",
+            "creators": "Imam Yahya ibn Sharaf an-Nawawi",
+            "description": "In 13th Century Damascus, the renowned Hadith Scholar, juristic expert, academic luminary and pious ascetic, Imam Muhyi ad-Din Abu Zakariyya Yahya ibn Sharaf an-Nawawi set himself the task of compiling a short collection of rigorously authenticated Hadith, which will comprise for its reader a way to the hereafter. The resulting Riyad as-Salihin is a collection of almost two thousand Hadiths on numerous subjects, selected from the Sahih collections and other canonical books of the Sunnah. This blessed book, containing the treasures of the noble Sunnah and Prophetic guidance, was greeted with immediate scholarly approval and has established its worth in terms of the far-reaching and long-term influence it has had on Muslim character, conduct, education and reform throughout the Ummah and across the centuries. Arabic text with English translation and commentary.",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 67
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 68,
+        "fields": {
+            "title": "Al-Wafi: A Thorough Commentary on The Forty Nawawiyyah",
+            "creators": "Dr. Mustafa Dib Al-Bugha, Dr. Muhyi Ad-Din Dib Mistu",
+            "description": "Al-Wafi is a well-known Arabic commentary of forty ḥadīths compiled by the great jurist and ḥadīth scholar Imam Abu Zakariyya Yahya ibn Sharaf an-Nawawi, commonly known as Imam an-Nawawi or Imam an-Nawawi (d. 676 AH).The book is widely used in schools and religious classes and has been translated into several languages. This is the first published English version.It is authored by two of Damascus’ internationally well-known and respected scholars, Shaykh Mustafa Dib Al-Bugha and Shaykh Muhyi Ad-Din Dib Mistu. Both are esteemed professors in the field of Islamic knowledge and authors of several critically acclaimed books.This book is ideal for those who wish to read for personal edification as well as those who would like to conduct classes. Every ḥadīth is followed by a detailed explanation of its importance and its vocabulary, followed by its fiqh rulings and other insights that can be gleaned from it.It is hoped that as the reader makes his way through the text, his understanding and appreciation of the Prophet’s words will deepen, and he will also come to see the immense wisdom in Imam an-Nawawī’s choices. If Allah so wills, the reader will emerge with a broader and more thorough understanding of Islam itself.",
+            "publisher": "National Library Singapore",
+            "publish_date": "2023-03-06",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 68
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 69,
+        "fields": {
+            "title": "Muhammad the Perfect Man",
+            "creators": "Sayyio Muhammad Ibn Alawi Al-Maliki Al-Hasani, Mostafa Badawi",
+            "description": "",
+            "publisher": "Visions of Reality Books",
+            "publish_date": "2012-10-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 69
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 70,
+        "fields": {
+            "title": "Al-Ghazali on the Condemnation of Pride and Self-admiration: Kitab dhamm al-kibr wa'l-ujb",
+            "creators": "Abu Hamid Al-Ghazali, Mohammed Rustom",
+            "description": "The Condemnation of Pride and Self-Admiration is the first translation into a European language of chapter twenty-nine of The Revival of the Religious Sciences, a monumental work of classical Islam written by the greatest theologian-mystic of Islam Abu Hamid al-Ghazali (d. 1111). Perhaps the most important chapter in the whole of the Revival, The Condemnation of Pride and Self-Admiration delves into the fundamental spiritual ailments and major impediments of the soul, namely pride and self-admiration. Ghazali offers readers an in-depth analysis of how and why pride and self-admiration are so harmful to a person's soul, and oulines methods of recognizing and subsequently healing these diseases of the heart. The key ingredient in this cure, Ghazali explains, is the cultivation of humility, which results from an increasing awareness of one's lowliness and essential nothingness before God. An indepth and very lucid analysis of the major vices and virtues central to all religions.",
+            "publisher": "Islamic Texts Society",
+            "publish_date": "2018-08-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 70
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 71,
+        "fields": {
+            "title": "Tafsir al-Qurtubi - Vol. 1: Juz' 1: Al-Fātiḥah & Sūrat al-Baqarah 1-141",
+            "creators": "Abu 'abdullah Muhammad Al-Qurtubi, Abdalhaqq Bewley, Aisha Abdurrahman Bewley",
+            "description": "The tafsīr of al-Qurṭubī is perhaps one of the most compendious of them all and is certainly among the most famous. As its title, al-Jāmi' li Aḥkām al-Qur'ān - The General Judgments of the Qur'an, suggests, its main focus is on the rulings and judgments to be found in the Qur'ān. However, in the course of doing that, al-Qurṭubī examines all the relevant sciences necessary, such as the ḥadīth pertaining to the āyahs, events in the sīrah, what the Companions, their Followers and other noted people of knowledge said about the āyahs, essential aspects of Arabic etymology, syntax and usage, copiously illustrated by examples, and much more.In this volume, the author examines the Fātiḥah in great depth, and then works through the first juz' (two ḥizbs), stopping to examine linguistic matters, aḥkām/judgments in greater detail, covering, for example, īmān, establishment of the ṣalāt, zakāt, hypocrisy, the Tribe of Israel, the creation of Adam and Ḥawwā', caliphate, abrogation, and including the pivotal story of the sacrifice of the cow by the Tribe of Israel.",
+            "publisher": "Diwan Press",
+            "publish_date": "2019-03-25",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 71
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 72,
+        "fields": {
+            "title": "Handbook of A Healthy Muslim Marriage: Unlocking The Secrets To Ultimate Bliss",
+            "creators": "Abdur-Rahman Ibn Yusuf Mangera",
+            "description": "",
+            "publisher": "White Thread Press",
+            "publish_date": "2019-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 72
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 73,
+        "fields": {
+            "title": "Al-Ghazali on Disciplining the Soul and on Breaking the Two Desires",
+            "creators": "Abu Hamid Muhammad al-Ghazali, T. J. Winter (Translator)",
+            "description": "The spiritual life in Islam begins with riyadat al-nafs, the inner warfare against the ego. Distracted and polluted by worldliness, the lower self has a tendency to drag the human creature down into arrogance and vice. Only by a powerful effort of will can the sincere worshipper achieve the purity of soul which enables him to attain God's proximity. This translation of two chapters from The Revival of the Religious Sciences (Ihya' 'Ulum al-Din) details the sophisticated spiritual techniques adopted by classical Islam. In the first step, On Disciplining the Soul, which cites copious anecdotes from the Islamic scriptures and biographies of the saints, Ghazali explains how to acquire good character traits, and goes on to describe how the sickness of the heart may be cured. In the second part, Breaking the Two Desires, he focusses on the question of gluttony and sexual desire, concluding, in the words of the Prophet, that 'the best of all matters is the middle way'. The translator has added an introduction and notes which explore Ghazali's ability to make use of Greek as well as Islamic ethics. The work will prove of special interest to those interested in Sufi mysticism, comparative ethics, and the question of sexuality in Islam.",
+            "publisher": "Islamic Texts Society",
+            "publish_date": "1997-12-01",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 73
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 74,
+        "fields": {
+            "title": "The Virtues of Seclusion in Times of Confusion",
+            "creators": "",
+            "description": "The Virtues of Seclusion in Times of Confusion is a timely work about unplugging, physically and virtually, as a viable and sorely needed third option between absolute isolation from society and unrestricted social interaction. In this work that speaks to us and our time, Shaykh Abd al-Ghani al-Nabulusi brilliantly weaves together the Quranic verses, hadith reports, and counsels of the Salaf concerning self-imposed seclusion and its importance as a protective measure to safeguard our faith and shore up our spiritual defenses in times of strife and confusion (fitna). This seclusion, he tells us, is not about withdrawing completely from society and heading for the hills, but rather sitting things out, keeping busy with personal and familial concerns, minding our business staying at home. It is a call for taking careful stock of where we are spiritually and assessing where exactly our sphere of influence is and not overextending ourselves to our own detriment and the detriment of our loved ones. The goal of this book and its fine-tuned translation is to put an exclamation point on the importance of seclusion, and to construct a nuanced and scholarly understanding of the matter. Readers will enjoy, learn, and take examples from the stories of how our predecessors withdrew from societies when they felt their corruption. I pray that this work marks the beginning of our regular practice of retreat physically and digitally in a way that makes us more at peace and thus more effective in bringing positive change to ourselves, our families, and our communities. Dr. Shadee Elmasry Shaykh Abd al-Ghani al-Nabulusi (d. 1143 ah) was a high ranking Hanafi jurist, theologian, and spiritual master in the Ottoman era from Damascus, Syria. He was a gifted and prolific author, and a virtual encyclopedia of Islamic knowledge, who joined the exoteric and esoteric, authoring over 200 book on a variety of sciences. He taught in the renowned Umawi Mosque in Damascus and the Salihiyya Seminary. contents Translator s Preface Foreword by Dr. Shadee Elmasry Biography of Shaykh Abd al-Ghani al-Nabulusi Introduction Chapter 1: On Self-imposed Isolation and Avoidance of People During times of Confusion and Strife Chapter 2: The Legal Dispensation Allowing One to Avoid the Imams of Fitna in the Mosques Chapter 3: How the Early Muslims (Salaf) Were During Periods of Corruption Chapter 4: Early Imams Who Withdrew from Society Appendices Appendix I: Selected Narrations from Ibn Abi al-Dunya s Kitab al- Uzla wa al-Infirad (The Book of Withdrawal and Seclusion) Appendix II: Selected Narrations from Ibn Abi al-Dunya s Kitab al-Tawadu wa al-Khumul (The Book of Humility and Obscurity)",
+            "publisher": "Ibriz Media",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 74
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 75,
+        "fields": {
+            "title": "The Book of Assistance",
+            "creators": "Imam 'Abdallah Ibn Alawi al-Haddad, Mostafa al-Badawi (Preface by)",
+            "description": "There are many books in English that present Sufi doctrine, but few that can be used as practical travel guides along the Path. Originally written in classical Arabic, this volume is in widespread use among Sufi teachers in Arabia, Indonesia, and East Africa; its devotions, prayers, and practical ethics are invaluable as a guide along the Sufi Way.",
+            "publisher": "Fons Vitae of Kentucky, Incorporated",
+            "publish_date": "2003-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 75
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 76,
+        "fields": {
+            "title": "The Book of Wisdoms",
+            "creators": "Ahmad ibn Muhammad Ibn Ata Allah, Victor Danner, Muhammad Abdullah Gangohi, Andrew Booso, Abdur-Rahman Ibn Yusuf",
+            "description": "",
+            "publisher": "White Thread Press",
+            "publish_date": "2013-12-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 76
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 77,
+        "fields": {
+            "title": "Al-Ghazali on the Remembrance of Death & the Afterlife",
+            "creators": "Abu Hamid Al-Ghazali",
+            "description": "This is the first English translation of a key section of al-Ghazali’s Revival of the Religious Sciences, (Ihya’ Ulum al-Din), widely regarded as the greatest work of Muslim spirituality. Its theme is of universal interest: death, and the life to come. After expounding his Sufi philosophy of death, and showing the importance of the contemplation of human morality to the mystical way of self-purification, al-Ghazali's takes his readers through the stages of the future life: the vision of the Angels of the Grave, the Resurrection, the Intercession of the Prophets, and finally, the torments of Hell, the delights of Paradise, and--for the elect--the beatific vision of God’s Countenance. In this new edition, the Islamic Texts Society has included a translation of Imam Ghazali’s own Introduction to the Revival of the Religious Sciences which gives the reasons that caused him to write the work, the structure of the whole of the Revival and places each of the chapters in the context of the others.",
+            "publisher": "Islamic Texts Society",
+            "publish_date": "2016-04-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 77
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 78,
+        "fields": {
+            "title": "Imam Al-Ghazali on Self-Delusion",
+            "creators": "Imam Abu Hamid Muhammad al-Ghazali",
+            "description": "Imam al-Ghazali delves into the core of our predicament by exposing undesirable qualities of the heart, such as arrogance, pride, ostentation, and the pursuit of fame. The importance of ikhlas (sincerity) is the root of what he is alluding to. The text examines the various religious activities that take place in a believers life, be they the construction of masjids, the delivery of lectures, charitable contributions in the name of Allah ﷻ, or the recitation of the Qur'an. Imam al-Ghazali's articulation of these matters persuades the reader to remain vigilant in every aspect of the Religion. His overarching theme throughout the book revolves around the term ghurür which, in the context of this work, can be translated as self-deception. As seen in many of his other writings, he provides compelling examples that resonate with all readers.",
+            "publisher": "Turath Publishing, UK",
+            "publish_date": "2023-12-31",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 78
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 79,
+        "fields": {
+            "title": "The Principles of the Creed: Book 2 of the Revival of the Religious Sciences",
+            "creators": "Khalid Williams",
+            "description": "In the Principles of the Creed (Kitab Qawa'id al-'aqa'id), the second of the forty books of the Revival of the Religious Sciences (Ihya' 'ulum al-din), Abu Hamid al-Ghazali explains the fundamental beliefs of Islam, those that concern faith in God, His revelation, His messengers, and the hereafter. The scope of these beliefs includes the nature of God, Muhammad’s status as a prophet, the virtues of the Companions, the events related to the resurrection and judgment, and the nature of faith itself. This presentation of beliefs goes beyond a list of creedal statements; al-Ghazali cites the scriptural foundations in the Qur'an and hadith, refers to transmitted reports from the Companions and others from the righteous predecessors, and supports these beliefs with rational arguments.",
+            "publisher": "Fons Vitae",
+            "publish_date": "2016-10-01",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 79
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 80,
+        "fields": {
+            "title": "The Mysteries of Purification: Book 3 of the Revival of the Religious Sciences",
+            "creators": "Abu Hamid Al-Ghazali, Mohamed Fouad Aresmouk, Michael Abdurrahman Fitzgerald",
+            "description": "In The Mysteries of Purification (Kitab asrar al tahara), the third of the forty books of the Revival of the Religious Sciences (Ihya' 'ulum al-din), Abu Hamid al-Ghazali explains the fundamentals of the purification that is necessary in order to perform the five daily prayers.",
+            "publisher": "Fons Vitae",
+            "publish_date": "2017-10-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 80
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 81,
+        "fields": {
+            "title": "The Book of Knowledge: Book 1 of The Revival of the Religious Sciences",
+            "creators": "Abu Hamid Al-Ghazali",
+            "description": "",
+            "publisher": "Fons Vitae",
+            "publish_date": "2016-05-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 81
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 82,
+        "fields": {
+            "title": "Food Between Curse and Cure: Islam, Health, and the Good Life",
+            "creators": "Abu Munir al-Sha'ar",
+            "description": "Few people exemplify service to the Muslims like Abu Munir, a Syrian man who spent his entire life in service, including for the century’s foremost scholars and sages, like Sheikh 'Abd al-Rahman as-Shagouri, Sheikh Mustafa at-Turkmani, and Sheikh as-Shukri (May Allah have mercy upon them all), until their very last breath.Amidst war-torn Syrian civil unrest, he fled to Jordan where he would discover his cancer diagnosis of leukemia. While battling leukemia, he was introduced to functional, integrative, and traditional physicians who guided him to an optimal diet and lifestyle, helping his cancer remain in remission. With the intention of benefiting the community (umma) of the Prophet (Allah bless him and give him peace), he compiled the words and wisdom he obtained into the present book. He and his team of clinicians began seeing patients and, with the will of Allah Most High, they were cured from their chronic diseases: diabetes, high blood pressure, cancer, seizures, obesity, and more.Chronic disease is sabotaging our health, and the current medical model is leaving patients sicker than ever on multiple pills with multiple side effects. Patients are depressed with no guidance. The advice provided in this book will cure 90% of medical conditions in the physical realm through addressing the root cause, while providing readers the real cure in the spiritual realm through augmenting one's relationship with Allah Most High.A certified physician assistant (PA-C) with a background in the Arabic sciences, the translator researched, compiled, and added upon Abu Munir's work for the western audience, providing a balance of mental, physical, and spiritual health to achieve, in the words of the Koran, \"the good life\" (hayat tayyiba).",
+            "publisher": "Hayat Tayyiba, LLC",
+            "publish_date": "2020-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 82
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 83,
+        "fields": {
+            "title": "Man and the Universe",
+            "creators": "",
+            "description": "Many thinking people now have an inward sense that 21st- century humanity faces stark and urgent challenges that demand wise and decisive responses. Profound illnesses call for profound remedies, and when nothing less than radical change will do, courage is essential to survival. Authentic traditional Islam provides a holistic and historically proven alternative. In this timely book, Dr Mostafa al-Badawi shows that revealed knowledge is the source of traditional wisdom, and that the Islamic faith and civilization has a veritable 'track record' of healing individual and social disintegration. The author presents a penetrating diagnosis of the illnesses of humanity today, together with a fascinating overview of the Islamic metaphysic, unearthing its spiritual and moral values and its timeless relevance and applicability. Man and the Universe is a compelling and urgently needed piece of writing about what we human beings are, where we stand and what we can do about it.",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 83
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 84,
+        "fields": {
+            "title": "Ascent to Felicity",
+            "creators": "Hasan ibn Ammar Shurunbulali, Ohasan Ibn Ammaar Shurunbulaalai",
+            "description": "Written by an eminent medieval Hanafi scholar, this is a concise yet comprehensive primer in creed and jurisprudence. It spans all five pillars of Islam, as well as the topics of slaughtering, ritual sacrifice, and haunting.",
+            "publisher": "White Thread Press",
+            "publish_date": "2011-08-24",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 84
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 85,
+        "fields": {
+            "title": "Hearts Turn: Sinners, Seekers, Saints and the Road to Redemption",
+            "creators": "Michael Sugich",
+            "description": "",
+            "publisher": "978-0-9893640-0-3",
+            "publish_date": "2019-01-29",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 85
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 86,
+        "fields": {
+            "title": "Prayers for Forgiveness",
+            "creators": "imam-hasan-al-basri",
+            "description": "The act of seeking forgiveness is what gives us the opening we need after feeling overwhelmed by the burden of sin. Forgiveness means a way out, a second chance, a feeling of hope with which to turn a new page in life. It is through the seeking of forgiveness that we begin to understand that there is no reason whatsoever to despair of the mercy of God. Islam encourages us to not run away in fear of Allah but rather to turn toward God the same way a baby would run into its mother’s lap. So lovingly does God, Most High, address His sinful servants: \"Say (to humanity, O Muhammad): O My servants—those (of you) who have committed (sins in great) excess against their own souls—never despair of the mercy of Allah! For, indeed, Allah forgives sins, one and all. Indeed, it is He who is the All-Forgiving, the Mercy-Giving. So turn in penitence to your Lord. And submit yourselves to Him.\" (The Qur'an 39:53–54) This collection of seventy prayers for forgiveness [istighfarat] is attributed to one of the greatest spiritual luminaries of the past, Hasan al-Basri, and it has been presented here to offer a way for us to navigate through the complications and pitfalls of this life. Set out in Arabic script, with adjoining translation in English, this edition also includes transliteration of the prayers to facilitate reading for those who are not so well-versed in Arabic.",
+            "publisher": "White Thread Press",
+            "publish_date": "2004-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 86
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 87,
+        "fields": {
+            "title": "A Concise Description of Jannah & Jahannam",
+            "creators": "Ibn-Abī-Ṣāliḥ ʿAbd-al-Qādir al-Ǧīlānī",
+            "description": "",
+            "publisher": "",
+            "publish_date": "2010-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 87
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 88,
+        "fields": {
+            "title": "The Lives of Man: A Guide to the Human States: Before Life, In the World, and After Death",
+            "creators": "Imam 'Abdallah Ibn Alawi al-Haddad",
+            "description": "Originally published: [London]: Quilliam, 1991 (Classics of Muslim spirituality; 3).",
+            "publisher": "Fons Vitae",
+            "publish_date": "1991-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 88
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 89,
+        "fields": {
+            "title": "On Remembering Death",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 89
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 90,
+        "fields": {
+            "title": "The Essential Islamic Creed",
+            "creators": "Shaykh Ahmad Ibn Zayni Dahlan",
+            "description": "The essence of Islam is its creed, which validates the performance of one s worship; thus making it eligible for acceptance. The obligation to have sound doctrine has led Muslim theologians to develop an elaborate discipline of creed based primarily on the Qur an and Sunnah, whilst also incorporating sound rational argumentation. This work by Shaykh A mad ibn Zayn Da l n is a summary of the core tenets of faith in the manner of the Late-Sunni Tradition, enumerating what a Muslim should believe regarding Allah; the prophets; the Divine Scriptures; the angels; the Resurrection Day, with its prelude and finale; the Prophet s Companions [may Allah bless him and give him peace] and miracles of Allah s friends.",
+            "publisher": "Heritage Press",
+            "publish_date": "2015-09-25",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 90
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 91,
+        "fields": {
+            "title": "The Value of Time",
+            "creators": "Abd Al-Fattah Abu Ghuddah",
+            "description": "The Value of Time is a collection of amazing sayings and wonderful stories of the scholars of the Muslim Ummah, which indicate to the importance they attached to time. It is a book that will inspire the youth and the old alike to spend their time constructively and avoid wasting time. The stories narrated, unimaginable as they may be, are not fables or fairy tales, but are all authentic events that have been well documented and narrated by scholars themselves. The author, Abd al-Fattah Abu Ghuddah, was one of the prominent scholars of the 20th century and a veteran leader of the Islamic Movement in Syria.",
+            "publisher": "Claritas Books",
+            "publish_date": "2004-04-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 91
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 92,
+        "fields": {
+            "title": "Imam Al-Tahawi's Creed of Islam",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 92
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 93,
+        "fields": {
+            "title": "THE ISLAMIC DISCOURSE IN RELIGIOUS INSTITUTIONS: IT'S CURRENT STATE & FUTURE DEVELOPMENT",
+            "creators": "Al-Habib Umar bin Hafiz",
+            "description": "Allah the Exalted said, \"Let there be a group among you who call to goodness, encourage what is good, forbid what is evil; it is they who are successful.\" - [Quran 3:104] This treatise, authored by al-Ḥabīb 'Umar Bin Ḥafīz, a master of the inward and outward sciences of Islam, is a timely and significant contribution to the field of Fiqh al-Da'wa (the principles of calling people to Allah). The author addresses some of the challenges facing Islamic institutions, provides the most prominent means for impact, and presents ten steps for the further development and effectiveness of the discourse. We ask Allah to grant those serving in religious institutions His enabling grace (tawfīq) in carrying and fulfilling the trust with excellence, that He unites their hearts, and that Allah causes this treatise, and others like it, to reach their hearts and minds, having a positive impact on their states and affairs, being a means for attaining the desired outcome and fulfilling the covenants with Allah—which, in turn, leads to the arrival of His promised support.",
+            "publisher": "Al-Maqasid",
+            "publish_date": "2020-01-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 93
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 94,
+        "fields": {
+            "title": "World of the Angels",
+            "creators": "Abd al-Hamid Kishk, Abdalhaqq Bewley (Editor), Aisha Abdurrahman Bewley (Translator)",
+            "description": "",
+            "publisher": "Dar Al Taqwa Limited",
+            "publish_date": "1994-03-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 94
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 95,
+        "fields": {
+            "title": "Interpretation of Dreams",
+            "creators": "Ibn Seerin, Aisha Abdurrahman Bewley (Editor), Abdalhaqq Bewley (Editor)",
+            "description": "",
+            "publisher": "Dar Al Taqwa Limited",
+            "publish_date": "1994-05-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 95
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 96,
+        "fields": {
+            "title": "The Differences of the Imâms",
+            "creators": "Muhammad Zakariyyâ",
+            "description": "",
+            "publisher": "White Thread Press",
+            "publish_date": "2008-12-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 96
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 97,
+        "fields": {
+            "title": "The Mysteries of the Prayer and Its Important Elements",
+            "creators": "Michael Abdurrahman Fitzgerald (Translator)",
+            "description": "In The Mysteries of the Prayer and Its Important Elements, book four of the 40 books of the Revival of the Religious Sciences, Abū Hāmid al-Ghazālī explains the inner and outer meanings of the prayer, a central practice for Muslims. He explains the acts involved in the outward elements of the prayer and outlines which of these acts are obligatory and which are sunna. He then discusses the inward requisites of the prayer--the practices of the heart-- and presents practical remedies for a distracted heart. He also discusses the annual prayers and the prayers and supplications related to events such as eclipses, the prayer for rain, guidance, and need. This readable yet comprehensive work covers an array of issues from the essential outward aspects of how to pray, to the inward aspects of the state of the heart during the prayer and how to humble oneself completely. As a practical, yet profound book, it is essential reading for Muslims who seek a deeper comprehension of prayer, and for all those interested in understanding the meaning and place of prayer in Islam.",
+            "publisher": "Fons Vitae of Kentucky, Incorporated",
+            "publish_date": "2018-07-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 97
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 98,
+        "fields": {
+            "title": "Obeying the Messenger",
+            "creators": "Yusuf Motala, Aasim Ali Rashid",
+            "description": "This book emerged from an outpour of love for Prophetic ways and pain of seeing Muslims discarding those same ways. It was initially published some fifty years ago under the guidance and supervision of Hazrat Shaykh al-hadith Mawlānā Muḥammad Zakariyyā -may Allah enlighten his grave.",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 98
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 99,
+        "fields": {
+            "title": "The Opening of The Hearts in Explaining the State of the Deceased and of the Graves",
+            "creators": "Jalāl ad-Dīn as-Suyūṭī",
+            "description": "The event of losing a loved one leaves many left behind seeking meaning in their loss and answers to a myriad of questions. What happens when we die? Can the deceased hear us? Can they see us? Can we benefit them? Can they benefit us? This masterpiece by Imam Jalāl ad-Dīn as-Suyuṭī not only provides answers to these questions and so many more but also offers hope, comfort, and solace by describing the believer’s journey from this life into the next.​",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 99
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 100,
+        "fields": {
+            "title": "Etiquette for the Seeker on the Path",
+            "creators": "Imam Abdallah bin Alawi al-Haddad",
+            "description": "Etiquette for the Seeker on the Path, has listed the most fundamental aspects for the seeker, intending the path of Sufism.\nHe begins by describing the point of initiation and the origin for the seeker, which is the transmission of Divine light into the heart. It is received through God’s favour alone and no human effort is involved at this stage. Therefore, one who has been graced with this Divine light, must treasure, protect and appreciate this gift, as they have been selected and chosen from amongst the masses.\nThe initial drive and zeal to approach Allah, emerges from this transmission, and Imam al-Haddad provides a succinct guideline in this book with a step by step approach on how to protect, develop and nurture this Divine gift.",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 100
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 101,
+        "fields": {
+            "title": "In the Presence of the Beloved: Two Treatises on The Merits and Etiquettes of Visiting The Prophet",
+            "creators": "Ahmad ibn Muhammad Qastallani, Abdallah Sirajuddin, Amjad Mahmood",
+            "description": "In the Presence of the Beloved is a translation of two authoritative treatises on the act of ziyārah, namely, visiting the Prophet Muhammad (Allah bless him and give him peace). Both texts meticulously examine the legal status, manifold virtues and etiquettes of this blessed visit. They also address issues, some of which have become controversial in contemporary Islamic discourse, such as the permissibility of tawassul (supplicating Allah through the Prophet), the practice of tabarruk (seeking blessings from his relics), the distinctive merits of the Rawḍah and Medina and the significance of visiting other revered historical sites within the Prophet’s city.",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 101
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 102,
+        "fields": {
+            "title": "Women of Excellence - In the time of the Prophet ﷺ - Comprehensive directory of more than 260 female Companions",
+            "creators": "Talib Hashimi",
+            "description": "In the age of individualism and celebrity, Talib Hashimi's thorough and comprehensive directory of more than 260 female Companions is an enlightening and timely bridge to a world of excellence. Among them, we find fearless martyrs, truthful businesswomen, erudite scholars, articulate poets, brave defenders of the Prophet ﷺ, generous neighbours and devoted mothers and daughters, may Allah be pleased with them all.\n\nThe guidance of the Prophet ﷺ reigned supreme in their lives, no matter the personal cost to their health, wealth and even lives. They lived this life, as travellers, seeking a glorious final abode.\n\nThese pages are rich in lessons for all those seeking to follow the straight path and will provoke deep spiritual introspection into our own relationships with Allah and His Messenger ﷺ.",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 102
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 103,
+        "fields": {
+            "title": "A Handbook of Accepted Prayers",
+            "creators": "Ibn Daud",
+            "description": "Are your duas not being accepted? Unhealthy addictions and depression are widespread: some of us find the uncertainty and emotional darkness eating away at us. 700 years ago, a diligent Muslim scholar told of a cost-free universal psychotherapeutic cure, writing: \"Happiness comes with sincere du'a.\" He was Al-Qayyim Al-Jawziyyah (RA); his teacher was Ibn Taymiyyah (RA). Riding on the coattails of our pious predecessors, we too seek routes to accepted prayers and eternal reward within the tradition of the Holy Qur'an and authentic ahadith (Prophetic sayings). This book builds on the debut A Handbook of Spiritual Medicine and isn't simply a compilation of recommended du'as. Instead, it is a carefully considered framework that aligns our emotions with the most beautiful du'as, all of which have a profound constructive purpose: the aim is to transport us smilingly and with the noblest etiquette towards the ma'arifat (higher knowledge of Allah SWT) and istiqamah (steadfastness) that every Muslim seeks, deep down. This is the perfect Islamic book if you want your du'as to become accepted.",
+            "publisher": "Ibn Daud Books",
+            "publish_date": "2024-03-15",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 103
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 104,
+        "fields": {
+            "title": "A Handbook of Prophetic Characteristics",
+            "creators": "Ibn Daud",
+            "description": "A Handbook of Prophetic Characteristics offers a transformative approach to embodying the timeless virtues of the Prophet Muhammad ﷺ, blending tradition with practical applications for modern life. Designed to enrich the literature on Islamic character (akhlāq), this accessible guide resonates with readers of all ages and backgrounds, whether believers or seekers of inner peace and moral clarity.",
+            "publisher": "Ibn Daud Books",
+            "publish_date": "2025-09-12",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 104
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 105,
+        "fields": {
+            "title": "A Handbook of Spiritual Medicine",
+            "creators": "Ibn Daud",
+            "description": "This spiritual guide to the self is a handbook of tazkiyah or 'self-purification'. Not only does it illustrate the maladies of the human spiritual condition, it recognises the struggles and insecurities we all succumb to from time to time, and offers up the remedies too. The antidotes to our ailments are drawn from Qur'anic verses and authenticate ahadith (Prophetic sayings), inspiring mindfulness of the Almighty Cherisher (SWT) and His Beloved Prophet (PBUH). This guidebook, drawing on the 11th and 12th Century works of the 'Proof of Islam' and the wondrous sage, Imam Abu Hamid Al-Ghazali can be applied to our busy lives in the modern, hi-tech era, and will prove accessible to people of all ages, all denominations: believers and non-believers alike.",
+            "publisher": "Ibn Daud Books",
+            "publish_date": "2022-04-05",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 105
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 106,
+        "fields": {
+            "title": "Khasa' ail Commentary of Shamail",
+            "creators": "Muhammad ibn Isa at-Tirmidhi, Muhammad Zakariyya Kandhlawi",
+            "description": "Imam Tirmidhi's Ash-Shama'il al-Muhammadiyyah is a distinguished compendium of Hadith discussing the perfect features, lofty attributes, and qualities of the Messenger of Allah ﷺ. Throughout history, many scholars have penned commentaries on the Shama'il and the great scholar, Shaykh al-Hadith Muhammad Zakariyya Kandhlawi, has also added an invaluable addition in the Urdu language, titled Khasa'il Nabawi - a beneficial and invigorating commentary for scholars and the general public alike. This English translation presents the Hadith compiled by Imam Tirmidhi alongside Shaykh Zakariyya's commentary. Readers can anticipate beautiful examples of the Messenger of Allah's ﷺ blessed lifestyle, his perfect characteristics, habits, style, morals, and worship in a clear, coherent, and comprehensible style.",
+            "publisher": "Turath Publishing",
+            "publish_date": "2021-01-01",
+            "total_copies": 3,
+            "available_copies": 3,
+            "unique_number": 106
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 107,
+        "fields": {
+            "title": "Daily Wisdom",
+            "creators": "Abdur Raheem Kidwai",
+            "description": "This beautiful presentation of a selection from the Holy Qur'an engages the reader in a moment of daily reflection. Edited for ease of comprehension, English-speaking readers will find this compilation both spiritually enriching and easy to understand. With 365 verses covering the whole year, this is a must for every home. An introduction to the Qur'an and its eternal message for humanity is included, giving the reader an insight into its origin, purpose, and style. Abdur Raheem Kidwai is professor of English at the Aligarh Muslim University in India and the well-known author of many works on the Qur'an and Islam.",
+            "publisher": "Kube Publishing Limited",
+            "publish_date": "2012-04-27",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 107
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 108,
+        "fields": {
+            "title": "Fortress Of The Muslim (Du'a From The Qur'an & Sunnah)",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 10,
+            "available_copies": 10,
+            "unique_number": 108
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 109,
+        "fields": {
+            "title": "Understanding Islam and the Muslims: The Muslim Family and Islam and World Peace",
+            "creators": "T. J. Winter, John A. Williams",
+            "description": "Book by Winter, T. J., Williams, John A.",
+            "publisher": "Fons Vitae",
+            "publish_date": "2002-01-01",
+            "total_copies": 5,
+            "available_copies": 5,
+            "unique_number": 109
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 110,
+        "fields": {
+            "title": "Islam",
+            "creators": "Abdul Wadod Shalabi, Abdal Hakim Murad (Editor)",
+            "description": "Written by an Islamic scholar who combines traditional religious training from al-Azhar University and Western education from the University of Cambridge, where he received his doctorate, this book provides an introductions to Islam for an educated readership.",
+            "publisher": "Starlatch Press",
+            "publish_date": "2001-12-01",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 110
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 111,
+        "fields": {
+            "title": "Absolute Essentials of Islam",
+            "creators": "Amin ibn Muhammad Jundi, Faraz Fareed Rabbani (Compiled by)",
+            "description": "A Basic Hanafi Primer on Faith, Prayer, & the Path of SalvationAllah has commanded us to worship and obey Him, with sincerity, out of reverence, love, and thankfulness. He says in the Qur'an, ?And they are ordered only to serve Allah, keeping religion pure for Him, to remain upright, and to establish worship and to pay the poor-due. That is true religion? (Qur'an, 98.5).This worship is not possible without knowledge. This short work outlines the absolute essentials of this knowledge: in faith, prayer, and key points related to one's life and dealings.It is based on the methodology of traditional Sunni Islam, according to the Hanafi school, the largest school of Islamic law, and its purpose is to make one's worship valid, sound, and proper in a short amount of time.' Learn the basics & essentials of Islamic beliefs? Make your purification and prayer proper, sound, & valid? Learn key issues on the path to Paradise",
+            "publisher": "White Thread Press",
+            "publish_date": "2004-12-01",
+            "total_copies": 5,
+            "available_copies": 5,
+            "unique_number": 111
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 112,
+        "fields": {
+            "title": "al-Khasa'is al-Muhammadiyyah",
+            "creators": "Shaykh 'Izz al-Din ibn 'Abd al-Salam, Imam Jalal Al-Din Al-Suyuti, Shaykh Muhammad al-Mahdi al-Fasi",
+            "description": "The science of Khasa'is encompasses the study of the uniqueness of the actions, the attributes, and the essence of the Messenger of Allah ﷺ, as well as the special gifts given to him, and the special gifts that are given to the Muslim Ummah by virtue of their status as the Ummah of Muhammad ﷺ. Knowledge of the Khasa'is is considered to be one of the keys to benefiting from one's relationship with the Messenger of Allah ﷺ, since his unique aspects provide openings to innumerable blessings. In the history of Islam, the earliest works in the genre of Khasa'is date from the time of the early Imams and compilers of Hadith. This present work consists of translations of two major works in the genre of Khasais and one supplemental work from three of the great scholars of the Bidayat al-Sul fi Tafdhil al-Rasul ﷺ of Shaykh 'Izz al-Din ibn 'Abd al-Salam, as well as Unmūdhaj al-Labīb fi Khasa’is al-Habib ﷺ of Imam Jalal al-Din al-Suyuti, and selections from Matali' al-Masarrat li Jala' Dala'il al-Khayrat of Shaykh Muhammad al-Mahdi al-Fasi. However, in modern times the science of Khasa'is has been neglected, to the point that many Muslims have become unaware of its existence. This present volume is an attempt to rectify this deficiency, to present the Khasa'is to an English-speaking audience in a manner befitting the unique honor, majesty, and significance of Allah's Final Messenger ﷺ. Each page is the result of a collaboration of a world-class team of translators, editors, designers, typesetters, and printers from across four continents, and every detail represents a fusion of traditional knowledge and design elements with state-of-the-art book production methods. The result is a work the like of which has never before been printed in the English language, that is sure to occupy a place of honor in the library or home.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2023-01-01",
+            "total_copies": 5,
+            "available_copies": 5,
+            "unique_number": 112
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 113,
+        "fields": {
+            "title": "The Book on the Mysteries of the Pilgrimage for Young People",
+            "creators": "Ghazzali",
+            "description": "\"Imam al-Ghazalis book on Hajj includes a summary of the essential inner provisions that must be part of everyones daily life journey whether performing the pilgrimage or not. While conveying the deeper significance and spirit of the Hajj rites, this work highlights teachings which may not only strengthen character but also might provide the whole family with a firmer foundation for spiritual growth. This adaptation of al-Ghazalis Book on the Mysteries of the Pilgrimage is not written in a language for young children. Parents and teachers can easily adjust the important and relevant teachings which the book contains for little ones, although a special section is included for them. Wherever possible, we have included al-Ghazalis own words rather than paraphrase them, in order that the reader can enjoy his wonderful way of expressing ideas. This is indicated by the use of single ( and ) quotation marks. Clearly, we could not include all the beautiful supplications and prayers in this version for young people. These are available in the educator/pilgrims accompanying translation from the original Arabic, as well as Hajj details of matters specifically for adults. This volume cannot replace modern Hajj manuals which take into account the various changes which have occurred since the 1100s CE and other adjustments needed to accommodate the ever-increasing number of pilgrims. Although outward changes may have taken place, the essentials endure. It is important to offer the young a way to understand the profound significance of this crowning fifth pillar of their faith, as well as a real appreciation of what the Hajj entails. Most important of all, this knowledge can strengthen taqwa. It can nourish and relate to everyday life experiences. It can help prepare the young for the inevitable loss of loved ones. May God u forgive any misunderstandings and mistakes made in conveying the wise counsel and teachings of blessed Imam al-Ghazali\"--",
+            "publisher": "Fons Vitae of Kentucky, Incorporated",
+            "publish_date": "2020-01-01",
+            "total_copies": 4,
+            "available_copies": 4,
+            "unique_number": 113
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 114,
+        "fields": {
+            "title": "Muhammad - The Last Prophet: A Model for All Time: A Model For All Time",
+            "creators": "Syed Abul Hasan Ali Nadwi",
+            "description": "Muhammad, The Last Prophet presents a comprehensive account of the life of the last Prophet - Muhammad (peace and blessings be upon him). This translation allows young English-speaking Muslims to benefit from Syed Abul Hasan Ali Nadwi's renowned Islamic scholarship. The work covers the historical background to the call to Islam as well as provides an authentic description of the experiences encountered by Allah's Messenger as he struggled to bring his wayward community to the Divine Path.This book offers guidance and inspiration to young Muslims seeking answers to the evil's in today's society. Relying on the Holy Qur'an and its contemporary sources, the author illustrates how the natural order was restored from chaos 1.400 years ago.SAYYED ABUL HASAN 'ALI NADWI (1914-99) was one of the leading Muslim scholars of his time. He was a powerful and eloquent writer and orator, both in Urdu and Arabic. He wrote prolifically, and many of his books for children have been translated into English: among them are Stories of the Prophets; A Starlight View of Islam's Past; Stories from Islamic History and The Minaret Speaks.",
+            "publisher": "Nadwi Press",
+            "publish_date": "2023-12-08",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 114
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 115,
+        "fields": {
+            "title": "Miracles of the Prophet Muhammad: Selections from \"The Shifa\" of Qadi 'Iyad",
+            "creators": "Qadi 'Iyad b. Musa al-Yahsubi, Jody McIntyre",
+            "description": "From the text:“The reader should know that we did not compile this book for the one who denies the status of the Prophet ﷺ, nor the one who wants to find doubts in the miracles he performed….Our intention in this chapter is to document the greatest miracles and signs, both of which indicate the greatness of the abilities that Allah has bestowed upon the Prophet ﷺ. We have presented those miracles that have been meticulously studied and possess the most authentic chains of transmission. And most of what has been transmitted is undisputedly authentic, or almost so, to which we have added some of the narrations found in the well-known books of reputable scholars.“If an equitable person reflects on what we have presented, from the beauty of his effect on people, the praiseworthiness of his life, the ingenuity of his knowledge, his ability to act with wisdom and understanding, the completeness of his speech and all his traits, whilst being a witness to the circumstances he lived in and the benefit in what he said, they would neither doubt the veracity of his Prophethood nor the truth of his call. And these characteristics alone are sufficient for a person to embrace Islam and to believe in the Prophet ﷺ.”Studying the miracles of the Prophet Muhammad ﷺ helps those who have responded to his call and believed in his Prophethood to reinforce their love for him, to renew their efforts to perform righteous actions, and to increase in faith (īmān). This is why Qāḍī 'Iyāḍ devoted a section of his celebrated work, al-Shifā’, to the discussion of Prophetic miracles. The IGI team chose to publish this section so that it might be easily available for study and review, which will serve both the busy student and the working professional on the go.Al-Shifā bi Taʿrīf Ḥuqūq al-Muṣṭafā, directly translated as, ‘The Remedy (or Cure) Through Recognizing the Rights of the Chosen One’, is one of the most celebrated works in the genre of Shamā’il. It stands uniquely amongst the works of Qāḍī ʿIyād as his most celebrated effort with many surviving manuscripts and commentaries found throughout the Islamic world. Shamā’il is a genre of works that deals with the life, characteristics, and descriptions of the Prophet ﷺ and his station.Al-Shifā, as it is called for short, stands alone as perhaps the most thorough work in this genre, dealing with both the descriptions of the Prophet ﷺ, his station and his perfections, and with the rulings pertaining to one’s belief and treatment of him ﷺ. It is exhaustive in its treatment of the subject, expounding on topics that range from Allah’s praise of the Prophet ﷺ and his status and station before Him, to the obligation of loving him and what that entails. In short, the uniqueness of this work can be attributed to its holistic coverage of the Messenger ﷺ.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2022-02-01",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 115
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 116,
+        "fields": {
+            "title": "Muhammad: Prophet of Peace Amid the Clash of Empires",
+            "creators": "Juan Cole",
+            "description": "In the midst of the dramatic seventh-century war between two empires, Muhammad was a spiritual seeker in search of community and sanctuary. Many observers stereotype Islam and its scripture as inherently extreme or violent-a narrative that has overshadowed the truth of its roots. In this masterfully told account, preeminent Middle East expert Juan Cole takes us back to Islam's-and the Prophet Muhammad's-origin story. Cole shows how Muhammad came of age in an era of unparalleled violence. The eastern Roman Empire and the Sasanian Empire of Iran fought savagely throughout the Near East and Asia Minor. Muhammad's profound distress at the carnage of his times led him to envision an alternative movement, one firmly grounded in peace. The religion Muhammad founded, Islam, spread widely during his lifetime, relying on soft power instead of military might, and sought armistices even when militarily attacked. Cole sheds light on this forgotten history, reminding us that in the Qur'an, the legacy of that spiritual message endures. A vibrant history that brings to life the fascinating and complex world of the Prophet, Muhammad is the story of how peace is the rule and not the exception for one of the world's most practiced religions.",
+            "publisher": "Bold Type Books",
+            "publish_date": "2018-10-09",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 116
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 117,
+        "fields": {
+            "title": "Meeting Muhammad",
+            "creators": "Omar Suleiman",
+            "description": "This beautifully presented book provides 30 reflections from the life of our beloved Prophet Muhammad (PBUH) to try to understand and emulate him.",
+            "publisher": "",
+            "publish_date": "2022-04-05",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 117
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 118,
+        "fields": {
+            "title": "Celebrating the Birth of the Prophet",
+            "creators": "Muhammad Alawi Al-Maliki, Habib Umar Bin Hafiz, Rashad Jameer",
+            "description": "This book, which is a work of the late Muhaddith of Makkah, Sayyid Shaykh Muhammad Alawi al-Maliki, may Allah have mercy upon him, seeks to present the case for celebrating the birth of the Best of Creations, Sayyidna Muhammad, may Allah bless him and grant him peace. What Will I Learn? The Proofs of the Permissibility of Celebrating the Birth of the Prophet; Learn what Shaykh Muhammad Alawi al-Maliki says about the five categories of innovation; Learn what some of Islam's scholarly giants have said about the Mawlid throughout history. New Additions in the Second Edition from Habib 'Umar bin Hafiz: Being with Allah and His Messenger; When the Month of Rabi al-Awwal Arrives; Dealing With Those Who Disagree With the Mawlid.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2020-10-17",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 118
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 119,
+        "fields": {
+            "title": "Prayers Upon the Beloved: Supplications by Allah’s Most Beautiful Names for the One Who Had the Most Beautiful Traits",
+            "creators": "Habib Umar bin Hafiz, Abduragmaan Khan, Abdullah Salih",
+            "description": "In the age that we live in, our days have become our nights and our nights have become our days. We are continually focusing on this temporary life, turning a blind eye to that which matters, such as the teachings of the best of creation, the one who uttered the supplication: “O Allah: my nation, my nation!” It is none other than the Prophet Muhammad ﷺ. Our pious predecessors understood the importance of one’s tongue being moist with the remembrance of the beloved. They ensured that some - if not all - of their time was enveloped in the prayers upon the Prophet Muhammad ﷺ. This compilation is unique in that each form of prayer highlights the connection between the Messenger ﷺ and the Names and Qualities of Allah ﷻ. In addition, each form includes a unique supplication for the one reciting it. The reciter of these prayers thus finds himself engaging in the remembrance of Allah ﷻ by calling Him through His Most Sublime Names, and asking Him to send prayers and increase the honour and rank of the Messenger ﷺ. By doing this, he obtains the virtues and reward of sending prayers upon the Prophet ﷺ, and also supplicates to Allah, asking Him such amazing things that we are generally unable to think of when asking of Him. The author, Habib Umar bin Hafiz, a descendant of the Prophet Muhammad ﷺ, is one of the great luminaries of our time. This book has been made available to English speakers for whom we ask Allah to make it a means to attain proximity, in this life and the Hereafter, to Him and the Prophet Muhammad ﷺ.",
+            "publisher": "Imam Ghazali Publishing",
+            "publish_date": "2020-11-10",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 119
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 120,
+        "fields": {
+            "title": "Khadijah",
+            "creators": "Fatima Barkatulla",
+            "description": "",
+            "publisher": "Learning Roots",
+            "publish_date": "2020-01-01",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 120
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 121,
+        "fields": {
+            "title": "Joy Jots",
+            "creators": "Tamara Gray",
+            "description": "The second edition of Joy Jots a collection of 52 weekly essays that take the reader through a year of seasons, blessings and joyful spiritual growth. The reader goes on a journey from lessons learned to lessons lived, from talking about joy to feeling joy, from the limitation of sadness to the freedom of joy. A joy jot is a phrase coined around mindful thankfulness. As the reader works through the reflection prompts and practical projects, she will find herself collecting joy jots; happy moments or points of deep thankfulness to God. As the habit of joy develops, the reader will begin to know herself better, draw closer to her fellow human beings, and set herself firmly upon the path that leads to real, all-encompassing joy - in this life and the next.",
+            "publisher": "",
+            "publish_date": "2019-08-22",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 121
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 122,
+        "fields": {
+            "title": "Prophetic Grace : The Qur’anic Merits of the Prophet Muhammad",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 122
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 123,
+        "fields": {
+            "title": "A Treasury of Hadith",
+            "creators": "Mokrane Guezzou (Translator), Shaykh al-Islam Ibn Daqiq al-'Id, Imam Nawawi",
+            "description": "Imam Nawawi's collection of forty twohadith brings together some of the most important and pivotal Prophetic traditions. Each tradition encapsulates a great rule of the religion of Islam, described by Islamic religious scholars as an \"axis\" in Islam. The commentary of the greathadith master Shaykh al-Islam Ibn Daqiq al-'Id is simple but erudite. Mokrane Guezzou is a well-known translator of over ten works including the Qur'an commentaryWahidi's Asbab al-Nuzul. Ibn Daqiq al-'Id (d.1302) is accounted as one of Islam's great scholars in the fundamentals of Islamic law and belief. Imam Nawawi (1233-77) was an authority onhadith and a biographer, lexicologist, and Sufi.",
+            "publisher": "Kube Publishing Limited",
+            "publish_date": "2014-08-08",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 123
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 124,
+        "fields": {
+            "title": "The Life of the Prophet Muhammad",
+            "creators": "Leila Azzam",
+            "description": "The Life of the Prophet Muhammad",
+            "publisher": "Islamic Texts Society",
+            "publish_date": "1999-12-01",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 124
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 125,
+        "fields": {
+            "title": "The Prayer of the Oppressed w/ CD",
+            "creators": "Imam Muhammad bin Nasir al-Dar'i, Hamza Yusuf Hanson",
+            "description": "Comes with a Audio CD The Power of this prayer of Imam Muhammad al-DarÏ lies in its simplicity, its purity, and its sincere supplication. It is essentially a plea to God that our transgressions be overlooked, that divine mercy be bestowed upon us, that social justice be restored in spite of us, that wrongs be righted, and that righteousness reign once again in our lands, so that the destitute may no longer be in need, the young may be educated, the animals purpose fulfilled, rain restored, and bounties poured forth. It is a plea to be freed from the aggression of foreigners in lands over which they have no right a plea much needed in our modern world, rampant as it is with invasions and territorial occupations. Ultimately, it asks not that our enemies be destroyed, but simply that their plots, and the harm they cause, be halted. Its essence is mercy, which in turn is the essence of the Messenger of God, Muhammad(saw): And We have only sent you as a mercy to all the worlds.",
+            "publisher": "Sandala",
+            "publish_date": "2012-06-07",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 125
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 126,
+        "fields": {
+            "title": "Muhammad: A Quranic Exposition of His Excellence and Virtues",
+            "creators": "",
+            "description": "",
+            "publisher": "",
+            "publish_date": "",
+            "total_copies": 1,
+            "available_copies": 1,
+            "unique_number": 126
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 127,
+        "fields": {
+            "title": "The Subtle Blessings in the Saintly Lives of Abul-Abbas al- Mursi: And His Master Abul-Hasan",
+            "creators": "Ibn Ata' Allah al-Iskandari, Nancy Roberts",
+            "description": "This deeply personal reminiscence of one man's growth in Islamic mysticism is a tribute to the two great shaykhs who molded his spiritual life and vision. Filled with anecdotes illustrating the shaykhs' spiritual gifts and insights, the text not only conveys the beauty and inspiration of these men's lives and their utter devotion to God, but also helps readers to approach a life of devotion and inimitable blessings. Sufi interpretations of Qur'an passages and traditional Sufi spiritual litanies are included. An appendix features an account of female gnostic Hajja Zakia's life and devotion to Shaykh Abul Hasan and is augmented by a photographic essay.",
+            "publisher": "Fons Vitae",
+            "publish_date": "2005-09-28",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 127
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 128,
+        "fields": {
+            "title": "Daily Wisdom: Sayings of the Prophet Muhammad",
+            "creators": "Abdur Raheem Kidwai",
+            "description": "This beautiful presentation of the Prophet Muhammad's teachings engages the reader in a moment of daily reflection.",
+            "publisher": "Kube Publishing Ltd",
+            "publish_date": "2010-08-17",
+            "total_copies": 2,
+            "available_copies": 2,
+            "unique_number": 128
+        }
+    }
+]

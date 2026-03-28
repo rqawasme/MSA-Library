@@ -3,9 +3,12 @@ from accounts.models import User
 
 class Book(models.Model):
     title = models.CharField(max_length=255, blank=False)
-    description = models.TextField()
-    author = models.CharField(max_length=255)
-    available = models.BooleanField(default=True, blank=False)
+    description = models.TextField(blank=True)
+    creators = models.CharField(max_length=255, blank=True)
+    publisher = models.CharField(max_length=255, blank=True)
+    publish_date = models.CharField(max_length=100, blank=True)
+    total_copies = models.IntegerField(default=1)
+    available_copies = models.IntegerField(default=1)
     # image = models.ImageField()
     unique_number = models.IntegerField(unique=True, blank=False)
 
