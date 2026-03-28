@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ book.title }} — MSA Library{% endblock %}
+{% block main_title %}Book Details{% endblock %}
+
+{% block content %}
+<div class="page-content">
+
+  <a href="{% url 'books' %}" class="back-link">&larr; Browse Books</a>
+
+  <div class="book-detail">
+    <div class="book-detail-cover">
+      {% if book.isbn %}
+      <img src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-L.jpg" alt="{{ book.title }}">
+      {% else %}
+      <div class="book-detail-no-cover">No Cover</div>
+      {% endif %}
+    </div>
+
+    <div class="book-detail-info">
+      <h2 class="book-detail-title">{{ book.title }}</h2>
+
+      {% if book.creators %}
+      <div class="book-detail-creators">{{ book.creators }}</div>
+      {% endif %}
+
+      {% if book.publisher or book.publish_date %}
+      <div class="book-detail-meta">
+        {% if book.publisher %}{{ book.publisher }}{% endif %}
+        {% if book.publisher and book.publish_date %} &middot; {% endif %}
+        {% if book.publish_date %}{{ book.publish_date|slice:":4" }}{% endif %}
+      </div>
+      {% endif %}
+
+      {% if book.description %}
+      <div class="book-detail-description">{{ book.description }}</div>
+      {% endif %}
+
+      <div class="book-detail-footer">
+        <span class="book-number"># {{ book.unique_number }}</span>
+        {% if book.available_copies == 0 %}
+          <button class="btn-checkout" disabled>Unavailable</button>
+        {% elif user_has_borrowed %}
+          <button class="btn-checkout" disabled>Already Borrowed</button>
+        {% elif user_borrow_count >= 3 %}
+          <button class="btn-checkout" disabled>Limit Reached</button>
+        {% else %}
+          <form method="post" action="{% url 'checkout' book.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn-checkout">Borrow</button>
+          </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

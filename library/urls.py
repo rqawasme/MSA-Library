@@ -15,6 +15,7 @@ urlpatterns = [
     path('', views.BooksView.as_view(), name='home'),
     path('signin/', views.MyBorrowsView.as_view(), name='signin'),
     path('books/', views.BooksView.as_view(), name='books'),
+    path('books/<int:book_id>/', views.BookDetailView.as_view(), name='book_detail'),
     path('checkout/<int:book_id>/', views.CheckoutView.as_view(), name='checkout'),
     path('return/<int:signout_id>/', views.ReturnView.as_view(), name='return_book'),
     path('addbook/', views.AddBookView.as_view(), name='addbook'),

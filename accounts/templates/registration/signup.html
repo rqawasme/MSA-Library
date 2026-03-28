@@ -1,23 +1,136 @@
 {% extends 'base.html' %}
 
-{% block title %}Sign Up — MSA Library{% endblock %}
-{% block main_title %}Create Account{% endblock %}
+{% block title %}Create Account — MSA Library{% endblock %}
+{% block main_title %}Join the Library{% endblock %}
 
 {% block content %}
-<div class="form-card">
-  <div class="form-card-title">Sign Up</div>
+<div class="form-card" style="max-width:560px;">
+
+  <div class="form-card-title">Create your account</div>
   <div class="form-card-subtitle">
-    Already have an account? <a href="{% url 'login' %}" style="color:var(--red);font-weight:600;">Log In</a>
+    Already a member? <a href="{% url 'login' %}" style="color:var(--red);font-weight:600;">Log in</a>
   </div>
 
-  <p style="font-size:13px;color:var(--text-3);margin-bottom:20px;background:var(--bg);padding:10px 14px;border-radius:var(--radius-sm);">
-    * Password is optional and can be left blank
-  </p>
+  {% if form.non_field_errors %}
+  <div class="alert alert-error">
+    {% for error in form.non_field_errors %}{{ error }}{% endfor %}
+  </div>
+  {% endif %}
 
-  <form method="post">
+  <form method="post" novalidate>
     {% csrf_token %}
-    <div class="django-form">{{ form.as_p }}</div>
-    <button type="submit" class="btn-primary btn-full">Create Account</button>
+
+    <!-- Name row -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div class="form-group">
+        <label for="{{ form.first_name.id_for_label }}">First Name</label>
+        <input
+          type="text"
+          id="{{ form.first_name.id_for_label }}"
+          name="{{ form.first_name.html_name }}"
+          value="{{ form.first_name.value|default_if_none:'' }}"
+          placeholder="Aisha"
+          autocomplete="given-name"
+          {% if form.first_name.errors %}style="border-color:#C62828;"{% endif %}
+        >
+        {% if form.first_name.errors %}
+        <div style="font-size:12px;color:#C62828;margin-top:4px;">{{ form.first_name.errors|join:", " }}</div>
+        {% endif %}
+      </div>
+      <div class="form-group">
+        <label for="{{ form.last_name.id_for_label }}">Last Name</label>
+        <input
+          type="text"
+          id="{{ form.last_name.id_for_label }}"
+          name="{{ form.last_name.html_name }}"
+          value="{{ form.last_name.value|default_if_none:'' }}"
+          placeholder="Khan"
+          autocomplete="family-name"
+          {% if form.last_name.errors %}style="border-color:#C62828;"{% endif %}
+        >
+        {% if form.last_name.errors %}
+        <div style="font-size:12px;color:#C62828;margin-top:4px;">{{ form.last_name.errors|join:", " }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="{{ form.email.id_for_label }}">SFU Email Address</label>
+      <input
+        type="email"
+        id="{{ form.email.id_for_label }}"
+        name="{{ form.email.html_name }}"
+        value="{{ form.email.value|default_if_none:'' }}"
+        placeholder="you@sfu.ca"
+        autocomplete="email"
+        {% if form.email.errors %}style="border-color:#C62828;"{% endif %}
+      >
+      {% if form.email.errors %}
+      <div style="font-size:12px;color:#C62828;margin-top:4px;">{{ form.email.errors|join:", " }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label for="{{ form.phone_number.id_for_label }}">Phone Number</label>
+      <input
+        type="tel"
+        id="{{ form.phone_number.id_for_label }}"
+        name="{{ form.phone_number.html_name }}"
+        value="{{ form.phone_number.value|default_if_none:'' }}"
+        placeholder="+1 (604) 555-0100"
+        autocomplete="tel"
+        {% if form.phone_number.errors %}style="border-color:#C62828;"{% endif %}
+      >
+      {% if form.phone_number.errors %}
+      <div style="font-size:12px;color:#C62828;margin-top:4px;">{{ form.phone_number.errors|join:", " }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Password section -->
+    <div style="border-top:1px solid var(--border);margin:20px 0 16px;padding-top:16px;">
+      <div style="font-size:12px;color:var(--text-3);margin-bottom:14px;background:var(--bg);padding:10px 14px;border-radius:var(--radius-sm);line-height:1.5;">
+        Password is <strong>optional</strong> — you can leave both fields blank and log in with your email only.
+      </div>
+
+      <div class="form-group">
+        <label for="{{ form.password1.id_for_label }}">Password <span style="font-weight:400;color:var(--text-3);">(optional)</span></label>
+        <input
+          type="password"
+          id="{{ form.password1.id_for_label }}"
+          name="{{ form.password1.html_name }}"
+          placeholder="Leave blank if not needed"
+          autocomplete="new-password"
+          {% if form.password1.errors %}style="border-color:#C62828;"{% endif %}
+        >
+        {% if form.password1.errors %}
+        <div style="font-size:12px;color:#C62828;margin-top:4px;">{{ form.password1.errors|join:", " }}</div>
+        {% endif %}
+      </div>
+
+      <div class="form-group" style="margin-bottom:0;">
+        <label for="{{ form.password2.id_for_label }}">Confirm Password <span style="font-weight:400;color:var(--text-3);">(optional)</span></label>
+        <input
+          type="password"
+          id="{{ form.password2.id_for_label }}"
+          name="{{ form.password2.html_name }}"
+          placeholder="Repeat password"
+          autocomplete="new-password"
+          {% if form.password2.errors %}style="border-color:#C62828;"{% endif %}
+        >
+        {% if form.password2.errors %}
+        <div style="font-size:12px;color:#C62828;margin-top:4px;">{{ form.password2.errors|join:", " }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <button type="submit" class="btn-primary btn-full" style="margin-top:20px;">Create Account</button>
+
+    <p style="margin-top:14px;font-size:12px;color:var(--text-3);text-align:center;line-height:1.6;">
+      By signing up you agree to use this library responsibly and return books on time.
+    </p>
   </form>
+
 </div>
 {% endblock %}

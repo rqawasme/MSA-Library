@@ -31,6 +31,19 @@ class BooksView(LoginRequiredMixin, ListView):
         return context
 
 
+class BookDetailView(LoginRequiredMixin, View):
+    def get(self, request, book_id, *args, **kwargs):
+        book = get_object_or_404(Book, id=book_id)
+        active = Signout.objects.filter(user=request.user, signed_back_in=False)
+        active_ids = set(s.book_id for s in active)
+        context = {
+            'book': book,
+            'user_has_borrowed': book.id in active_ids,
+            'user_borrow_count': len(active_ids),
+        }
+        return render(request, 'library/book_detail.html', context)
+
+
 class CheckoutView(LoginRequiredMixin, View):
     def post(self, request, book_id, *args, **kwargs):
         book = get_object_or_404(Book, id=book_id)
@@ -98,6 +111,7 @@ class AddBookView(UserPassesTestMixin, View):
         publisher = request.POST.get('publisher')
         publish_date = request.POST.get('publish_date')
         total_copies = int(request.POST.get('total_copies') or 1)
+        isbn = request.POST.get('isbn', '').strip()
 
         if title == '':
             errors.append("Title is Empty!")
@@ -106,7 +120,7 @@ class AddBookView(UserPassesTestMixin, View):
         try:
             book = Book(title=title, creators=creators, description=description, publisher=publisher,
                         publish_date=publish_date, total_copies=total_copies, available_copies=total_copies,
-                        unique_number=book_number)
+                        isbn=isbn, unique_number=book_number)
             book.save()
         except:
             errors.append("Book number is not unique!")
