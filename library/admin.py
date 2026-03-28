@@ -5,7 +5,7 @@ from library.models import Book, Signout
 # Register your models here.
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = [ 'title', 'description', 'author', 'available', 'unique_number']
+    list_display = ['title', 'creators', 'available_copies', 'total_copies', 'unique_number']
     
 @admin.register(Signout)
 class SignoutAdmin(admin.ModelAdmin):
