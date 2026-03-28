@@ -1,53 +1,67 @@
 {% extends 'base.html' %}
 
-{% block title %}Add a Book{% endblock %}
-
+{% block title %}Add a Book — MSA Library{% endblock %}
 {% block main_title %}Add a Book{% endblock %}
 
 {% block content %}
-<div class="red_header">
-  <h2>Add a book</h2>
-</div>
-<div class="form">
-  <form method="post">
-    {%csrf_token%}
-    {% if error %}
-    <div class="error">
-      <p>Cannot save the book. Please correct the following: </p>
-      <ul>
-      {% for bad in errors %}
-          <li>{{ bad }}</li>
-      {% endfor %}
+<div class="form-card" style="max-width: 600px;">
+  <div class="form-card-title">Add a Book</div>
+  <div class="form-card-subtitle">Add a new book to the library inventory.</div>
+
+  {% if error %}
+  <div class="alert alert-error">
+    <div>
+      <strong>Could not save the book:</strong>
+      <ul style="margin-top: 6px; padding-left: 16px;">
+        {% for bad in errors %}<li>{{ bad }}</li>{% endfor %}
       </ul>
     </div>
-    {% endif %}
+  </div>
+  {% endif %}
 
-    {% if book %}
-      <h4>Successfully added {{book.title}} to the library!</h4>
-    {% endif %}
-    
-    <label for="book_number">Book Unique Number: </label>
-    <input id="book_number" type="number" name="book_number" class="input_field">
+  {% if book %}
+  <div class="alert alert-success">✓ <strong>{{ book.title }}</strong> has been added to the library!</div>
+  {% endif %}
 
-    <label for="title">Book Title: </label>
-    <input id="title" type="text" name="title" class="input_field">
+  <form method="post">
+    {% csrf_token %}
 
-    <label for="creators">Creators: </label>
-    <input id="creators" type="text" name="creators" class="input_field">
+    <div class="form-group">
+      <label for="book_number">Book Unique Number</label>
+      <input id="book_number" type="number" name="book_number" placeholder="Unique identifier">
+    </div>
 
-    <label for="publisher">Publisher: </label>
-    <input id="publisher" type="text" name="publisher" class="input_field">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input id="title" type="text" name="title" placeholder="Book title">
+    </div>
 
-    <label for="publish_date">Publish Date: </label>
-    <input id="publish_date" type="text" name="publish_date" class="input_field">
+    <div class="form-group">
+      <label for="creators">Author / Creators</label>
+      <input id="creators" type="text" name="creators" placeholder="Author name(s)">
+    </div>
 
-    <label for="description">Description: </label>
-    <input id="description" type="text" name="description" class="input_field">
+    <div class="form-group">
+      <label for="publisher">Publisher</label>
+      <input id="publisher" type="text" name="publisher" placeholder="Publisher name">
+    </div>
 
-    <label for="total_copies">Number of Copies: </label>
-    <input id="total_copies" type="number" name="total_copies" value="1" min="1" class="input_field">
+    <div class="form-group">
+      <label for="publish_date">Publish Date</label>
+      <input id="publish_date" type="text" name="publish_date" placeholder="e.g. 2023-01-01">
+    </div>
 
-    <input type="submit" value="Submit" class="input_button">
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" name="description" placeholder="Brief description of the book"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="total_copies">Number of Copies</label>
+      <input id="total_copies" type="number" name="total_copies" value="1" min="1">
+    </div>
+
+    <button type="submit" class="btn-primary btn-full">Add Book</button>
   </form>
 </div>
 {% endblock %}

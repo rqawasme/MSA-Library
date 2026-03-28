@@ -1,88 +1,114 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}MSA Library{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'pages/css/styles.css' %}">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-  <div id="nav">
-    {% comment %} the side bar {% endcomment %}    
-    <div id="pancake" class="pancake_sidebar w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-      <button onclick="pancake_close()" class="w3-bar-item w3-large">Close &times;</button>
-      <a href="/" class="w3-bar-item w3-button">Borrow a Book</a>
-      <a href="/signin/" class="w3-bar-item w3-button">Return a Book</a>
-      <a href="/books/" class="w3-bar-item w3-button">Books List</a>
+
+  <!-- ── Top Nav ── -->
+  <nav id="nav">
+    <a href="/" class="nav-brand">
+      <img src="{% static 'images/msa_logo.png' %}" alt="SFU MSA">
+      <div class="brand-text">
+        <strong>MSA Library</strong>
+        <span>Simon Fraser University</span>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      <a href="/">Borrow</a>
+      <a href="/signin/">Return</a>
+      <a href="/books/">Browse</a>
       {% if user.is_superuser %}
-      <a href="/addbook/" class="w3-bar-item w3-button">Add a Book</a>
-      <a href="/history/" class="w3-bar-item w3-button">Signed Out Books</a>
-      <a href="/overdue/" class="w3-bar-item w3-button">Overdue Books</a>
-      <a href="/admin/" class="w3-bar-item w3-button">Admin</a>
+      <a href="/addbook/">Add Book</a>
+      <a href="/history/">History</a>
+      <a href="/overdue/">Overdue</a>
+      <a href="/admin/">Admin</a>
       {% endif %}
       {% if user.is_authenticated %}
-      <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
-      <p class="w3-bar-item" style="opacity: 0.8;">Logged in as {{ user.get_full_name}}</p>
+      <span class="nav-user">{{ user.first_name }}</span>
+      <a href="{% url 'logout' %}" class="nav-cta">Logout</a>
       {% else %}
-      <a href="{% url 'login' %}" class="w3-bar-item w3-button">Login</a>
-      <a href="{% url 'signup' %}" class="w3-bar-item w3-button">Sign Up</a>
-      <a href="{% url 'password_reset' %}" class="w3-bar-item w3-button">Reset Password</a>
-      {% endif %} 
+      <a href="{% url 'login' %}">Login</a>
+      <a href="{% url 'signup' %}" class="nav-cta">Sign Up</a>
+      {% endif %}
     </div>
 
-    {% comment %} nav button {% endcomment %}
-    <div style="display: flex; align-items: center; justify-content: space-between; background: rgb(0,0,0,0.2);">
-      <button  class="pancake_button" role="button" title="Show sidebar" onclick="pancake_open()">☰</button>
-      <div class="top_nav">
-        <a href="/" class="w3-bar-item w3-button">Borrow a Book</a>
-        <a href="/signin/" class="w3-bar-item w3-button">Return a Book</a>
-        <a href="/books/" class="w3-bar-item w3-button">Books List</a>
-        {% if user.is_authenticated %}
-        <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
-        {% else %}
-        <a href="{% url 'login' %}" class="w3-bar-item w3-button">Login</a>
-        <a href="{% url 'signup' %}" class="w3-bar-item w3-button">Sign Up</a>
-        {% endif %} 
-      </div>
+    <button class="nav-hamburger" onclick="drawerOpen()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── Mobile Drawer ── -->
+  <div class="drawer-overlay" id="drawerOverlay" onclick="drawerClose()"></div>
+  <div class="nav-drawer" id="navDrawer">
+    <div class="drawer-header">
+      <span class="drawer-brand">MSA Library</span>
+      <button class="drawer-close" onclick="drawerClose()">&#x2715;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="/" onclick="drawerClose()">Borrow a Book</a>
+      <a href="/signin/" onclick="drawerClose()">Return a Book</a>
+      <a href="/books/" onclick="drawerClose()">Browse Books</a>
+      {% if user.is_superuser %}
+      <div class="drawer-divider"></div>
+      <a href="/addbook/" onclick="drawerClose()">Add a Book</a>
+      <a href="/history/" onclick="drawerClose()">Signed Out Books</a>
+      <a href="/overdue/" onclick="drawerClose()">Overdue Books</a>
+      <a href="/admin/" onclick="drawerClose()">Admin Panel</a>
+      {% endif %}
+      <div class="drawer-divider"></div>
+      {% if user.is_authenticated %}
+      <span class="drawer-user">{{ user.get_full_name }}</span>
+      <a href="{% url 'logout' %}" onclick="drawerClose()">Logout</a>
+      {% else %}
+      <a href="{% url 'login' %}" onclick="drawerClose()">Login</a>
+      <a href="{% url 'signup' %}" onclick="drawerClose()">Sign Up</a>
+      <a href="{% url 'password_reset' %}" onclick="drawerClose()">Reset Password</a>
+      {% endif %}
     </div>
   </div>
-  {% comment %} main content {% endcomment %}
+
+  <!-- ── Hero Banner ── -->
+  <div class="hero">
+    <h1>{% block main_title %}MSA Library{% endblock %}</h1>
+    <p>SFU Muslim Students Association &middot; Est. 1977</p>
+  </div>
+
+  <!-- ── Page Content ── -->
   <div id="main">
-
-    <div id="main_title">
-      <h1>
-          <strong>{% block main_title %}MSA Library{% endblock %}</strong>
-      </h1>
-    </div>
-
-    {% block content %}
-    {% endblock %}
+    {% block content %}{% endblock %}
   </div>
-  <div id="footer">
+
+  <!-- ── Footer ── -->
+  <footer id="footer">
     <div>
-      Contact Us
-      <br/>
-      Email: sfu-msa@hotmail.com
+      <div class="footer-brand">SFU MSA Library</div>
+      <div>Serving our community since 1977</div>
     </div>
-    <div style="max-width: 325px;">
-      <i>SFU MSA thanks you for using our library. We hope you will benefit!</i>
+    <div>
+      <a href="mailto:sfu-msa@hotmail.com">sfu-msa@hotmail.com</a>
     </div>
+    <div><i>We hope you benefit!</i></div>
   </footer>
+
+  <script>
+    function drawerOpen() {
+      document.getElementById('navDrawer').classList.add('open');
+      document.getElementById('drawerOverlay').classList.add('open');
+    }
+    function drawerClose() {
+      document.getElementById('navDrawer').classList.remove('open');
+      document.getElementById('drawerOverlay').classList.remove('open');
+    }
+  </script>
+  {% block js %}{% endblock %}
 </body>
 </html>
-
-{% block js %}
-{% endblock %}
-<script>
-  function pancake_open() {
-    document.getElementById("pancake").style.display = "block";
-    document.getElementById("pancake").style.width = "100%";
-  }
-  
-  function pancake_close() {
-    document.getElementById("pancake").style.display = "none";
-  }
-</script>

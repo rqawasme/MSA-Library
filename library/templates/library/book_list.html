@@ -1,26 +1,50 @@
 {% extends 'base.html' %}
 
-{% block title %}Books list{% endblock %}
-
-{% block main_title %}Books List{% endblock %}
+{% block title %}Browse Books — MSA Library{% endblock %}
+{% block main_title %}Browse Books{% endblock %}
 
 {% block content %}
-<div class="red_header">
-  <h2>Books in Our Library</h2>
-</div>
+<div class="page-content">
+  <div class="section-header"><h2>Books in Our Library</h2></div>
 
-{% for object in object_list %}
-<div class="lightred_header">
-	<h4>{{ object.title }}{% if object.creators %} by {{ object.creators }}{% endif %} ({{object.unique_number}})</h4>
+  {% if object_list %}
+  <div class="book-grid">
+    {% for book in object_list %}
+    <div class="book-card">
+      <div class="book-accent"></div>
+      <div class="book-body">
+        <div class="book-title">{{ book.title }}</div>
+        {% if book.creators %}
+        <div class="book-creators">{{ book.creators }}</div>
+        {% endif %}
+        {% if book.publisher %}
+        <div class="book-publisher">
+          {{ book.publisher }}{% if book.publish_date %}, {{ book.publish_date|slice:":4" }}{% endif %}
+        </div>
+        {% endif %}
+        {% if book.description %}
+        <div class="book-description">{{ book.description }}</div>
+        {% endif %}
+      </div>
+      <div class="book-footer">
+        <span class="book-number"># {{ book.unique_number }}</span>
+        {% if book.available_copies == 0 %}
+          <span class="badge unavailable">Unavailable</span>
+        {% elif book.available_copies < book.total_copies %}
+          <span class="badge partial">{{ book.available_copies }}/{{ book.total_copies }} left</span>
+        {% else %}
+          <span class="badge available">{{ book.available_copies }} available</span>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <div class="empty-icon">📚</div>
+    <h3>No books yet</h3>
+    <p>Check back soon — the library is being set up.</p>
+  </div>
+  {% endif %}
 </div>
-<div style="padding-left: 20px;">
-	{% if object.publisher %}<p>Publisher: {{ object.publisher }}{% if object.publish_date %}, {{ object.publish_date }}{% endif %}</p>{% endif %}
-	{% if object.description %}<p>Description: {{ object.description }}</p>{% endif %}
-	<p>Available: {{ object.available_copies }} / {{ object.total_copies }} copies</p>
-</div>
-{% empty %}
-<h1>No objects yet.</h1>
-{% endfor %}
-
 {% endblock %}
-

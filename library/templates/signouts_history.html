@@ -1,36 +1,57 @@
 {% extends 'base.html' %}
 
-{% block title %}Signed Out Books{% endblock %}
-
-{% block main_title %}Signed Out Books{% endblock %}
+{% block title %}{% block page_title %}Signed Out Books{% endblock %} — MSA Library{% endblock %}
+{% block main_title %}{% block hero_title %}Signed Out Books{% endblock %}{% endblock %}
 
 {% block content %}
-<div class="red_header">
-  <h2>Signed Out Books</h2>
-</div>
+<div class="page-content">
+  <div class="section-header"><h2>{% block section_title %}All Signed Out Books{% endblock %}</h2></div>
 
-
-{% for object in object_list %}
-<div class="lightred_header">
-	<h4>{{ object.book.title }} by {{ object.book.author }} ({{object.book.unique_number}})</h4>
+  {% if object_list %}
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Book</th>
+          <th>Borrower</th>
+          <th>Contact</th>
+          <th>Signed Out</th>
+          <th>Due</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in object_list %}
+        <tr>
+          <td>
+            <strong>{{ s.book.title }}</strong><br>
+            <span style="font-size:11px;color:var(--text-3);"># {{ s.book.unique_number }}</span>
+          </td>
+          <td>{{ s.user.get_full_name }}</td>
+          <td>
+            <a href="mailto:{{ s.user.email }}" style="color:var(--red);">{{ s.user.email }}</a><br>
+            <span style="font-size:12px;color:var(--text-3);">{{ s.user.phone_number }}</span>
+          </td>
+          <td style="white-space:nowrap;">{{ s.signout_date|date:"M j, Y" }}</td>
+          <td style="white-space:nowrap;">{{ s.expected_return_date|date:"M j, Y" }}</td>
+          <td>
+            {% if s.signed_back_in %}
+              <span class="badge available">Returned</span>
+            {% else %}
+              <span class="badge unavailable">Out</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <div class="empty-icon">📋</div>
+    <h3>Nothing here</h3>
+    <p>No signout records found.</p>
+  </div>
+  {% endif %}
 </div>
-<div>
-	<ul>
-		<li>Borrower: 
-			<ul>
-				<li>Name: {{ object.user.get_full_name }}</li>
-				<li>Email: {{ object.user.email }}</li>
-				<li>Phone Number: {{ object.user.phone_number }}</li>
-			</ul> 
-		</li>
-		<li>Signout Date: {{ object.signout_date }}</li>
-		<li>Return By: {{ object.expected_return_date }}</li>
-		<li>Signed back in: {{ object.signed_back_in }}</li>
-		<li>Signin Date: {{ object.signin_date }}</li>
-	</ul>
-</div>
-{% empty %}
-<h1>No objects yet.</h1>
-{% endfor %}
-
 {% endblock %}
