@@ -1,6 +1,6 @@
 # accounts/views.py
 import os
-import resend
+import requests
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.tokens import default_token_generator
 from django.shortcuts import render, redirect
@@ -15,7 +15,7 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from accounts.models import User
 
-resend.api_key = os.getenv("RESEND_API_KEY", "")
+RESEND_API_KEY = os.getenv("RESEND_API_KEY", "")
 
 username_validator = UnicodeUsernameValidator()
 
@@ -54,12 +54,17 @@ class SignUpView(generic.CreateView):
             reverse('verify_email', kwargs={'uidb64': uid, 'token': token})
         )
 
-        resend.Emails.send({
-            "from": "MSA Library <onboarding@resend.dev>",
-            "to": [user.email],
-            "subject": "Verify your MSA Library account",
-            "text": f"Assalamu Alaikum {user.first_name},\n\nPlease verify your email by clicking this link:\n\n{verify_url}\n\nThis link expires in 3 days.\n\nJazakAllah Khair,\nSFU MSA Library",
-        })
+        requests.post(
+            "https://api.resend.com/emails",
+            headers={"Authorization": f"Bearer {RESEND_API_KEY}"},
+            json={
+                "from": "MSA Library <onboarding@resend.dev>",
+                "to": [user.email],
+                "subject": "Verify your MSA Library account",
+                "text": f"Assalamu Alaikum {user.first_name},\n\nPlease verify your email by clicking this link:\n\n{verify_url}\n\nThis link expires in 3 days.\n\nJazakAllah Khair,\nSFU MSA Library",
+            },
+            timeout=10,
+        )
 
         return redirect('verification_sent')
 
