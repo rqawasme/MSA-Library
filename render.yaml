@@ -3,7 +3,7 @@ services:
   name: msalibrary
   env: python
   buildCommand: "./build.sh"        # ensure it's a string
-  startCommand: gunicorn msalibrary.wsgi:application
+  startCommand: gunicorn msalibrary.wsgi:application --timeout 120
   repo: https://github.com/rqawasme/MSA-Library.git # optional
   # plan: standard # optional
   healthCheckPath: /
