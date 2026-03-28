@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Check Your Email — MSA Library{% endblock %}
+{% block main_title %}Check Your Email{% endblock %}
+
+{% block content %}
+<div class="form-card" style="max-width:480px;text-align:center;">
+  <div style="font-size:48px;margin-bottom:16px;">&#9993;</div>
+  <div class="form-card-title">Verification email sent!</div>
+  <p style="color:var(--text-2);margin:12px 0 20px;line-height:1.6;">
+    We sent a verification link to your email address. Please check your inbox (and spam folder) and click the link to activate your account.
+  </p>
+  <a href="{% url 'login' %}" class="btn-primary" style="display:inline-block;padding:10px 28px;">Back to Login</a>
+</div>
+{% endblock %}
