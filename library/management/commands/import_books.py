@@ -4,7 +4,10 @@ from library.models import Book
 
 
 class Command(BaseCommand):
-    help = 'Import books from a CSV file. Columns: unique_number, title, author, description'
+    help = (
+        'Import books from a CSV file exported from Excel. '
+        'Expected columns: unique_number, title, creators, description, publisher, publish_date, copies'
+    )
 
     def add_arguments(self, parser):
         parser.add_argument('csv_file', type=str, help='Path to the CSV file')
@@ -23,14 +26,16 @@ class Command(BaseCommand):
         try:
             with open(path, newline='', encoding='utf-8-sig') as f:
                 reader = csv.DictReader(f)
-                # Normalise header names to lowercase with no spaces
                 reader.fieldnames = [h.strip().lower().replace(' ', '_') for h in reader.fieldnames]
 
-                for i, row in enumerate(reader, start=2):  # start=2 accounts for header row
+                for i, row in enumerate(reader, start=2):
                     unique_number = row.get('unique_number', '').strip()
                     title = row.get('title', '').strip()
-                    author = row.get('author', '').strip()
+                    creators = row.get('creators', '').strip()
                     description = row.get('description', '').strip()
+                    publisher = row.get('publisher', '').strip()
+                    publish_date = row.get('publish_date', '').strip()
+                    copies_raw = row.get('copies', '1').strip() or '1'
 
                     if not unique_number or not title:
                         self.stdout.write(self.style.WARNING(f'Row {i}: missing unique_number or title — skipped'))
@@ -44,20 +49,29 @@ class Command(BaseCommand):
                         skipped += 1
                         continue
 
+                    try:
+                        total_copies = int(float(copies_raw))
+                    except ValueError:
+                        self.stdout.write(self.style.WARNING(f'Row {i}: copies "{copies_raw}" is not a number, defaulting to 1'))
+                        total_copies = 1
+
                     if Book.objects.filter(unique_number=unique_number).exists():
                         if skip_dupes:
                             self.stdout.write(self.style.WARNING(f'Row {i}: book #{unique_number} already exists — skipped'))
                             skipped += 1
                             continue
                         else:
-                            raise CommandError(f'Row {i}: book with unique_number {unique_number} already exists. Use --skip-duplicates to ignore.')
+                            raise CommandError(f'Row {i}: book #{unique_number} already exists. Use --skip-duplicates to ignore.')
 
                     Book.objects.create(
                         unique_number=unique_number,
                         title=title,
-                        author=author,
+                        creators=creators,
                         description=description,
-                        available=True,
+                        publisher=publisher,
+                        publish_date=publish_date,
+                        total_copies=total_copies,
+                        available_copies=total_copies,
                     )
                     created += 1
 
