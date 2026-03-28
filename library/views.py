@@ -9,6 +9,7 @@ from library.utils import sign_back_all_borrows
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.http import HttpResponse, HttpResponseForbidden
+from django.utils import timezone
 
 class BooksView(LoginRequiredMixin, ListView):
     model = Book
@@ -39,23 +40,23 @@ class CheckoutView(LoginRequiredMixin, View):
         if book.available_copies <= 0 or book.id in active_ids or len(active_ids) >= 3:
             return redirect('books')
 
-        signout_time = datetime.now()
-        expected_return_date = signout_time + timedelta(days=21)
+        now = timezone.now()
+        expected_return_date = now + timedelta(days=21)
         Signout.objects.create(
             book=book,
             user=request.user,
-            signout_date=signout_time,
+            signout_date=now,
             signin_date=None,
             expected_return_date=expected_return_date,
         )
         book.available_copies -= 1
         book.save()
-        return redirect(f"{'/'}?msg=checked_out")
+        return redirect('/?msg=checked_out')
 
 
 class MyBorrowsView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        now = datetime.now()
+        now = timezone.now()
         signouts = (
             Signout.objects.filter(user=request.user, signed_back_in=False)
             .select_related('book')
@@ -73,7 +74,7 @@ class ReturnView(LoginRequiredMixin, View):
         if signout.user != request.user:
             return HttpResponseForbidden()
         signout.signed_back_in = True
-        signout.signin_date = datetime.now()
+        signout.signin_date = timezone.now()
         signout.save()
         signout.book.available_copies += 1
         signout.book.save()
