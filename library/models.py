@@ -10,7 +10,16 @@ class Book(models.Model):
     total_copies = models.IntegerField(default=1)
     available_copies = models.IntegerField(default=1)
     isbn = models.CharField(max_length=20, blank=True)
+    image_url = models.URLField(max_length=500, blank=True)
     unique_number = models.IntegerField(unique=True, blank=False)
+
+    @property
+    def availability_status(self):
+        if self.available_copies == 0:
+            return 'unavailable'
+        if self.available_copies < self.total_copies / 2:
+            return 'partial'
+        return 'available'
 
 
 class Signout(models.Model):

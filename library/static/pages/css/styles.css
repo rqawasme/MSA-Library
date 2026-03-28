@@ -583,6 +583,8 @@ a.book-card-link {
 .form-group input[type="number"],
 .form-group input[type="email"],
 .form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
 .form-group textarea,
 .form-group select {
   width: 100%;
@@ -602,6 +604,8 @@ a.book-card-link {
 .form-group input[type="number"]:focus,
 .form-group input[type="email"]:focus,
 .form-group input[type="password"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="url"]:focus,
 .form-group textarea:focus,
 .form-group select:focus {
   border-color: var(--red);
@@ -635,6 +639,8 @@ a.book-card-link {
 .django-form input[type="number"],
 .django-form input[type="email"],
 .django-form input[type="password"],
+.django-form input[type="tel"],
+.django-form input[type="url"],
 .django-form select,
 .django-form textarea {
   width: 100%;
@@ -653,6 +659,8 @@ a.book-card-link {
 .django-form input[type="number"]:focus,
 .django-form input[type="email"]:focus,
 .django-form input[type="password"]:focus,
+.django-form input[type="tel"]:focus,
+.django-form input[type="url"]:focus,
 .django-form select:focus,
 .django-form textarea:focus {
   border-color: var(--red);
@@ -715,6 +723,12 @@ a.book-card-link {
   background: #E8F5E9;
   color: #1B5E20;
   border: 1px solid #C8E6C9;
+}
+
+.alert.alert-info {
+  background: #E3F2FD;
+  color: #0D47A1;
+  border: 1px solid #BBDEFB;
 }
 
 /* Table */

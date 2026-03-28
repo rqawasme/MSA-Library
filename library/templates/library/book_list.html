@@ -13,14 +13,21 @@
   </div>
   {% endif %}
 
+  {% if not user.is_authenticated %}
+  <div class="alert alert-info" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+    <strong>Sign in to borrow a book.</strong>
+    <a href="{% url 'login' %}" class="btn-primary" style="white-space:nowrap;padding:8px 18px;font-size:13px;">Login</a>
+  </div>
+  {% endif %}
+
   <div class="section-header"><h2>Books in Our Library</h2></div>
 
   {% if object_list %}
   <div class="book-grid">
     {% for book in object_list %}
     <a href="{% url 'book_detail' book.id %}" class="book-card book-card-link">
-      {% if book.isbn %}
-      <img src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg" alt="{{ book.title }}" class="book-cover">
+      {% if book.image_url %}
+      <img src="{{ book.image_url }}" alt="{{ book.title }}" class="book-cover">
       {% endif %}
       <div class="book-body">
         <div class="book-title">{{ book.title }}</div>
