@@ -152,18 +152,7 @@ AUTH_USER_MODEL = 'accounts.User'
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "/accounts/login/" 
 
-# Email — use Gmail SMTP in production, console backend locally
-if os.getenv("EMAIL_HOST_USER"):
-    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-    EMAIL_HOST = "smtp.gmail.com"
-    EMAIL_PORT = 465
-    EMAIL_USE_SSL = True
-    EMAIL_USE_TLS = False
-    EMAIL_TIMEOUT = 10  # seconds — fail fast instead of hanging the worker
-    DEFAULT_FROM_EMAIL = os.getenv("EMAIL_HOST_USER")
-else:
-    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-    DEFAULT_FROM_EMAIL = "noreply@example.com"
+# Email — Resend handles sending via HTTP API (no SMTP needed)
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
