@@ -5,6 +5,14 @@
 
 {% block content %}
 <div class="page-content">
+
+  {% if request.GET.msg == 'checked_out' %}
+  <div class="alert alert-success" id="checkoutToast">
+    ✓ Book checked out! Due in 21 days. Jazakallah Khair!
+    <button onclick="this.parentElement.style.display='none'" style="float:right;background:none;border:none;cursor:pointer;font-size:16px;color:inherit;">&#x2715;</button>
+  </div>
+  {% endif %}
+
   <div class="section-header"><h2>Books in Our Library</h2></div>
 
   {% if object_list %}
@@ -29,11 +37,16 @@
       <div class="book-footer">
         <span class="book-number"># {{ book.unique_number }}</span>
         {% if book.available_copies == 0 %}
-          <span class="badge unavailable">Unavailable</span>
-        {% elif book.available_copies < book.total_copies %}
-          <span class="badge partial">{{ book.available_copies }}/{{ book.total_copies }} left</span>
+          <button class="btn-checkout" disabled>Unavailable</button>
+        {% elif book.id in user_active_ids %}
+          <button class="btn-checkout" disabled>Already Borrowed</button>
+        {% elif user_borrow_count >= 3 %}
+          <button class="btn-checkout" disabled>Limit Reached</button>
         {% else %}
-          <span class="badge available">{{ book.available_copies }} available</span>
+          <form method="post" action="{% url 'checkout' book.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn-checkout">Borrow</button>
+          </form>
         {% endif %}
       </div>
     </div>

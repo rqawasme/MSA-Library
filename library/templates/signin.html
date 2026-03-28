@@ -1,28 +1,82 @@
 {% extends 'base.html' %}
 
-{% block title %}Return a Book — MSA Library{% endblock %}
-{% block main_title %}Return a Book{% endblock %}
+{% block title %}My Books — MSA Library{% endblock %}
+{% block main_title %}My Books{% endblock %}
 
 {% block content %}
-<div class="form-card">
-  <div class="form-card-title">Return a Book</div>
-  <div class="form-card-subtitle">Enter the book number found on the inside cover.</div>
+<div class="page-content">
+  <div class="section-header"><h2>Currently Borrowed</h2></div>
 
-  {% if error %}
-  <div class="alert alert-error">Invalid book number. Please check the number on the inside cover and try again.</div>
+  {% if signouts %}
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Book</th>
+          <th>Borrowed On</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in signouts %}
+        <tr>
+          <td><strong>{{ s.book.title }}</strong></td>
+          <td>{{ s.signout_date|date:"M j, Y" }}</td>
+          <td>{{ s.expected_return_date|date:"M j, Y" }}</td>
+          <td>
+            {% if s.is_overdue %}
+            <span class="badge unavailable">Overdue</span>
+            {% else %}
+            <span class="badge available">On Time</span>
+            {% endif %}
+          </td>
+          <td>
+            <button class="btn-primary" onclick="openReturnModal('{{ s.id }}', '{{ s.book.title|escapejs }}')">Return</button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <div class="empty-icon">📖</div>
+    <h3>No active borrows</h3>
+    <p>You have no books checked out. <a href="/books/" style="color:var(--red);">Browse the library</a> to borrow one.</p>
+  </div>
   {% endif %}
-
-  {% if success %}
-  <div class="alert alert-success">✓ <strong>{{ book.title }}</strong> returned. Jazakallah Khair!</div>
-  {% endif %}
-
-  <form method="post">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="book_number">Book Number</label>
-      <input id="book_number" type="number" name="book_number" value="0" min="0" placeholder="e.g. 42">
-    </div>
-    <button type="submit" class="btn-primary btn-full">Return Book</button>
-  </form>
 </div>
+
+<!-- Return confirmation modal -->
+<div class="modal-overlay" id="returnModalOverlay" onclick="closeReturnModal()"></div>
+<div class="modal" id="returnModal">
+  <div class="modal-title">Return Book</div>
+  <div class="modal-body">
+    Are you sure you want to return <strong id="modalBookTitle"></strong>?
+  </div>
+  <div class="modal-actions">
+    <button class="btn-secondary" onclick="closeReturnModal()">Cancel</button>
+    <form id="returnForm" method="post" style="display:inline;">
+      {% csrf_token %}
+      <button type="submit" class="btn-primary">Yes, Return</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+  function openReturnModal(signoutId, bookTitle) {
+    document.getElementById('modalBookTitle').textContent = bookTitle;
+    document.getElementById('returnForm').action = '/return/' + signoutId + '/';
+    document.getElementById('returnModalOverlay').classList.add('open');
+    document.getElementById('returnModal').classList.add('open');
+  }
+  function closeReturnModal() {
+    document.getElementById('returnModalOverlay').classList.remove('open');
+    document.getElementById('returnModal').classList.remove('open');
+  }
+</script>
 {% endblock %}

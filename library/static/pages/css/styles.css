@@ -673,6 +673,102 @@ body {
 .empty-state h3 { font-size: 18px; font-weight: 600; color: var(--text-2); margin-bottom: 8px; }
 .empty-state p  { font-size: 14px; }
 
+/* Checkout Button */
+.btn-checkout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: var(--red);
+  color: #fff;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.btn-checkout:hover:not(:disabled) {
+  background: var(--red-dark);
+  box-shadow: 0 2px 8px rgba(193,48,13,0.35);
+}
+
+.btn-checkout:disabled {
+  background: var(--border);
+  color: var(--text-3);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-2);
+  transition: background 0.15s;
+}
+
+.btn-secondary:hover { background: var(--bg); }
+
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 300;
+  backdrop-filter: blur(2px);
+}
+
+.modal-overlay.open { display: block; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 301;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 28px 32px;
+  width: min(400px, 90vw);
+}
+
+.modal.open { display: block; }
+
+.modal .modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.modal .modal-body {
+  font-size: 14px;
+  color: var(--text-2);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.modal .modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
 /* Footer */
 #footer {
   background: #1C1B1F;
