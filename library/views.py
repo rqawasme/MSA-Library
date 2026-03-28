@@ -11,7 +11,7 @@ from django.contrib.auth.mixins import UserPassesTestMixin
 from django.http import HttpResponse, HttpResponseForbidden
 from django.utils import timezone
 
-class BooksView(LoginRequiredMixin, ListView):
+class BooksView(ListView):
     model = Book
 
     def get_queryset(self, *args, **kwargs):
@@ -31,15 +31,21 @@ class BooksView(LoginRequiredMixin, ListView):
         return context
 
 
-class BookDetailView(LoginRequiredMixin, View):
+class BookDetailView(View):
     def get(self, request, book_id, *args, **kwargs):
         book = get_object_or_404(Book, id=book_id)
-        active = Signout.objects.filter(user=request.user, signed_back_in=False)
-        active_ids = set(s.book_id for s in active)
+        if request.user.is_authenticated:
+            active = Signout.objects.filter(user=request.user, signed_back_in=False)
+            active_ids = set(s.book_id for s in active)
+            user_has_borrowed = book.id in active_ids
+            user_borrow_count = len(active_ids)
+        else:
+            user_has_borrowed = False
+            user_borrow_count = 0
         context = {
             'book': book,
-            'user_has_borrowed': book.id in active_ids,
-            'user_borrow_count': len(active_ids),
+            'user_has_borrowed': user_has_borrowed,
+            'user_borrow_count': user_borrow_count,
         }
         return render(request, 'library/book_detail.html', context)
 
@@ -112,6 +118,7 @@ class AddBookView(UserPassesTestMixin, View):
         publish_date = request.POST.get('publish_date')
         total_copies = int(request.POST.get('total_copies') or 1)
         isbn = request.POST.get('isbn', '').strip()
+        image_url = request.POST.get('image_url', '').strip()
 
         if title == '':
             errors.append("Title is Empty!")
@@ -120,7 +127,7 @@ class AddBookView(UserPassesTestMixin, View):
         try:
             book = Book(title=title, creators=creators, description=description, publisher=publisher,
                         publish_date=publish_date, total_copies=total_copies, available_copies=total_copies,
-                        isbn=isbn, unique_number=book_number)
+                        isbn=isbn, image_url=image_url, unique_number=book_number)
             book.save()
         except:
             errors.append("Book number is not unique!")

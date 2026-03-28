@@ -469,6 +469,8 @@ body {
   input[type="number"],
   input[type="email"],
   input[type="password"],
+  input[type="tel"],
+  input[type="url"],
   textarea,
   select {
     width: 100%;
@@ -515,6 +517,8 @@ body {
   input[type="number"],
   input[type="email"],
   input[type="password"],
+  input[type="tel"],
+  input[type="url"],
   select, textarea {
     width: 100%;
     padding: 10px 14px;
@@ -589,6 +593,12 @@ body {
     background: #E8F5E9;
     color: #1B5E20;
     border: 1px solid #C8E6C9;
+  }
+
+  &.alert-info {
+    background: #E3F2FD;
+    color: #0D47A1;
+    border: 1px solid #BBDEFB;
   }
 }
 
