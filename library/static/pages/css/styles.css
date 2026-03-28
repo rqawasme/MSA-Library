@@ -414,7 +414,7 @@ body {
   background: var(--bg);
 }
 
-.book-card .book-number {
+.book-number {
   font-size: 11px;
   color: var(--text-3);
   font-weight: 500;
