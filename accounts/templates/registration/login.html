@@ -1,29 +1,26 @@
-<!-- templates/registration/login.html -->
 {% extends 'base.html' %}
 
-{% block title %}Login{% endblock %}
-
-{% block main_title %}Login{% endblock %}
+{% block title %}Login — MSA Library{% endblock %}
+{% block main_title %}Welcome Back{% endblock %}
 
 {% block content %}
+<div class="form-card">
+  <div class="form-card-title">Log In</div>
+  <div class="form-card-subtitle">
+    Don't have an account? <a href="{% url 'signup' %}" style="color:var(--red);font-weight:600;">Sign Up</a>
+  </div>
 
-<div class="red_header">
-  <h2>Log In</h2>
-</div>
-<div class="login_form">
+  {% if form.errors %}
+  <div class="alert alert-error">Incorrect email or password. Please try again.</div>
+  {% endif %}
+
   <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <p>
-      <i>
-        Don't have an account?  <a href="{% url 'signup' %}">Sign Up</a>
-      </i>
-      <br/>
-      <br/>
-      <i><a href="{% url 'password_reset' %}">Reset Password</a></i>
+    <div class="django-form">{{ form.as_p }}</div>
+    <button type="submit" class="btn-primary btn-full">Log In</button>
+    <p style="margin-top:16px;font-size:13px;text-align:center;">
+      <a href="{% url 'password_reset' %}" style="color:var(--text-3);">Forgot your password?</a>
     </p>
-    <button type="submit" class="input_button">Log In</button>
   </form>
 </div>
-
 {% endblock %}

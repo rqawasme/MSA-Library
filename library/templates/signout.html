@@ -1,25 +1,28 @@
 {% extends 'base.html' %}
 
-{% block title %}Signout{% endblock %}
-
+{% block title %}Borrow a Book — MSA Library{% endblock %}
 {% block main_title %}Borrow a Book{% endblock %}
 
 {% block content %}
-<div class="red_header">
-  <h2>Sign out a book</h2>
-</div>
-<div class="form">
+<div class="form-card">
+  <div class="form-card-title">Sign Out a Book</div>
+  <div class="form-card-subtitle">Enter the book number found on the inside cover.</div>
+
+  {% if error %}
+  <div class="alert alert-error">Invalid book number. Please check the number on the inside cover and try again.</div>
+  {% endif %}
+
+  {% if success %}
+  <div class="alert alert-success">✓ Successfully borrowed <strong>{{ book.title }}</strong>. Enjoy the read!</div>
+  {% endif %}
+
   <form method="post">
-    {%csrf_token%}
-    {% if error %}
-    <p class="error">Please input a valid book number. It can be found on the inside of the cover.</p>
-    {%endif%}
-    {% if success %}
-      <h4>Signed out {{book.title}} Successfully! Enjoy the book!</h4>
-    {% endif %}
-    <label for="book_number">Book Number: </label><br/>
-    <input id="book_number" type="number" name="book_number" value="0" class="input_field">
-    <input type="submit" value="Submit" class="input_button">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="book_number">Book Number</label>
+      <input id="book_number" type="number" name="book_number" value="0" min="0" placeholder="e.g. 42">
+    </div>
+    <button type="submit" class="btn-primary btn-full">Borrow Book</button>
   </form>
 </div>
 {% endblock %}
