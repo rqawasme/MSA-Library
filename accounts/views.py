@@ -58,7 +58,7 @@ class SignUpView(generic.CreateView):
             "https://api.resend.com/emails",
             headers={"Authorization": f"Bearer {RESEND_API_KEY}"},
             json={
-                "from": "MSA Library <onboarding@resend.dev>",
+                "from": "MSA Library <verification@sfumsa.ca>",
                 "to": [user.email],
                 "subject": "Verify your MSA Library account",
                 "text": f"Assalamu Alaikum {user.first_name},\n\nPlease verify your email by clicking this link:\n\n{verify_url}\n\nThis link expires in 3 days.\n\nJazakAllah Khair,\nSFU MSA Library",
